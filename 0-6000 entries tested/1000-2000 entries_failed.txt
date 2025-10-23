@@ -1,0 +1,2449 @@
+FAILED ENTRIES WITH ERROR MESSAGES
+==================================================
+Total entries processed: 1000
+Failed to parse: 86
+Failure rate: 8.60%
+==================================================
+
+ENTRY #2 SOLVED (removed one _? from TRANSLATION..)
+--------------------
+Original text: ætrig _poisonous_, _Lcd_; Æ. [‘_attery_’] 
+
+Error: Unexpected error: No terminal matches 'Æ' in the current parser context, at line 1 col 27
+
+ætrig _poisonous_, _Lcd_; Æ. ['_attery_']
+                          ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #4  SOLVED ? (should match..)
+--------------------
+Original text: ætsacan^6 _to deny_, _Lk_; Æ: _renounce_, _Mk_. [‘_atsake_’]
+
+Error: Unexpected error: No terminal matches 'Æ' in the current parser context, at line 1 col 28
+
+ætsacan^6 _to deny_, _Lk_; Æ: _renounce_, _Mk_. ['_atsake_']
+                           ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #6 SOLVED (added to bibl MSREF?)
+--------------------
+Original text: ætscēotan^2 _to escape, disappear_, MF (Vesp. D xiv).
+
+Error: Unexpected error: No terminal matches 'D' in the current parser context, at line 1 col 47
+
+tan^2 _to escape, disappear_, MF (Vesp. D xiv).
+                                        ^
+Expected one of: 
+	* RP
+
+
+==================================================
+
+ENTRY #12 SOLVED (added USGPREP)
+--------------------
+Original text: ætspornan^3 (u) _to strike against, stumble, go wrong_, CP:
+_rebel_ (æt).
+
+Error: Unexpected error: No terminal matches 'æ' in the current parser context, at line 1 col 70
+
+ainst, stumble, go wrong_, CP: _rebel_ (æt).
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NODOTGEN
+	* MOOD
+	* LBL
+	* SOURCE
+	* NUM
+	* PERS
+	* LP
+	* REFLBL
+	* DECL
+	* VIDE
+	* VALEN
+	* CASE
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #15 SOLVED (Added 1,3 to DASHVAR's ...(\([āæǣēīōðȳūüa-z^0-9]{1,3}\))...)
+--------------------
+Original text: ætspringnes, -sprung(en)nes f. _defection_.
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 32
+
+ætspringnes, -sprung(en)nes f. _defection_.
+                               ^
+Expected one of: 
+	* GEN
+	* PARINFVAR
+	* LBL
+	* CASE
+
+
+==================================================
+
+ENTRY #20  MANUAL (rare)
+--------------------
+Original text: ætstæl m. _aid, assistance_ (GK); = ætsteall (BT), #Gu# 150.
+
+Error: Unexpected error: No terminal matches '=' in the current parser context, at line 1 col 35
+
+ætstæl m. _aid, assistance_ (GK); = ætsteall (BT), #Gu# 150.
+                                  ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #22 SOLVED ???? (Should match. don't get it)
+--------------------
+Original text: ætstandan^6 _to stand still, stand at, near, in or by_, _Æ_: _remain,
+stand up_: _check, resist_, Æ: _cease_, _Lk_; Æ. [‘_atstand_’]
+
+Error: Unexpected error: No terminal matches 'Æ' in the current parser context, at line 1 col 117
+
+up_: _check, resist_, Æ: _cease_, _Lk_; Æ. ['_atstand_']
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #81 SOLVED (typo - extra dot after _Sat_. Removed here)
+--------------------
+Original text: ǣðm (ē) m. _air, breath, breathing_, CP; _Sat_ (ē): _vapour_, _B_:
+_blast_, Æ. [‘_ethem_’]
+
+Error: Unexpected error: No terminal matches 'ē' in the current parser context, at line 1 col 50
+
+. _air, breath, breathing_, CP; _Sat_. (ē): _vapour_, _B_: _blast_, Æ. ['_ethem_
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NODOTGEN
+	* MOOD
+	* LBL
+	* SOURCE
+	* NUM
+	* PERS
+	* LP
+	* REFLBL
+	* DECL
+	* VIDE
+	* USGLBL
+	* SPECSYMB
+	* VALEN
+	* CASE
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #91 MANUAL ???
+--------------------
+Original text: æðða (Bd, Death-song) = oððe
+
+Error: Unexpected error: No terminal matches '-' in the current parser context, at line 1 col 16
+
+æðða (Bd, Death-song) = oððe
+               ^
+Expected one of: 
+	* RP
+	* DOT_SEP
+
+
+==================================================
+
+ENTRY #96 SOLVED (Added (\^[0-9])? to OEDREF)
+--------------------
+Original text: ǣwbreca (i, y) m. _adulterer_, _LL_ (y). [‘_eaubruche_^2’]
+
+Error: Unexpected error: No terminal matches ''' in the current parser context, at line 1 col 43
+
+breca (i, y) m. _adulterer_, _LL_ (y). ['_eaubruche_^2']
+                                        ^
+Expected one of: 
+	* COMPARE
+	* LANG
+	* REFLBL
+	* VIDE
+	* WORD
+	* OEDREF
+	* RSQB
+
+
+==================================================
+
+ENTRY #97 SOLVED (Added (\^[0-9])? to OEDREF)
+--------------------
+Original text: ǣwbryce m. _adultery_, Æ; _LL_. [‘_eaubruche_^1’]
+
+Error: Unexpected error: No terminal matches ''' in the current parser context, at line 1 col 34
+
+ǣwbryce m. _adultery_, Æ; _LL_. ['_eaubruche_^1']
+                                 ^
+Expected one of: 
+	* COMPARE
+	* LANG
+	* REFLBL
+	* VIDE
+	* WORD
+	* OEDREF
+	* RSQB
+
+
+==================================================
+
+ENTRY #103 MANUAL  (rare)
+--------------------
+Original text: ǣwerd adj.? _religious_, or sb.? _regular priest_, ANS 128·298. [cp.
+ǣweweard]
+
+Error: Unexpected error: No terminal matches '?' in the current parser context, at line 1 col 11
+
+ǣwerd adj.? _religious_, or sb.? _regular priest_,
+          ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* ROM_NUM
+	* MOOD
+	* PERS
+	* SPECSYMB
+	* SPELLVAR
+	* CASE
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* SIMPLEVAR
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* INFLECTVAR
+	* __ANON_0
+	* USGLBL
+	* REFLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #110 MANUAL (1 case) 
+--------------------
+Original text: ǣwicnes f. _eternity_, #RPs# 102^17 (v. p. 303).
+
+Error: Unexpected error: No terminal matches 'p' in the current parser context, at line 1 col 41
+
+ǣwicnes f. _eternity_, #RPs# 102^17 (v. p. 303).
+                                        ^
+Expected one of: 
+	* SOURCE
+
+
+==================================================
+
+ENTRY #137 SOLVED (added |biblref RP COMMA to parenvar, made \) optional in PARENVAR )
+--------------------
+Original text: æxfaru f. _‘apparatus,’ naval expedition_? (= æsc-? v. ES 37·184), #Gl#.
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 65
+
+naval expedition_? (= æsc-? v. ES 37·184), #Gl#.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* DOT_SEP
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* SPECSYMB
+	* QM
+	* CASE
+	* ONEWORD
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DOT
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #146 SOLVED ??? Should match. 
+--------------------
+Original text: āfǣran _to frighten_, _PPs, Mk, Chr_; AO, CP. [‘_afear_,’ ‘_afeared_’]
+
+Error: Unexpected error: No terminal matches 'A' in the current parser context, at line 1 col 39
+
+āfǣran _to frighten_, _PPs, Mk, Chr_; AO, CP. ['_afear_,' '_afeared_']
+                                      ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #148 MANUAL (No idea. LL, W. doesn't work for some reason, even though very similar things work. No clue.) 
+--------------------
+Original text: āfæstan I. _to fast_, LL, W. II. _to let out on hire_, MkR 12^1.
+
+Error: Unexpected error: No terminal matches 't' in the current parser context, at line 1 col 35
+
+āfæstan I. _to fast_, LL, W. II. _to let out on hire_, MkR 12^1.
+                                  ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOT_SEP
+	* CASECOMM
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* QM
+	* CASE
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* QMSENSE
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #153 SOLVED (added |LP lbl SIMPLEVAR qm RP to parenvar) 
+--------------------
+Original text: āfandian _to try, test, prove, tempt_, _Lk, Lcd_; Æ, CP: _find out,
+experience_, Æ. āfandod (and āfanden?) _approved, excellent_, Æ.
+
+Error: Unexpected error: No terminal matches '?' in the current parser context, at line 1 col 105
+
+ut, experience_, Æ. āfandod (and āfanden?) _approved, excellent_, Æ.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* SPELLVAR
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* RP
+	* VALEN
+	* SIMPLEVAR
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* __ANON_0
+	* USGLBL
+	* DECL
+	* REFLBL
+	* PARINFVAR
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #206 SOLVED (added () to SOURCE's [...])
+--------------------
+Original text: afol n. _power, might_, LL (304^22).
+
+Error: Unexpected error: No terminal matches '3' in the current parser context, at line 1 col 29
+
+afol n. _power, might_, LL (304^22).
+                            ^
+Expected one of: 
+	* VIDE
+	* SOURCE
+
+
+==================================================
+
+ENTRY #217 MANUAL (rare)
+--------------------
+Original text: āfrēon (-ia, N) _to deliver, free_.
+
+Error: Unexpected error: No terminal matches ',' in the current parser context, at line 1 col 12
+
+āfrēon (-ia, N) _to deliver, free_.
+           ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NODOTGEN
+	* MOOD
+	* LBL
+	* NUM
+	* PERS
+	* PARINFVAR
+	* DECL
+	* RP
+	* VALEN
+	* CASE
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #226 SOLVED (changed (y = ie) to (ie^2), which is the same and what is usually used)
+--------------------
+Original text: āfyllan I. (w. g. or d.) _to fill, fill up, replenish, satisfy_, _Æ_;
+AO: _complete, fulfil_. [‘_afill_’]. II. (ie^2) _to cause to fall,
+fell, beat down, overturn, subvert, demolish, abolish_, _Lk_; Æ: _slay,
+kill_. [‘_afelle_’]
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 205
+
+, subvert, demolish, abolish_, _Lk_; Æ: _slay, kill_. ['_afelle_']
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* POS
+	* ROM_NUM
+	* MOOD
+	* PERS
+	* VIDE
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* VALEN
+	* DOT
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* REFLBL
+	* DECL
+	* LPAR
+	* SUBST
+
+
+==================================================
+
+ENTRY #236 SOLVED (Restored previous version of TRANSLATION. It cannot handle senses that have _ in the middle without messing up bibl)
+--------------------
+Original text: āgǣlan _to hinder, keep back, preoccupy, detain, hold back, retard,
+delay_, AO: _neglect_, CP: _profane_.
+
+Error: Unexpected error: No terminal matches 'r' in the current parser context, at line 1 col 98
+
+k, retard, delay_, AO: _neglect_, CP: _profane_.
+                                        ^
+Expected one of: 
+	* NUM
+	* LBL
+	* DASHVAR
+
+
+==================================================
+
+ENTRY #241 MANUAL (rare: conj. and (word) in xr section)
+--------------------
+Original text: āgan I. (conj. Wt 546) _to own, possess, have, obtain_, _An, Bo, Ma,
+Mt_; AO, CP: _give, give up, deliver, restore_: _have to pay, ‘owe,’_
+_Mt, Lk_: _have to do_, ANS 123·417. ā. ūt _find out, discover_. II.
+pret. 3 sg. of āginnan (onginnan).
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 22
+
+āgan I. (conj. Wt 546) _to own, possess, have, obtain_, _An, 
+                     ^
+Expected one of: 
+	* SEMICOL_SEP
+	* DOT_SEP
+	* COLON_SEP
+
+
+==================================================
+
+ENTRY #250 SOLVED 
+--------------------
+Original text: āgen I. _‘own,’ proper, peculiar_, _BH, Sat, Mt_; AO, CP, #Chr#, Æ.
+ā. cyre _freewill_. āgnes ðonces _voluntarily, spontaneously_: _proper
+(gram.)_, #ÆGr#. II. n. _property_, _LL_: _own country_. III. pp. of
+āgan.
+
+Error: Unexpected error: No terminal matches ',' in the current parser context, at line 1 col 64
+
+ peculiar_, _BH, Sat, Mt_; AO, CP, #Chr#, Æ. ā. cyre _freewill_. āgnes ðonces _v
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOT_SEP
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* QM
+	* CASE
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* DECL
+	* LPAR
+
+
+==================================================
+
+ENTRY #303 SOLVED (Added |gramgrp after homref| in refword)
+--------------------
+Original text: āgnes = āgenes gmn. of āgen adj.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* POS
+	* LBL
+	* REFLBL
+	* REFLBL
+	* LP
+	* LP
+	* LP
+	* LP
+	* DGR
+	* TNS
+
+
+==================================================
+
+ENTRY #306 SOLVED (went back to the previous version of SOURCE.)
+--------------------
+Original text: āgnettung f. ‘_usurpatura_’? Lk 19^23 (ES 42·163).
+
+Error: Unexpected error: No terminal matches 'L' in the current parser context, at line 1 col 30
+
+āgnettung f. '_usurpatura_'? Lk 19^23 (ES 42·163).
+                             ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* DOT_SEP
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* COMMA
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #339 SOLVED
+--------------------
+Original text: ah (AO, CP) = ac (conj. and adv.)
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* POS
+	* LBL
+	* REFLBL
+	* REFLBL
+	* LP
+	* LP
+	* LP
+	* LP
+
+
+==================================================
+
+ENTRY #356 MANUAL
+--------------------
+Original text: āhebban^6 (occl. wk. pret. āhefde and pp. āhefed) (often w. ūp) _to lift
+up, stir up, raise, exalt, erect_, _Lk_; CP: _take away, remove_:
+_support, uphold_: _leaven_. [‘_aheave_’]
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 16
+
+āhebban^6 (occl. wk. pret. āhefde and pp. āhefed) (ofte
+               ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NODOTGEN
+	* MOOD
+	* LBL
+	* NUM
+	* PERS
+	* PARINFVAR
+	* DECL
+	* RP
+	* VALEN
+	* CASE
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #363 SOLVED
+--------------------
+Original text: āhēnan _to humble_, LkL: _accuse_, NG. [hīenan; hēan]
+
+Error: Unexpected error: No terminal matches 'c' in the current parser context, at line 1 col 28
+
+āhēnan _to humble_, LkL: _accuse_, NG. [hīenan; hēan]
+                           ^
+Expected one of: 
+	* NUM
+	* GEN
+	* OF
+
+
+==================================================
+
+ENTRY #374 SOLVED (added gramgrp| after quote in cit)
+--------------------
+Original text: āhildan (æ, e, y) _to bend, incline_, Æ: _rest, lay down_ (tr. and
+intr.): _turn away, avert_: _cast down, destroy_.
+
+Error: Unexpected error: No terminal matches ':' in the current parser context, at line 1 col 74
+
+ne_, Æ: _rest, lay down_ (tr. and intr.): _turn away, avert_: _cast down, destro
+                                        ^
+Expected one of: 
+	* LBL
+	* DASHVAR
+	* LP
+	* REFLBL
+	* VALEN
+
+
+==================================================
+
+ENTRY #386 MANUAL (too complex for etym)
+--------------------
+Original text: āhlocian _to dig out_, #Gl#, MtR 5^29. [?= *ālocian, cp. lucan (BT) and
+v. ES 42·165]
+
+Error: Unexpected error: No terminal matches 'l' in the current parser context, at line 1 col 58
+
+out_, #Gl#, MtR 5^29. [?= *ālocian, cp. lucan (BT) and v. ES 42·165]
+                                        ^
+Expected one of: 
+	* OEDREF
+	* RSQB
+	* LANG
+
+
+==================================================
+
+ENTRY #393 SOLVED 
+--------------------
+Original text: āhnescian _to become soft or effeminate_, AO: _weaken_. [hnesce]
+
+Error: Unexpected error: No terminal matches 'w' in the current parser context, at line 1 col 48
+
+an _to become soft or effeminate_, AO: _weaken_. [hnesce]
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOT_SEP
+	* CASECOMM
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* QM
+	* CASE
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* QMSENSE
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #399 SOLVED (added COMMA? after USGPREP)
+--------------------
+Original text: āhopian _to hope for_ (tō), #Bl# 17^23.
+
+Error: Unexpected error: No terminal matches 't' in the current parser context, at line 1 col 24
+
+āhopian _to hope for_ (tō), #Bl# 17^23.
+                       ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NODOTGEN
+	* MOOD
+	* LBL
+	* SOURCE
+	* NUM
+	* PERS
+	* LP
+	* REFLBL
+	* DECL
+	* VIDE
+	* VALEN
+	* CASE
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #419 MANUAL (1 case)
+--------------------
+Original text: āhtes (= g. of āht) _of any account or value_.
+
+Error: Unexpected error: No terminal matches 'ā' in the current parser context, at line 1 col 16
+
+āhtes (= g. of āht) _of any account or value_.
+               ^
+Expected one of: 
+	* PARENXR
+	* HOMREF
+	* LP
+	* VIDE
+	* GLOSS
+	* PARENVAR
+	* RP
+	* TRANSLATION
+	* OEDREF
+	* COMMA
+	* DOT
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #427 SOLVED (Removed = before _either here.)
+--------------------
+Original text: āhwæðer (āwðer, āðer, āðor) I. pron. _some one, something_; _any one_:
+_anything_. II. adv. and conj. _either_, _AO, CP_. āðer...oððe =
+_either...or_, _AO, LL_. [‘_outher_’]
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 137
+
+conj. _either_, _AO, CP_. āðer...oððe _either...or_, _AO, LL_. ['_outher_']
+                                        ^
+Expected one of: 
+	* PREFSUFXR
+	* REFNUMWORD
+	* REFWORD
+	* CASE
+
+
+==================================================
+
+ENTRY #443  SOLVED
+--------------------
+Original text: āhwylfan _to cover over, submerge, subvert_, Æ: _to roll to_, MP 1·592.
+up ā. _pull up, loosen_.
+
+Error: Unexpected error: No terminal matches 'u' in the current parser context, at line 1 col 81
+
+rt_, Æ: _to roll to_, MP 1·592. up ā. _pull up, loosen_.
+                                        ^
+Expected one of: 
+	* NUM
+	* LBL
+	* DASHVAR
+
+
+==================================================
+
+ENTRY #457 SOLVED (added qm? at the end of form)
+--------------------
+Original text: āīdan (ȳ)? ‘_eliminare_,’ v. OEG 7^109n; BT.
+
+Error: Unexpected error: No terminal matches '?' in the current parser context, at line 1 col 10
+
+āīdan (ȳ)? '_eliminare_,' v. OEG 7^109n; BT.
+         ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* ROM_NUM
+	* MOOD
+	* SOURCE
+	* PERS
+	* SPECSYMB
+	* SPELLVAR
+	* CASE
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* COMMA
+	* SIMPLEVAR
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* __ANON_0
+	* USGLBL
+	* DECL
+	* REFLBL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #462 MANUAL (afraid to break the SOURCE)
+--------------------
+Original text: āl n. _fire, burning_, OEG 4389; 4470. [cp. ǣlan]
+
+Error: Unexpected error: No terminal matches '4' in the current parser context, at line 1 col 34
+
+āl n. _fire, burning_, OEG 4389; 4470. [cp. ǣlan]
+                                 ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOT_SEP
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* QM
+	* CASE
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* DECL
+	* LPAR
+
+
+==================================================
+
+ENTRY #473 SOLVED
+--------------------
+Original text: ālangian (impers.) _to affect with longing_, _Soul_ 154. [‘_along_’]
+
+Error: Unexpected error: No terminal matches '5' in the current parser context, at line 1 col 54
+
+ers.) _to affect with longing_, _Soul_ 154. ['_along_']
+                                        ^
+Expected one of: 
+	* DASHVAR
+	* LBL
+	* PERS
+
+
+==================================================
+
+ENTRY #475 SOLVED (added parenxr? to xr_section)
+--------------------
+Original text: alað I. = ealað (v. ealu). II. pres. 3 sg. of alan.
+
+Error: Unexpected error: No terminal matches 'I' in the current parser context, at line 1 col 28
+
+alað I. = ealað (v. ealu). II. pres. 3 sg. of alan.
+                           ^
+Expected one of: 
+	* PARENXR
+	* LP
+	* VIDE
+	* GLOSS
+	* PARENVAR
+	* RP
+	* TRANSLATION
+	* OEDREF
+	* DOT
+	* COMMA
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #511 SOLVED (added (parenbibl DOT_SEP)? to posvar)
+--------------------
+Original text: ālīefedlic _lawful, permissible_. adv. -līce (CP, Æ).
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 53
+
+lawful, permissible_. adv. -līce (CP, Æ).
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* SPELLVAR
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* COMMA
+	* SIMPLEVAR
+	* DGR
+	* NODOTGEN
+	* PARENXR
+	* LSQB
+	* LBL
+	* __ANON_0
+	* USGLBL
+	* REFLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #514 MANUAL (rare ...\s-\(... )
+--------------------
+Original text: ālīes-ednes, -(e)nes (ē, ȳ) f. _redemption, ransom_, _MtWLR: _remission
+(of sins)_, ERHy 9^77.
+
+Error: Unexpected error: No terminal matches '-' in the current parser context, at line 1 col 14
+
+ālīes-ednes, -(e)nes (ē, ȳ) f. _redemption, ransom_, 
+             ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NODOTGEN
+	* MOOD
+	* LBL
+	* NUM
+	* PERS
+	* DASHVAR
+	* DECL
+	* VALEN
+	* CASE
+	* SIMPLEVAR
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #521 SOLVED (added (lbl? mood number)+ to gramgrp combos)
+--------------------
+Original text: ālīh (DR) imperat. sg. of ālēon.
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 32
+
+ālīh (DR) imperat. sg. of ālēon.
+                               ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* ROM_NUM
+	* MOOD
+	* SOURCE
+	* PERS
+	* SPECSYMB
+	* SPELLVAR
+	* CASE
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* SIMPLEVAR
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* __ANON_0
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #527 MANUAL 
+--------------------
+Original text: all (strictly Anglian, but found in AO, CP) == eal, eall
+
+Error: Unexpected error: No terminal matches 'A' in the current parser context, at line 1 col 37
+
+all (strictly Anglian, but found in AO, CP) == eal, eall
+                                    ^
+Expected one of: 
+	* NUM
+	* GEN
+	* OF
+
+
+==================================================
+
+ENTRY #558 MANUAL
+--------------------
+Original text: āmǣran I. _to extol_, GD 206^24. II. (usu. ūtāmǣr(i)an) _to
+exterminate_, BH.
+
+Error: Unexpected error: No terminal matches 't' in the current parser context, at line 1 col 58
+
+ol_, GD 206^24. II. (usu. ūtāmǣr(i)an) _to exterminate_, BH.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOT_SEP
+	* CASECOMM
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* QM
+	* CASE
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* QMSENSE
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #591 SOLVED
+--------------------
+Original text: amel m. _sacred vessel_, WW 348. [_L._]
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 38
+
+amel m. _sacred vessel_, WW 348. [_L._]
+                                     ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #617 SOLVED (added \s to SOURCE's first [...])
+--------------------
+Original text: āmyrdrian (LL 348, 56#a#) = āmyrðrian  [[under “āmyrðran”]]
+
+Error: Unexpected error: No terminal matches '5' in the current parser context, at line 1 col 20
+
+āmyrdrian (LL 348, 56#a#) = āmyrðrian [[under "āmyrðran"]]
+                   ^
+Expected one of: 
+	* RP
+	* DOT_SEP
+
+
+==================================================
+
+ENTRY #620 MANUAL
+--------------------
+Original text: āmyrran = (1) āmierran; (2) (LL 348, 56#g,b#) āmyrðran
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 27
+
+āmyrran = (1) āmierran; (2) (LL 348, 56#g,b#) āmyrðran 
+                          ^
+Expected one of: 
+	* LP
+	* REFLBL
+	* LBL
+	* PERS
+
+
+==================================================
+
+ENTRY #623 MANUAL 
+--------------------
+Original text: an- in composition represents (1) and-; (2) un-; (3) in-; (4) on-.
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 33
+
+an- in composition represents (1) and-; (2) un-; (3) in-; (4) on-.
+                                ^
+Expected one of: 
+	* LBL
+	* PERS
+	* LP
+	* PARINFVAR
+	* REFLBL
+
+
+==================================================
+
+ENTRY #624 MANUAL
+--------------------
+Original text: ān I. adj. strong mfn. (asm. ānne, ǣnne) ‘_one_,’ _Mt, Æ_. in plur.
+_each, every one, all_. ān and (æfter) ān _one by one_. ānes hwæt _some
+single thing, a part_, B: _a, an_: _alone, sole, only_; in this sense it
+is used also in the weak form (sē āna; hē āna, AO, CP) and with a pl.:
+_singular, unique_: _single, each, every one, all_ (gp. ānra): _any_.
+II. adv. (also wk. āna) _alone, only_. on ān _continually, continuously,
+ever, in one, once for all, immediately_. ðæt ān _only that_.
+
+Error: Unexpected error: No terminal matches 'e' in the current parser context, at line 1 col 206
+
+ _a, an_: _alone, sole, only_; in this sense it is used also in the weak form (s
+                                        ^
+Expected one of: 
+	* TNS
+	* NUM
+	* GEN
+	* MOOD
+	* LBL
+	* NODOTGEN
+	* PARENXR
+	* PERS
+	* LP
+	* DECL
+	* GLOSS
+	* PARENVAR
+	* TRANSLATION
+	* VALEN
+	* CASE
+	* PARENDASHVAR
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #627 SOLVED (added ö to WORD)
+--------------------
+Original text: ānad, ānæd † n. _waste, desert, solitude_. [_Ger._ einöde]
+
+Error: Unexpected error: No terminal matches 'ö' in the current parser context, at line 1 col 55
+
+. _waste, desert, solitude_. [_Ger._ einöde]
+                                        ^
+Expected one of: 
+	* LANG
+	* SEMICOL_SEP
+	* WORD
+	* COMMA
+	* RSQB
+
+
+==================================================
+
+ENTRY #636 SOLVED (removed here ; after hope_ - should be ,)
+--------------------
+Original text: anbid (= on-) n. _waiting, expectation, hope_, AO, CP: _interval_, AO.
+
+Error: Unexpected error: No terminal matches 'A' in the current parser context, at line 1 col 48
+
+= on-) n. _waiting, expectation, hope_; AO, CP: _interval_, AO.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #637 SOLVED (reorganized rules before cit in senses: (usage| casecomment| specsymb| parenbibl| etym |gramgrp)* )
+--------------------
+Original text: ±an-bidian (on-) intr. _to wait, stay_: tr. w. g. _wait for, expect_.
+
+Error: Unexpected error: No terminal matches 'w' in the current parser context, at line 1 col 45
+
+bidian (on-) intr. _to wait, stay_: tr. w. g. _wait for, expect_.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* TRANSLATION
+	* POS
+	* MOOD
+	* PERS
+	* CASE
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* PARENXR
+	* LBL
+	* DECL
+	* GLOSS
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #659 SOLVED (added | lbl LANG to langword)
+--------------------
+Original text: ancor m. ‘_anchor_,’ _B, Bo_; CP. [_L._ ancora; from _Gk._]
+
+Error: Unexpected error: No terminal matches 'f' in the current parser context, at line 1 col 49
+
+ '_anchor_,' _B, Bo_; CP. [_L._ ancora; from _Gk._]
+                                        ^
+Expected one of: 
+	* RSQB
+	* LANG
+
+
+==================================================
+
+ENTRY #660
+--------------------
+Original text: ān-cor, -cora m. _anchorite, hermit_, Æ. [_L._ anachoreta; from _Gk._]
+
+Error: Unexpected error: No terminal matches 'f' in the current parser context, at line 1 col 60
+
+nchorite, hermit_, Æ. [_L._ anachoreta; from _Gk._]
+                                        ^
+Expected one of: 
+	* RSQB
+	* LANG
+
+
+==================================================
+
+ENTRY #678 MANUAL
+--------------------
+Original text: and- = an-, on-, ond- (_opposition, negation_. _Ger._ ent-): and
+occasionally a-.
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 48
+
+an-, on-, ond- (_opposition, negation_. _Ger._ ent-): and occasionally a-.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NODOTGEN
+	* MOOD
+	* LBL
+	* NUM
+	* PERS
+	* LP
+	* REFLBL
+	* DECL
+	* EDCOMM
+	* VALEN
+	* DOT
+	* CASE
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #731 ERROR 
+--------------------
+Original text: [[Printed on one line:
+  andgyt == andgiet, -git]]
+
+Error: Unexpected error: No terminal matches '[' in the current parser context, at line 1 col 1
+
+[[Printed on one line: andgyt == andgiet
+^
+Expected one of: 
+	* WORD
+
+
+==================================================
+
+ENTRY #738 SOLVED (typo - changed here to ['_along_'] as it should've been in the first place.)
+--------------------
+Original text: andlang (o^1, o^2) I. adj. _entire, continuous, extended_. andlangne
+dæg, niht _all day (night) long_, _An, Gu_. ['_along_'] II. prep. w. g.
+‘_along,’ by the side of_, _Æ, Chr, KC_; AO.
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 115
+
+niht _all day (night) long_, _An, Gu_. [_'along_'] II. prep. w. g. '_along,' by 
+                                        ^
+Expected one of: 
+	* COMPARE
+	* LANG
+	* REFLBL
+	* VIDE
+	* WORD
+	* OEDREF
+	* RSQB
+
+
+==================================================
+
+ENTRY #762 SOLVED
+--------------------
+Original text: ±andswarian _to ‘answer,’_ _Lk_; Æ, CP.
+
+Error: Unexpected error: No terminal matches 'Æ' in the current parser context, at line 1 col 34
+
+±andswarian _to 'answer,'_ _Lk_; Æ, CP.
+                                 ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #763 SOLVED
+--------------------
+Original text: andswaru f. _‘answer,’ reply_, _B, Jn_; CP.
+
+Error: Unexpected error: No terminal matches 'C' in the current parser context, at line 1 col 41
+
+andswaru f. _'answer,' reply_, _B, Jn_; CP.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #776 MANUAL (2 cases of (+ at...) )
+--------------------
+Original text: andweard (+ at AS 63^14) _present, actual, existing_, Æ, CP:
+_opposite to_.
+
+Error: Unexpected error: No terminal matches 'a' in the current parser context, at line 1 col 13
+
+andweard (+ at AS 63^14) _present, actual, existing_
+            ^
+Expected one of: 
+	* RPAR
+
+
+==================================================
+
+ENTRY #777 MANUAL (rare?) 
+--------------------
+Original text: ±andweardian _to present, bring before one_. (+andweardian also =
+andwyrdian.)
+
+Error: Unexpected error: No terminal matches 'a' in the current parser context, at line 1 col 48
+
+rdian _to present, bring before one_. (+andweardian also = andwyrdian.)
+                                        ^
+Expected one of: 
+	* RPAR
+
+
+==================================================
+
+ENTRY #779 SOLVED
+--------------------
+Original text: andweardnes f. _presence_, CP: _present time_.
+
+Error: Unexpected error: No terminal matches 'r' in the current parser context, at line 1 col 34
+
+andweardnes f. _presence_, CP: _present time_.
+                                 ^
+Expected one of: 
+	* NUM
+	* LBL
+	* DASHVAR
+
+
+==================================================
+
+ENTRY #782 SOLVED (fixed PREFSUFX: added "-" inside both [], removed all "-?" from the outside)
+--------------------
+Original text: andwerd == and-weard, -wyrd
+
+Error: Unexpected error: No terminal matches '-' in the current parser context, at line 1 col 23
+
+andwerd == and-weard, -wyrd
+                      ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* CASE
+	* LP
+	* PARENVAR
+	* RP
+	* VALEN
+	* DOT
+	* DGR
+	* NODOTGEN
+	* PARENXR
+	* LBL
+	* REFLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #796 SOLVED (added |form to othersenses; + to [] of PARENDASHVAR)
+--------------------
+Original text: ±and-wyrdan, -wyrdian (e, i) _to answer_, _Æ, Mt_; AO, CP: (+an-)
+‘_conspirare_,’ WW 209^42. [‘_andwurde_’]
+
+Error: Unexpected error: No terminal matches 'a' in the current parser context, at line 1 col 62
+
+ (e, i) _to answer_, _Æ, Mt_; AO, CP: (+an-) '_conspirare_,' WW 209^42. ['_andwu
+                                        ^
+Expected one of: 
+	* RPAR
+
+
+==================================================
+
+ENTRY #799 SOLVED (added | LP REFWORD to refword after REFWORD)
+--------------------
+Original text: andȳde pret. of andōn (ondōn).
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 30
+
+andȳde pret. of andōn (ondōn).
+                             ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* ROM_NUM
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* SPECSYMB
+	* SPELLVAR
+	* CASE
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* COMMA
+	* SIMPLEVAR
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* __ANON_0
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #801 SOLVED (changed here.  )
+--------------------
+Original text: āne = (1) ǣne, (2) heonu.
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 7
+
+āne (1) = ǣne, (2) heonu.
+      ^
+Expected one of: 
+	* LBL
+	* PERS
+	* LP
+	* PARINFVAR
+	* REFLBL
+
+
+==================================================
+
+ENTRY #813 MANUAL
+--------------------
+Original text: ān-feald, -fald, -fealdlic _single, unmixed, singular, unique,
+superior_, _Æ_; CP: _simple, modest, honest, sincere_, _Mt_; CP: _fixed,
+invariable_. ā. gerecednes _or_ sprǣc _prose_. [‘_afald_’] adv. -līce.
+
+Error: Unexpected error: No terminal matches 'r' in the current parser context, at line 1 col 171
+
+ixed, invariable_. ā. gerecednes _or_ sprǣc _prose_. ['_afald_'] adv. -līce.
+                                        ^
+Expected one of: 
+	* NUM
+	* LBL
+	* DASHVAR
+
+
+==================================================
+
+ENTRY #815 MANUAL (or move and n. next to f. ???) 
+--------------------
+Original text: anfealt f. _anvil_, OEG 11^67 and n. [cp. anfilte]  [[under “anfilt”]]
+
+Error: Unexpected error: No terminal matches '[' in the current parser context, at line 1 col 38
+
+anfealt f. _anvil_, OEG 11^67 and n. [cp. anfilte] [[under "anfilt"]]
+                                     ^
+Expected one of: 
+	* NUM
+	* GEN
+	* LBL
+	* DASHVAR
+	* CASE
+
+
+==================================================
+
+ENTRY #825 SOLVED
+--------------------
+Original text: anforngean _in front of_, MF (Vesp. D xiv).
+
+Error: Unexpected error: No terminal matches 'D' in the current parser context, at line 1 col 37
+
+anforngean _in front of_, MF (Vesp. D xiv).
+                                    ^
+Expected one of: 
+	* RP
+
+
+==================================================
+
+ENTRY #843 MANUAL (for now?)
+--------------------
+Original text: ±angian _to be in anguish_, #RPs# 60^3; 142^4.
+
+Error: Unexpected error: No terminal matches '4' in the current parser context, at line 1 col 42
+
+angian _to be in anguish_, #RPs# 60^3; 142^4.
+                                        ^
+Expected one of: 
+	* DASHVAR
+	* LBL
+	* PERS
+
+
+==================================================
+
+ENTRY #847 SOLVED (?)
+--------------------
+Original text: āngilde (e, y) I. n. _single payment or rate of compensation for
+damage_, _LL_: _the fixed price at which cattle and other goods were
+received as currency_, LL. [‘_angild_’] II. adj. _to be compensated
+for_. III. adv. _simply, only_, LL.
+
+Error: Unexpected error: No terminal matches 'g' in the current parser context, at line 1 col 167
+
+ds were received as currency_, LL. ['_angild_'] II. adj. _to be compensated for_
+                                        ^
+Expected one of: 
+	* NUM
+	* GEN
+	* OF
+
+
+==================================================
+
+ENTRY #853 MANUAL ? (gloss + ref inside - rare?) 
+--------------------
+Original text: Angle mp. _the Angles or English_ (who came from Anglen; v. Angel,
+Engle).
+
+Error: Unexpected error: No terminal matches 'w' in the current parser context, at line 1 col 36
+
+Angle mp. _the Angles or English_ (who came from Anglen; v. Angel, Engle).
+                                   ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NODOTGEN
+	* MOOD
+	* LBL
+	* SOURCE
+	* NUM
+	* PERS
+	* LP
+	* REFLBL
+	* DECL
+	* VIDE
+	* VALEN
+	* CASE
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #856 SOLVED
+--------------------
+Original text: angnægl m. _corn, ‘agnail,’_ _Lcd_ 30b.
+
+Error: Unexpected error: No terminal matches '0' in the current parser context, at line 1 col 37
+
+angnægl m. _corn, 'agnail,'_ _Lcd_ 30b.
+                                    ^
+Expected one of: 
+	* DASHVAR
+	* LBL
+	* PERS
+
+
+==================================================
+
+ENTRY #861 MANUAL (1 case)
+--------------------
+Original text: angrislic (y^2) _grisly, terrible_. adv. -(en)līce.
+
+Error: Unexpected error: No terminal matches '-' in the current parser context, at line 1 col 42
+
+ngrislic (y^2) _grisly, terrible_. adv. -(en)līce.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* TRANSLATION
+	* POS
+	* MOOD
+	* PERS
+	* CASE
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* PARENXR
+	* LBL
+	* DECL
+	* GLOSS
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #865 SOLVED (added (bibl|...) to posvar)
+--------------------
+Original text: angsumlic _troublesome, anxious, painful_. adv. -līce Æ.
+
+Error: Unexpected error: No terminal matches 'Æ' in the current parser context, at line 1 col 55
+
+ublesome, anxious, painful_. adv. -līce Æ.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* SPELLVAR
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* SIMPLEVAR
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* __ANON_0
+	* USGLBL
+	* DECL
+	* REFLBL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #867 SOLVED (added singlecase rule for dat.)
+--------------------
+Original text: āngum = ǣnigum dat. of ǣnig.
+
+Error: Unexpected error: No terminal matches 't' in the current parser context, at line 1 col 18
+
+āngum = ǣnigum dat. of ǣnig.
+                 ^
+Expected one of: 
+	* NUM
+	* GEN
+	* OF
+
+
+==================================================
+
+ENTRY #884 SOLVED 
+--------------------
+Original text: +ānian _to unite_, BH 214. [‘_one_’ vb.]
+
+Error: Unexpected error: No terminal matches 'o' in the current parser context, at line 1 col 31
+
++ānian _to unite_, BH 214. ['_one_' vb.]
+                              ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOT_SEP
+	* CASECOMM
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* QM
+	* CASE
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* QMSENSE
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #889 SOLVED
+--------------------
+Original text: āniman^4 (y) _to take_, GD: _take away or from, deprive of_, _Mt_ (y);
+CP. [‘_anim_’] 
+
+Error: Unexpected error: No terminal matches 't' in the current parser context, at line 1 col 30
+
+āniman^4 (y) _to take_, GD: _take away or from, deprive of_, _Mt_ (y)
+                             ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOT_SEP
+	* CASECOMM
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* QM
+	* CASE
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* QMSENSE
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #938 SOLVED
+--------------------
+Original text: ānstandende ptc. _standing alone_, RB 9^7. as sb. _hermit_, Æ.
+
+Error: Unexpected error: No terminal matches 'h' in the current parser context, at line 1 col 52
+
+ ptc. _standing alone_, RB 9^7. as sb. _hermit_, Æ.
+                                        ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOT_SEP
+	* CASECOMM
+	* POS
+	* MOOD
+	* SOURCE
+	* PERS
+	* SEMICOL_SEP
+	* VIDE
+	* QM
+	* CASE
+	* COLON_SEP
+	* DASHVAR
+	* LP
+	* QMSENSE
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* LBL
+	* PARENXR
+	* DECL
+	* GLOSS
+	* LPAR
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #952 SOLVED
+--------------------
+Original text: antefn m. _antiphon, ‘anthem,’_ _BH_; Æ.
+
+Error: Unexpected error: No terminal matches 'Æ' in the current parser context, at line 1 col 39
+
+antefn m. _antiphon, 'anthem,'_ _BH_; Æ.
+                                      ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #955 MANUAL (or get rid of _i.e._ so that it matches as gloss? only one case of _i.e._)
+--------------------
+Original text: āntīd f. _similar time_ (_i.e._ the corresponding time of a following
+day)? B 219.
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 26
+
+āntīd f. _similar time_ (_i.e._ the corresponding time of a follo
+                         ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NODOTGEN
+	* MOOD
+	* LBL
+	* SOURCE
+	* NUM
+	* PERS
+	* LP
+	* REFLBL
+	* DECL
+	* VIDE
+	* VALEN
+	* CASE
+	* DGR
+	* POS
+
+
+==================================================
+
+ENTRY #970 MANUAL (for now?)
+--------------------
+Original text: ānwīte n. _single fine_, LL 64, 31, 1.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* PERS
+	* LBL
+	* DASHVAR
+
+
+==================================================
+
+ENTRY #991 MANUAL (for now?)
+--------------------
+Original text: apostata m. _apostate_, LL (322^14).
+
+Error: Unexpected error: No terminal matches '3' in the current parser context, at line 1 col 29
+
+apostata m. _apostate_, LL (322^14).
+                            ^
+Expected one of: 
+	* VIDE
+	* SOURCE
+
+
+==================================================
+
+ENTRY #992 SOLVED
+--------------------
+Original text: apostol (#Chr#), apostel m. ‘_apostle_,’ _MtR_: _disciple_, ÆH 1^520.
+[_L._ apostolus; from _Gk._]
+
+Error: Unexpected error: No terminal matches 'f' in the current parser context, at line 1 col 88
+
+ _disciple_, ÆH 1^520. [_L._ apostolus; from _Gk._]
+                                        ^
+Expected one of: 
+	* RSQB
+	* LANG
+
+
+==================================================
+
+ENTRY #994 SOLVED
+--------------------
+Original text: apostolic _apostolic_, _BH_; Æ. [‘_apostly_’]
+
+Error: Unexpected error: No terminal matches 'Æ' in the current parser context, at line 1 col 30
+
+apostolic _apostolic_, _BH_; Æ. ['_apostly_']
+                             ^
+Expected one of: 
+	* TNS
+	* GEN
+	* NUM
+	* DOTSCOLLOC
+	* COLLOC
+	* EDCOMM
+	* TRANSLATION
+	* OEDREF
+	* CASECOMM
+	* POS
+	* MOOD
+	* PERS
+	* VIDE
+	* SPECSYMB
+	* CASE
+	* ONEWORD
+	* DASHVAR
+	* LP
+	* PARENVAR
+	* VALEN
+	* DGR
+	* NODOTGEN
+	* LSQB
+	* PARENXR
+	* LBL
+	* USGLBL
+	* DECL
+	* GLOSS
+	* LPAR
+	* SUBST
+	* PARENDASHVAR
+
+
+==================================================
+
+ENTRY #998 SOLVED
+--------------------
+Original text: aprotane f. _southernwood, wormwood_, #Lcd# 22a. [_L._ abrotonum; from
+_Gk._]
+
+Error: Unexpected error: No terminal matches 'f' in the current parser context, at line 1 col 67
+
+ wormwood_, #Lcd# 22a. [_L._ abrotonum; from _Gk._]
+                                        ^
+Expected one of: 
+	* RSQB
+	* LANG
+
+
+==================================================
+
+ENTRY #223 MANUAL(can't add rare to lbl, that would break usglbl..)
+--------------------
+Entry text: āfunde rare wk. pret. 3 sg. of āfindan.
+
+Parse tree:
+entry
+  headword	āfunde
+  form
+    spell_var	rare
+      gramgrp
+        declension	wk.
+  xr_section
+    gramgrp
+      tense	pret. 
+      person	3 
+      number	sg. 
+    reflbl	of
+    refword	āfindan

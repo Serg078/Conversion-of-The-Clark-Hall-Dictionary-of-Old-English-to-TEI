@@ -1,0 +1,1658 @@
+FAILED ENTRIES WITH ERROR MESSAGES
+==================================================
+Total entries processed: 1000
+Failed to parse: 56
+Failure rate: 5.60%
+==================================================
+
+ENTRY #16 MANUAL 
+--------------------
+Original text: ±bēatan^7 pret. bēot and (rarely) beoft (ES 38·28) _to 'beat,' strike, thrust, dash_, _Bo, Bl, Ps_: _hurt, injure_, #Da# 265: _tramp, tread_, _B_.
+
+Error: Unexpected error: No terminal matches '(' in the current parser context, at line 1 col 26
+
+±bēatan^7 pret. bēot and (rarely) beoft (ES 38·28) _to 'beat,' st
+                         ^
+Expected one of: 
+	* DECL
+	* POS
+	* SINGLECASE
+	* NODOTGEN
+	* TNS
+	* GEN
+	* LBL
+	* VALEN
+	* NUM
+	* MOOD
+	* QM
+	* PERS
+	* DGR
+	* CASE
+
+
+==================================================
+
+ENTRY #45 SOLVED 
+--------------------
+Original text: bebyrwan (?= -bȳwan, BT) _to rub over_, GD 318^3.
+
+Error: Unexpected error: No terminal matches '?' in the current parser context, at line 1 col 11
+
+bebyrwan (?= -bȳwan, BT) _to rub over_, GD 318^3.
+          ^
+Expected one of: 
+	* TNS
+	* VARIANT
+	* SPECSYMB
+	* SOURCE
+	* PERS
+	* DECL
+	* NODOTGEN
+	* VALEN
+	* LBL
+	* MOOD
+	* SINGLECASE
+	* AUTH
+	* USGLBL
+	* CASE
+	* USGPREP
+	* POS
+	* GEN
+	* LP
+	* VIDE
+	* NUM
+	* COMPARE
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #51 MANUAL 
+--------------------
+Original text: becca m. _pick, mattock_, _WW_; Æ. [‘_beck_’; and v. Indog.
+Forschungen 24]
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 59
+
+ttock_, _WW_; Æ. ['_beck_'; and v. Indog. Forschungen 24]
+                                        ^
+Expected one of: 
+	* WORD
+	* SOURCE
+	* RSQB
+	* COMMA
+	* SEMICOL_SEP
+	* REFLBL
+	* LANG
+	* LP
+	* LBL
+	* COLON_SEP
+	* SPECSYMB
+	* AUTH
+	* ROM_NUM
+
+
+==================================================
+
+ENTRY #52 MANUAL SOLVED (added parenbibl? after SOURCE+)
+--------------------
+Original text: beccen m. _buyer_, WW (#KGl#) 75^36. [= bycgend]
+
+Error: Unexpected error: No terminal matches '7' in the current parser context, at line 1 col 31
+
+beccen m. _buyer_, WW (#KGl#) 75^36. [= bycgend]
+                              ^
+Expected one of: 
+	* TNS
+	* DOT_SEP
+	* QM
+	* SPECSYMB
+	* SOURCE
+	* PERS
+	* DECL
+	* NODOTGEN
+	* COMMA
+	* SEMICOL_SEP
+	* LBL
+	* VALEN
+	* LPAR
+	* MOOD
+	* SINGLECASE
+	* COLON_SEP
+	* AUTH
+	* CASE
+	* POS
+	* LSQB
+	* GEN
+	* LP
+	* VIDE
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #54 SOLVED (added parenvidexr at the end of entry)
+--------------------
+Original text: bēce (oe) f. _'beech' (tree)_, _Gl_. (v. also bōc.)
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 47
+
+oe) f. _'beech' (tree)_, _Gl_. (v. also bōc.)
+                                        ^
+Expected one of: 
+	* SOURCE
+	* SPECSYMB
+	* AUTH
+	* LP
+
+
+==================================================
+
+ENTRY #78  SOLVED 
+--------------------
+Original text: bēcn == bēac(e)n
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* OF
+	* NUM
+	* GEN
+	* RP
+	* VARIANT
+
+
+==================================================
+
+ENTRY #90 SOLVED (removed section, changed clause, added (page clause)* )
+--------------------
+Original text: becwelan^4 _to die_, LL 400 (1).
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 31
+
+becwelan^4 _to die_, LL 400 (1).
+                              ^
+Expected one of: 
+	* LINE
+	* LBL
+	* PERS
+	* INFVARIANT
+
+
+==================================================
+
+ENTRY #92 MANUAL (1 case of proem)
+--------------------
+Original text: becweðere m. _interpreter, translator_, EHy 16 (proem.).
+
+Error: Unexpected error: No terminal matches 'r' in the current parser context, at line 1 col 50
+
+ m. _interpreter, translator_, EHy 16 (proem.).
+                                        ^
+Expected one of: 
+	* NUM
+	* LBL
+	* INFVARIANT
+
+
+==================================================
+
+ENTRY #103 SOLVED 
+--------------------
+Original text: +bedbigen f. _payment for prayers_, LL 258 (51). [bycgan]
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 47
+
+gen f. _payment for prayers_, LL 258 (51). [bycgan]
+                                        ^
+Expected one of: 
+	* LINE
+
+
+==================================================
+
+ENTRY #137 SOLVED (added - and changed {1,3} to {1,6} in SPELLVAR)
+--------------------
+Original text: be-dīglian (-dīhl-; ēa, ē, īe) _to conceal, hide, obscure, keep secret_, Æ: _be concealed, lie hid_.
+
+Error: Unexpected error: No terminal matches 'ē' in the current parser context, at line 1 col 25
+
+be-dīglian (-dīhl-; ēa, ē, īe) _to conceal, hide, obscure, keep 
+                        ^
+Expected one of: 
+	* VARIANT
+	* RP
+
+
+==================================================
+
+ENTRY #146 MANUAL (1 case of "v. pos word")
+--------------------
+Original text: bedragan v. pp. bedrōg.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 17
+
+bedragan v. pp. bedrōg.
+                ^
+Expected one of: 
+	* TNS
+	* PERS
+	* DECL
+	* NODOTGEN
+	* COMMA
+	* EDCOMM
+	* LBL
+	* VALEN
+	* LPAR
+	* MOOD
+	* SINGLECASE
+	* USGLBL
+	* CASE
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* OEDREF
+	* MINUS
+	* POS
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* DOT
+	* VIDE
+	* NUM
+	* RP
+	* DGR
+
+
+==================================================
+
+ENTRY #174 SOLVED (removed , here)
+--------------------
+Original text: be-dyppan (e) _to dip, immerse_, _Æ, Mt_. [‘_bedip_’]
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 16
+
+be-dyppan (e), _to dip, immerse_, _Æ, Mt_. ['_bedip_']
+               ^
+Expected one of: 
+	* VARIANT
+
+
+==================================================
+
+ENTRY #211 MANUAL (only one case of α. β.)
+--------------------
+Original text: beforan I. prep. α. (w. d.) (local) _‘before,’ in front of, in the
+presence of_: (temporal) _before, prior to, sooner than_. β. (w. a.)
+_before_. II. adv. (local) _before, in front_: (temporal) _before,
+formerly, in former times, earlier, sooner_: _at hand, openly_.
+
+Error: Unexpected error: No terminal matches 'α' in the current parser context, at line 1 col 18
+
+beforan I. prep. α. (w. d.) (local) _'before,' in front o
+                 ^
+Expected one of: 
+	* CASECOMM
+	* TNS
+	* SPECSYMB
+	* SOURCE
+	* PERS
+	* DECL
+	* NODOTGEN
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* AUTH
+	* USGLBL
+	* CASE
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* OF
+	* GLOSS
+	* GEN
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #215 SOLVED (added (\^[0-9])? to VARIANT)
+--------------------
+Original text: be-frīnan, -frignan^3 _to question, ask, learn_, Æ.
+
+Error: Unexpected error: No terminal matches '^' in the current parser context, at line 1 col 20
+
+be-frīnan, -frignan^3 _to question, ask, learn_, Æ.
+                   ^
+Expected one of: 
+	* CASECOMM
+	* VARIANT
+	* TNS
+	* QM
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* USGLBL
+	* AUTH
+	* CASE
+	* ROM_NUM
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #240 MANUAL
+--------------------
+Original text: bēgen nm. (but where one thing is m. and the other f. or n., the nom. is
+bā, bū), nf. bā, nn. bū; gmfn. bēg(e)a, bēgra; dimfn. bǣm, bām; am. bū;
+af. bā; an. bū _both_. v. also būtū. [‘_bo_’]
+
+Error: Unexpected error: No terminal matches 'm' in the current parser context, at line 1 col 35
+
+bēgen nm. (but where one thing is m. and the other f. or n., the nom. is b
+                                  ^
+Expected one of: 
+	* VARIANT
+	* RP
+
+
+==================================================
+
+ENTRY #243 MANUAL 
+--------------------
+Original text: begeondan (AO, CP), begeonde, -geonan, prep. w. a. d.; and adv. _'beyond,' on the other side_, _Æ, Chr, Jn_.
+
+Error: Unexpected error: No terminal matches ';' in the current parser context, at line 1 col 54
+
+, CP), begeonde, -geonan, prep. w. a. d.; and adv. _'beyond,' on the other side_
+                                        ^
+Expected one of: 
+	* LSQB
+	* CASECOMM
+	* __ANON_0
+	* PARENXR
+	* GLOSS
+	* TRANSLATION
+	* LP
+	* SPECSYMB
+	* USGLBL
+	* OEDREF
+	* MINUS
+
+
+==================================================
+
+ENTRY #264 MANUAL for now
+--------------------
+Original text: begneorð? _attentive_, BH 370^2 (?= *becneord, BT).
+
+Error: Unexpected error: No terminal matches '?' in the current parser context, at line 1 col 34
+
+begneorð? _attentive_, BH 370^2 (?= *becneord, BT).
+                                 ^
+Expected one of: 
+	* PAGE
+	* TNS
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* AUTH
+	* CASE
+	* POS
+	* GEN
+	* LP
+	* VIDE
+	* NUM
+	* COMPARE
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #290 MANUAL
+--------------------
+Original text: behammen _'clavatus,' (of shoe) patched_ (BT), _studded with nails_ (Napier), GD 37^13.
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 48
+
+n _'clavatus,' (of shoe) patched_ (BT), _studded with nails_ (Napier), GD 37^13.
+                                        ^
+Expected one of: 
+	* TNS
+	* DOT_SEP
+	* QM
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* SEMICOL_SEP
+	* LBL
+	* VALEN
+	* LPAR
+	* MOOD
+	* SINGLECASE
+	* COLON_SEP
+	* AUTH
+	* CASE
+	* POS
+	* LSQB
+	* GEN
+	* LP
+	* VIDE
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #311 MANUAL
+--------------------
+Original text: be-heonan, -heonon prep. (w. d.) and adv. _on this side of, close by_.
+
+Error: Unexpected error: No terminal matches 'a' in the current parser context, at line 1 col 34
+
+be-heonan, -heonon prep. (w. d.) and adv. _on this side of, close by_.
+                                 ^
+Expected one of: 
+	* LSQB
+	* CASECOMM
+	* __ANON_0
+	* PARENXR
+	* GLOSS
+	* TRANSLATION
+	* LP
+	* SPECSYMB
+	* USGLBL
+	* OEDREF
+	* MINUS
+
+
+==================================================
+
+ENTRY #318 MANUAL (can't add optional gramgrp after government, because firstsense shouldn't have gramgrp, it would break a lot of form related things)
+--------------------
+Original text: behindan I. prep. (w. d., a.), adv. _'behind,' after_, _Chr_, _etc._; CP.
+
+Error: Unexpected error: No terminal matches 'a' in the current parser context, at line 1 col 32
+
+behindan I. prep. (w. d., a.), adv. _'behind,' after_, _Chr_, _etc._; C
+                               ^
+Expected one of: 
+	* LSQB
+	* CASECOMM
+	* __ANON_0
+	* PARENXR
+	* GLOSS
+	* TRANSLATION
+	* LP
+	* SPECSYMB
+	* USGLBL
+	* OEDREF
+	* MINUS
+
+
+==================================================
+
+ENTRY #409 SOLVED
+--------------------
+Original text: belflȳs n. _bell-wether’s fleece_, LL 451 (14).
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 46
+
+ȳs n. _bell-wether's fleece_, LL 451 (14).
+                                        ^
+Expected one of: 
+	* LINE
+
+
+==================================================
+
+ENTRY #433 SOLVED
+--------------------
+Original text: belltīd f. _a canonical hour marked by the ringing of a bell_. (cp. belltācen)
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 67
+
+ur marked by the ringing of a bell_. (cp. belltācen)
+                                        ^
+Expected one of: 
+	* VARIANT
+	* RP
+
+
+==================================================
+
+ENTRY #457 MANUAL (1 case)
+--------------------
+Original text: bēn I. f. (±) _prayer, request_, _Lk_; AO, CP: _compulsory service_, LL
+447 (v. 2·418, Fron.). [‘_bene_’] II. pret. 3 sg. of bannan.
+
+Error: Unexpected error: No terminal matches '2' in the current parser context, at line 1 col 81
+
+O, CP: _compulsory service_, LL 447 (v. 2·418, Fron.). ['_bene_'] II. pret. 3 sg
+                                        ^
+Expected one of: 
+	* AUTH
+	* REFWORD
+	* LP
+	* SPECSYMB
+	* SOURCE
+
+
+==================================================
+
+ENTRY #462 SOLVED
+--------------------
+Original text: bencian _to make benches_, LL 455 (13).
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 38
+
+bencian _to make benches_, LL 455 (13).
+                                     ^
+Expected one of: 
+	* LINE
+	* LBL
+	* PERS
+	* INFVARIANT
+
+
+==================================================
+
+ENTRY #466 MANUAL (2 cases of (+b. ... )
+--------------------
+Original text: bend mfn. (+b. MtL) _bond, chain, fetter_, _BH, Bl, Mt, Ps_; CP: _band,
+ribbon, ornament, chaplet, crown_, _WW_. [‘_bend_’]
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 14
+
+bend mfn. (+b. MtL) _bond, chain, fetter_, _BH, Bl, M
+             ^
+Expected one of: 
+	* VARIANT
+	* RP
+
+
+==================================================
+
+ENTRY #470 MANUAL (too irregular)
+--------------------
+Original text: beneah (pret. pres. vb.) pl. benugon, pret. benohte _to have at one’s
+disposal, possess, enjoy_: _require_.
+
+Error: Unexpected error: No terminal matches 'v' in the current parser context, at line 1 col 21
+
+beneah (pret. pres. vb.) pl. benugon, pret. benohte _to have
+                    ^
+Expected one of: 
+	* TNS
+	* LBL
+	* INFVARIANT
+	* OF
+
+
+==================================================
+
+ENTRY #498 SOLVED
+--------------------
+Original text: bēnyrð f. _ploughing required from a tenant_, LL 448 (5,2).
+
+Error: Unexpected error: No terminal matches '2' in the current parser context, at line 1 col 57
+
+hing required from a tenant_, LL 448 (5,2).
+                                        ^
+Expected one of: 
+	* LINE
+
+
+==================================================
+
+ENTRY #513 SOLVED
+--------------------
+Original text: bēoddian _to do joiner’s work_, LL 455 (13).
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 43
+
+oddian _to do joiner's work_, LL 455 (13).
+                                        ^
+Expected one of: 
+	* LINE
+	* LBL
+	* PERS
+	* INFVARIANT
+
+
+==================================================
+
+ENTRY #532 MANUAL
+--------------------
+Original text: beoft redupl. pret. of bēatan; beoftadon is from a later wk. *beoftian
+(ES 38·28).
+
+Error: Unexpected error: No terminal matches 'r' in the current parser context, at line 1 col 7
+
+beoft redupl. pret. of bēatan; beoftadon is fr
+      ^
+Expected one of: 
+	* CASECOMM
+	* TNS
+	* QM
+	* SPECSYMB
+	* PERS
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* USGLBL
+	* AUTH
+	* CASE
+	* ROM_NUM
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #536 SOLVED (removed ? from PAGE so that qm can be used)
+--------------------
+Original text: bēohāta m. _chief_? _prince_? #Ex# 253?
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* FOOTNOTE
+	* ONLYLINE1
+	* ONLYLINE2
+	* ONLYLINE3
+	* LP
+	* LP
+	* LP
+	* LP
+	* SPECSYMB
+	* LP
+	* AUTH
+	* SOURCE
+	* LP
+	* LP
+	* LPAR
+	* VIDE
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #540 MANUAL rare
+--------------------
+Original text: bēon I. anv. [conj. in full (WS and A) Wt 548] _to be, exist, become,
+happen_. b. ymbe _to have to do with_. b. of _to be gone_. (v. also eom,
+wesan.) II. nap. of bēo I.
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 19
+
+bēon I. anv. [conj. in full (WS and A) Wt 548] _to be, exi
+                  ^
+Expected one of: 
+	* WORD
+	* SOURCE
+	* RSQB
+	* AUTH
+	* COMMA
+	* SEMICOL_SEP
+	* REFLBL
+	* LANG
+	* LP
+	* LBL
+	* VIDE
+	* COLON_SEP
+	* COMPARE
+	* SPECSYMB
+	* OEDREF
+	* ROM_NUM
+
+
+==================================================
+
+ENTRY #543 MANUAL? 
+--------------------
+Original text: bēonbroð n. _mead_? (or? bēanbroð ES 38·302).
+
+Error: Unexpected error: No terminal matches 'E' in the current parser context, at line 1 col 35
+
+bēonbroð n. _mead_? (or? bēanbroð ES 38·302).
+                                  ^
+Expected one of: 
+	* VARIANT
+	* RP
+
+
+==================================================
+
+ENTRY #549 SOLVED
+--------------------
+Original text: bēorbyden f. _beer-barrel_, LL 455 (17).
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 39
+
+bēorbyden f. _beer-barrel_, LL 455 (17).
+                                      ^
+Expected one of: 
+	* LINE
+
+
+==================================================
+
+ENTRY #598 SOLVED inconsistency, shouldn't be a comma there. Fixed here. 
+--------------------
+Original text: ±bēorscipe m. _feast, banquet, revel_, Æ, CP.
+
+Error: Unexpected error: No terminal matches 'm' in the current parser context, at line 1 col 13
+
+±bēorscipe, m. _feast, banquet, revel_, Æ, CP.
+            ^
+Expected one of: 
+	* VARIANT
+
+
+==================================================
+
+ENTRY #634 MANUAL 
+--------------------
+Original text: ±beran (eo) _to 'bear,' carry, bring, take away, carry out, extend_, _B_; Æ, AO, CP: _bring forth, produce_, _Bl, Mt, Gen_ (and v. ‘_ibere_’). berende _fruitful_. +boren _born, own (by birth)_: (with ūp) _set forth, open (a case)_, #Chr# 1052#e#: _wear_, _AO_: _endure, support, sustain_, _LL, Mt_; CP.
+
+Error: Unexpected error: No terminal matches 'v' in the current parser context, at line 1 col 129
+
+ing forth, produce_, _Bl, Mt, Gen_ (and v. '_ibere_'). berende _fruitful_. +bore
+                                        ^
+Expected one of: 
+	* DECL
+	* POS
+	* NODOTGEN
+	* VARIANT
+	* TNS
+	* GEN
+	* VALEN
+	* LBL
+	* NUM
+	* MOOD
+	* SINGLECASE
+	* PERS
+	* RP
+	* DGR
+	* CASE
+
+
+==================================================
+
+ENTRY #646 SOLVED
+--------------------
+Original text: berebrytta m. _barn-keeper_, LL 451 (17).
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 40
+
+berebrytta m. _barn-keeper_, LL 451 (17).
+                                       ^
+Expected one of: 
+	* LINE
+
+
+==================================================
+
+ENTRY #697 MANUAL 
+--------------------
+Original text: berōfon (pret. pl. of *berafan or *berebban) _despoiled_, #Gen# 2078. 
+
+Error: Unexpected error: No terminal matches 'o' in the current parser context, at line 1 col 32
+
+berōfon (pret. pl. of *berafan or *berebban) _despoiled_, #Gen# 2078.
+                               ^
+Expected one of: 
+	* __ANON_0
+	* GRAMREF
+	* COMMA
+	* HOMREF
+	* LP
+	* DOT
+	* RP
+	* MINUS
+
+
+==================================================
+
+ENTRY #701 MANUAL (only 5 cases with "gram. at source")
+--------------------
+Original text: ±berstan^3 intr. (tr. at #Rd# 2^8) _to break_, _‘burst,’ fail, fall_,
+_B, Lcd, Ma_; Æ, AO: _break away from, escape_: _break to pieces, crash,
+resound_.
+
+Error: Unexpected error: No terminal matches 't' in the current parser context, at line 1 col 24
+
+±berstan^3 intr. (tr. at #Rd# 2^8) _to break_, _'burst,' fail, 
+                       ^
+Expected one of: 
+	* NUM
+	* GEN
+	* OF
+
+
+==================================================
+
+ENTRY #717 ERROR 
+--------------------
+Original text: [[Entry before author’s corrections:
+  besārgung f. _sorrowing_, VHy: _compassion_, Æ.]]
+
+Error: Unexpected error: No terminal matches '[' in the current parser context, at line 1 col 1
+
+[[Entry before author's corrections: bes
+^
+Expected one of: 
+	* WORD
+
+
+==================================================
+
+ENTRY #722 SOLVED ERROR irregular comma after headword. Removed here
+--------------------
+Original text: besceaduwian _to overshadow_, #RPs# 139^8. ['_beshade_']
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 15
+
+besceaduwian, _to overshadow_, #RPs# 139^8. ['_beshade
+              ^
+Expected one of: 
+	* VARIANT
+
+
+==================================================
+
+ENTRY #726 SOLVED ERROR missing dot at the and. fixed here
+--------------------
+Original text: bescēawere m. _observer_, DHy 24^15.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* LINE
+	* PAGE
+	* LP
+	* LP
+	* LP
+	* LP
+	* SPECSYMB
+	* LP
+	* AUTH
+	* SOURCE
+	* LP
+	* LP
+	* LPAR
+	* VIDE
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #802 MANUAL only two cases of "forms of"
+--------------------
+Original text: besta, beste wk. forms of superl. adj. betst.
+
+Error: Unexpected error: No terminal matches 'o' in the current parser context, at line 1 col 24
+
+besta, beste wk. forms of superl. adj. betst.
+                       ^
+Expected one of: 
+	* CASECOMM
+	* TNS
+	* QM
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* COMMA
+	* SEMICOL_SEP
+	* RP
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* USGLBL
+	* AUTH
+	* CASE
+	* ROM_NUM
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #813  Manual? Only 7 cases. Variant reading?? or what? 
+--------------------
+Original text: bestrēdan _to bestrew, cover_, BH 154^27 (#b#).
+
+Error: Unexpected error: No terminal matches '#' in the current parser context, at line 1 col 43
+
+strēdan _to bestrew, cover_, BH 154^27 (#b#).
+                                        ^
+Expected one of: 
+	* PAGE
+	* TNS
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* AUTH
+	* CASE
+	* POS
+	* GEN
+	* LP
+	* VIDE
+	* NUM
+	* COMPARE
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #829
+--------------------
+Original text: besūðan = be sūðan
+
+Error: Unexpected error: No terminal matches 's' in the current parser context, at line 1 col 14
+
+besūðan = be sūðan
+             ^
+Expected one of: 
+	* TNS
+	* PERS
+	* DECL
+	* NODOTGEN
+	* COMMA
+	* EDCOMM
+	* LBL
+	* VALEN
+	* LPAR
+	* MOOD
+	* SINGLECASE
+	* USGLBL
+	* CASE
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* GRAMREF
+	* HOMREF
+	* OEDREF
+	* MINUS
+	* POS
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* DOT
+	* VIDE
+	* NUM
+	* RP
+	* DGR
+
+
+==================================================
+
+ENTRY #845
+--------------------
+Original text: beswicol _deceitful_, CP 238^16. (bi-)
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* __ANON_0
+	* MINUS
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* INFVARIANT
+	* INFVARIANT
+	* SPELLVAR
+	* LBL
+	* CASE
+	* GEN
+	* DECL
+	* TNS
+	* MOOD
+	* CASE
+	* POS
+	* DGR
+	* NODOTGEN
+	* NUM
+	* PERS
+	* SINGLECASE
+	* VALEN
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #858
+--------------------
+Original text: ±bētan _to amend, repair, restore, cure_, CP: _make good, make amends,
+remedy, compensate, atone, pay_ ‘bōt’ _for an offence_, _Æ, Mt, Lcd_;
+AO, CP: _attend to (fire or light)_, _AO_. ðurst b. _quench thirst_.
+[bōt; ‘_beet_’ vb.]
+
+Error: Unexpected error: No terminal matches ''' in the current parser context, at line 1 col 104
+
+amends, remedy, compensate, atone, pay_ 'bōt' _for an offence_, _Æ, Mt, Lcd_; AO
+                                        ^
+Expected one of: 
+	* CASECOMM
+	* TNS
+	* DOT_SEP
+	* QM
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* QMSENSE
+	* NODOTGEN
+	* SEMICOL_SEP
+	* LBL
+	* VALEN
+	* LPAR
+	* MOOD
+	* SINGLECASE
+	* COLON_SEP
+	* AUTH
+	* USGLBL
+	* CASE
+	* __ANON_0
+	* TRANSLATION
+	* PARENXR
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* LP
+	* VIDE
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #868
+--------------------
+Original text: betēon^1,2 _to cover, surround, enclose_, _AO_; Æ, CP: _dispose of,
+bestow, bequeath_: _impeach, accuse_. [‘_betee_’]
+
+Error: Unexpected error: No terminal matches ',' in the current parser context, at line 1 col 9
+
+betēon^1,2 _to cover, surround, enclose_, _AO_; 
+        ^
+Expected one of: 
+	* CASECOMM
+	* TNS
+	* QM
+	* SPECSYMB
+	* PERS
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* USGLBL
+	* AUTH
+	* CASE
+	* ROM_NUM
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #869
+--------------------
+Original text: betera ‘_better_,’ _AO, Mk_. followed by g. = _better in respect of...._
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 47
+
+ '_better_,' _AO, Mk_. followed by g. = _better in respect of...._
+                                        ^
+Expected one of: 
+	* REFWORD
+	* PREFSUFXR
+	* REFNUMWORD
+
+
+==================================================
+
+ENTRY #903
+--------------------
+Original text: betweox, betweoxn, betwih(s) = betwux
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 28
+
+betweox, betweoxn, betwih(s) = betwux
+                           ^
+Expected one of: 
+	* CASECOMM
+	* TNS
+	* VARIANT
+	* QM
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* USGLBL
+	* AUTH
+	* CASE
+	* ROM_NUM
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #906
+--------------------
+Original text: betwux (Æ, AO, CP) betwuht, betwix, betwux(t), betwisc prep. w. d. a.
+_between, among, amongst, amidst, during_. b. ðisum _meanwhile_. b. ðǣm
+ðe _whilst_. [‘_betwixt_’]
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 20
+
+betwux (Æ, AO, CP) betwuht, betwix, betwux(t), betwisc prep
+                   ^
+Expected one of: 
+	* CASECOMM
+	* TNS
+	* PERS
+	* SPECSYMB
+	* DECL
+	* NODOTGEN
+	* COMMA
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* USGLBL
+	* CASE
+	* ROM_NUM
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #916
+--------------------
+Original text: betwuxt, -twyh, -twyx(t) = betwux
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 24
+
+betwuxt, -twyh, -twyx(t) = betwux
+                       ^
+Expected one of: 
+	* CASECOMM
+	* VARIANT
+	* TNS
+	* QM
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* USGLBL
+	* AUTH
+	* CASE
+	* ROM_NUM
+	* __ANON_0
+	* TRANSLATION
+	* PARENXR
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #945
+--------------------
+Original text: be-ðurfan swv. pres., 3 sg. -ðearf, pl. -ðurfon, pret. -ðorfte. (w. g.
+or a.) _to need, have need of, want_, Æ, CP.
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 63
+
+3 sg. -ðearf, pl. -ðurfon, pret. -ðorfte. (w. g. or a.) _to need, have need of, 
+                                        ^
+Expected one of: 
+	* CASECOMM
+	* VARIANT
+	* TNS
+	* QM
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* COMMA
+	* SEMICOL_SEP
+	* RP
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* USGLBL
+	* AUTH
+	* CASE
+	* ROM_NUM
+	* __ANON_0
+	* TRANSLATION
+	* PARENXR
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #963
+--------------------
+Original text: bewāwan^7 _to blow upon_, #Wa# 76. (biwāune = biwāwene)
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* __ANON_0
+	* MINUS
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* INFVARIANT
+	* INFVARIANT
+	* SPELLVAR
+	* LBL
+	* CASE
+	* GEN
+	* DECL
+	* TNS
+	* MOOD
+	* CASE
+	* POS
+	* DGR
+	* NODOTGEN
+	* NUM
+	* PERS
+	* SINGLECASE
+	* VALEN
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+	* LSQB
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #975
+--------------------
+Original text: bewendan _to turn, turn round_, _Æ_; (refl.) _Mt_ 9^22: _turn one’s
+attention, convert_, Æ. [‘_bewend_’]
+
+Error: Unexpected error: No terminal matches '9' in the current parser context, at line 1 col 51
+
+to turn, turn round_, _Æ_; (refl.) _Mt_ 9^22: _turn one's attention, convert_, Æ
+                                        ^
+Expected one of: 
+	* CASECOMM
+	* TNS
+	* DOT_SEP
+	* QM
+	* PERS
+	* SPECSYMB
+	* SOURCE
+	* DECL
+	* QMSENSE
+	* NODOTGEN
+	* SEMICOL_SEP
+	* LBL
+	* VALEN
+	* LPAR
+	* MOOD
+	* SINGLECASE
+	* COLON_SEP
+	* AUTH
+	* USGLBL
+	* CASE
+	* __ANON_0
+	* TRANSLATION
+	* PARENXR
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* LP
+	* VIDE
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+
+ENTRY #988
+--------------------
+Original text: bewestan prep. w. d. or adv. _to the west of_, _Chr_. [‘_bewest_’]
+
+Error: Unexpected error: No terminal matches 'a' in the current parser context, at line 1 col 25
+
+bewestan prep. w. d. or adv. _to the west of_, _Chr_. ['_bewest_
+                        ^
+Expected one of: 
+	* LSQB
+	* CASECOMM
+	* __ANON_0
+	* PARENXR
+	* GLOSS
+	* TRANSLATION
+	* LP
+	* SPECSYMB
+	* USGLBL
+	* OEDREF
+	* MINUS
+
+
+==================================================
+
+ENTRY #999
+--------------------
+Original text: bewrēon^1,2 _to cover, hide, cover over, enwrap, protect, clothe_, _Sol,
+Met_; CP. [‘_bewry_’]
+
+Error: Unexpected error: No terminal matches ',' in the current parser context, at line 1 col 10
+
+bewrēon^1,2 _to cover, hide, cover over, enwrap, 
+         ^
+Expected one of: 
+	* CASECOMM
+	* TNS
+	* QM
+	* SPECSYMB
+	* PERS
+	* SOURCE
+	* DECL
+	* NODOTGEN
+	* LBL
+	* VALEN
+	* MOOD
+	* SINGLECASE
+	* SPELLVAR
+	* USGLBL
+	* AUTH
+	* CASE
+	* ROM_NUM
+	* __ANON_0
+	* PARENXR
+	* TRANSLATION
+	* OEDREF
+	* MINUS
+	* POS
+	* LSQB
+	* GLOSS
+	* GEN
+	* REFLBL
+	* LP
+	* NUM
+	* INFVARIANT
+	* DGR
+
+
+==================================================
+

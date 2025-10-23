@@ -1,0 +1,2444 @@
+FAILED ENTRIES WITH ERROR MESSAGES
+==================================================
+Total entries processed: 1000
+Failed to parse: 63
+Failure rate: 6.30%
+==================================================
+
+ENTRY #15
+--------------------
+Original text: bi, bī (1) = be (prep.); (2) f. = bēo
+
+Error: Unexpected error: No terminal matches 'f' in the current parser context, at line 1 col 30
+
+bi, bī (1) = be (prep.); (2) f. = bēo
+                             ^
+Expected one of: 
+	* SRCVAR
+	* LP
+	* COMMA
+	* SOURCE
+	* MSREF
+	* __ANON_2
+	* RP
+	* SOURCE_NUM
+
+
+==================================================
+
+ENTRY #44 ERROR? should be a dot before the relared entry +bȳged.
+--------------------
+Original text: bīegan (ē, ī, ȳ) _to bend, turn, turn back, incline_, _Bo, Mk_:
+_depress, abase, humiliate_: _subject_: _persuade, convert_: +bȳged
+_bowed down, infirm_, #Nic# 471^29. ['_bey_,' būgan]
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 127
+
+iate_: _subject_: _persuade, convert_: +bȳged _bowed down, infirm_, #Nic# 471^29
+                                        ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* QMSENSE
+	* SINGLECASE
+	* LSQB
+	* PERS
+	* USGLBL
+	* SNS_POET_SYMB
+	* NUM
+	* POS
+	* __ANON_0
+	* PARENXR
+	* GEN
+	* LP
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* OEDREF
+	* DECL
+	* NODOTGEN
+	* GLOSS
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #85 ERROR shouldn't be a comma if there's no variant after it. 
+--------------------
+Original text: bīgengnes, f. _application, study_.
+
+Error: Unexpected error: No terminal matches 'f' in the current parser context, at line 1 col 12
+
+bīgengnes, f. _application, study_.
+           ^
+Expected one of: 
+	* VARIANT
+	* GE_OPT
+	* LP
+	* GE_PREF
+
+
+==================================================
+
+ENTRY #86
+--------------------
+Original text: +bigeð = +bygeð pres. 3 sg. of +bycgan.
+
+Error: Unexpected error: No terminal matches 'o' in the current parser context, at line 1 col 29
+
++bigeð = +bygeð pres. 3 sg. of +bycgan.
+                            ^
+Expected one of: 
+	* NUM
+	* LP
+	* GE_PREF
+	* TNS
+	* GE_OPT
+	* CASE
+	* INFVARIANT
+	* DGR
+	* LBL
+	* GEN
+
+
+==================================================
+
+ENTRY #108 SOLVED (added an optional ", "? at the start of adv_lice, also added an optional sense_section* after adv_lice in relatedentry)
+--------------------
+Original text: bilewit _innocent, pure, simple, sincere, honest_, _BH, Mt_; Æ, CP:
+_calm, gentle, merciful, gracious_: _plausible_. [‘_bilewhit_’], adv.
+-līce.
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 137
+
+cious_: _plausible_. ['_bilewhit_'], adv. -līce.
+                                        ^
+Expected one of: 
+	* LP
+	* TRANSLATION
+	* VARIANT
+	* GLOSS
+	* QMSENSE
+	* USGLBL
+	* VALEN
+
+
+==================================================
+
+ENTRY #184 MANUAL (only one case with Lieb:)
+--------------------
+Original text: bisceopwīte n. _fine payable to a bishop_? (BT), _forced entertaining of
+a bishop_? (Lieb: v. LL 2·667).
+
+Error: Unexpected error: No terminal matches ':' in the current parser context, at line 1 col 90
+
+_forced entertaining of a bishop_? (Lieb: v. LL 2·667).
+                                        ^
+Expected one of: 
+	* SRCVAR
+	* DOT_SEP
+	* SOURCE
+	* MSREF
+	* __ANON_2
+	* RP
+	* SOURCE_NUM
+
+
+==================================================
+
+ENTRY #194 SOLVED (added optional qm next to oedref in etym, made all 3 optional: (oedref |qm | gramgrp?)* )
+--------------------
+Original text: bīsene (y) _blind_, _MtL_; NC 274; JAW 22. [‘_bisson_’?]
+
+Error: Unexpected error: No terminal matches '?' in the current parser context, at line 1 col 55
+
+ind_, _MtL_; NC 274; JAW 22. ['_bisson_'?]
+                                        ^
+Expected one of: 
+	* NUM
+	* OEDREF
+	* WORD
+	* DECL
+	* NODOTGEN
+	* POS
+	* TNS
+	* CASE
+	* MOOD
+	* VALEN
+	* DGR
+	* SINGLECASE
+	* REFLBL
+	* RSQB
+	* LBL
+	* PERS
+	* GEN
+	* LANG
+
+
+==================================================
+
+ENTRY #212 SOLVED before
+--------------------
+Original text: bismerlic _shameful, ignominious, contemptuous_, AO: _ridiculous,
+frivolous_. adv. -līce.
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 89
+
+ AO: _ridiculous, frivolous_. adv. -līce.
+                                        ^
+Expected one of: 
+	* LP
+	* TRANSLATION
+	* VARIANT
+	* GLOSS
+	* QMSENSE
+	* USGLBL
+	* VALEN
+
+
+==================================================
+
+ENTRY #223 SOLVED by addin optional COMMA? at the start of inflect_var, and also by making regular gramgrp non-repeatable before form..
+--------------------
+Original text: bissextus, gen. -te _the intercalary day of leap year_: _leap year_.
+[_L._]
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 15
+
+bissextus, gen. -te _the intercalary day of leap year_
+              ^
+Expected one of: 
+	* TRANSLATION
+	* GE_PREF
+	* GE_OPT
+	* SOURCE
+	* DGR
+	* ROM_NUM
+	* REFLBL
+	* QMSENSE
+	* SINGLECASE
+	* LSQB
+	* PERS
+	* USGLBL
+	* SNS_POET_SYMB
+	* QM
+	* NUM
+	* POS
+	* __ANON_0
+	* PARENXR
+	* GEN
+	* SOURCE_NUM
+	* LP
+	* SPELLVAR
+	* VARIANT
+	* POET_SYMB
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* AUTH
+	* GLOSS
+	* CASE
+	* MOOD
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #262 MANUAL (rare? - senses inside etym)
+--------------------
+Original text: blāc I. (ǣ) _bright, shining, glittering, flashing_, _Rd_: _pale,
+pallid, wan_, AO, CP. [blīcan; _‘bleak,’ to ‘bleach’_] II. pret. 3 sg.
+of blīcan.
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 98
+
+: _pale, pallid, wan_, AO, CP. [blīcan; _'bleak,' to 'bleach'_] II. pret. 3 sg. 
+                                        ^
+Expected one of: 
+	* OEDREF
+	* WORD
+	* COMMA
+	* COMPARE
+	* VIDE
+	* REFLBL
+	* RSQB
+	* LBL
+	* LANG
+
+
+==================================================
+
+ENTRY #270 SOLVED (by adding "-" inside the second optional element of SPELLVAR: [āæǣēœ̄īōðȳūüa-z-] )
+--------------------
+Original text: bladesung (at-, æt-) f. _shining, lightning_, #EPs# 76^19.
+
+Error: Unexpected error: No terminal matches 'f' in the current parser context, at line 1 col 22
+
+bladesung (at-, æt-) f. _shining, lightning_, #EPs# 76^19.
+                     ^
+Expected one of: 
+	* LP
+	* GE_PREF
+	* VARIANT
+	* AUTH
+	* POET_SYMB
+	* SOURCE
+	* GE_OPT
+	* RP
+	* SOURCE_NUM
+
+
+==================================================
+
+ENTRY #335 SOLVED (remade adv_lice into this: !adv_word: ", "? "adv. " (" -"? WORD)  (DOT_SEP | sense_section |COMMA bibl)* )
+--------------------
+Original text: blēat _miserable_? _Gu_ 963. [‘_blete_’]. adv. blēate, B 2824.
+
+Error: Unexpected error: No terminal matches 'B' in the current parser context, at line 1 col 56
+
+e_? _Gu_ 963. ['_blete_']. adv. blēate, B 2824.
+                                        ^
+Expected one of: 
+	* VARIANT
+	* GE_OPT
+	* LP
+	* GE_PREF
+
+
+==================================================
+
+ENTRY #353 SOLVED before
+--------------------
+Original text: ±blēo n. gs. blēos, ds. blēo, gp. blēo(na), dip. blēom, blēo(w)um
+_colour_, _Bo_; CP: _appearance, form_, _Sol_. [‘_blee_’]
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 48
+
+. gs. blēos, ds. blēo, gp. blēo(na), dip. blēom, blēo(w)um _colour_, _Bo_; CP: _
+                                        ^
+Expected one of: 
+	* TRANSLATION
+	* GE_PREF
+	* GE_OPT
+	* SOURCE
+	* DGR
+	* ROM_NUM
+	* REFLBL
+	* QMSENSE
+	* SINGLECASE
+	* LSQB
+	* PERS
+	* USGLBL
+	* SNS_POET_SYMB
+	* QM
+	* NUM
+	* POS
+	* __ANON_0
+	* PARENXR
+	* GEN
+	* SOURCE_NUM
+	* LP
+	* SPELLVAR
+	* VARIANT
+	* POET_SYMB
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* AUTH
+	* GLOSS
+	* CASE
+	* MOOD
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #389 SOLVED
+--------------------
+Original text: blin imperat. of blinnan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 18
+
+blin imperat. of blinnan.
+                 ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #408 MANUAL (only a few cases of (+letter ...) )
+--------------------
+Original text: blīðe I. _‘blithe,’ joyous, cheerful, pleasant_, Æ, AO, CP: _gracious,
+well-disposed, friendly, kind_, _El_: _agreeable, willing_: _quiet,
+peaceful, gentle_, _Ps_: (+b. occurs at #Guth# 161^9). II. adv. _Ps_.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 167
+
+ng_: _quiet, peaceful, gentle_, _Ps_: (+b. occurs at #Guth# 161^9). II. adv. _Ps
+                                        ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* SOURCE
+	* DGR
+	* QMSENSE
+	* SINGLECASE
+	* LSQB
+	* PERS
+	* USGLBL
+	* SNS_POET_SYMB
+	* NUM
+	* POS
+	* __ANON_0
+	* PARENXR
+	* SOURCE_NUM
+	* GEN
+	* LP
+	* VARIANT
+	* POET_SYMB
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* OEDREF
+	* DECL
+	* NODOTGEN
+	* AUTH
+	* GLOSS
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #409   SOLVED (reworkedadv_word again: !adv_word: ", "? "adv. " (" -"? WORD)?  (DOT_SEP | sense_section |COMMA? (bibl|parenbibl))* 
+- made COMMA optional, also added optional etym instead of sense_section after adv_word in relatedentry, also removed optional orth_variant from inside cit)
+--------------------
+Original text: blīðelic _gentle, pleasant, glad_. adv. -līce (_Lk_). ['_blithely_']
+
+Error: Unexpected error: No terminal matches ')' in the current parser context, at line 1 col 52
+
+entle, pleasant, glad_. adv. -līce (_Lk_). ['_blithely_']
+                                        ^
+Expected one of: 
+	* SEMICOL_SEP
+	* TRANSLATION
+	* GE_PREF
+	* GE_OPT
+	* SOURCE
+	* DGR
+	* QMSENSE
+	* SINGLECASE
+	* QM
+	* LSQB
+	* USGLBL
+	* PERS
+	* LPAR
+	* NUM
+	* POS
+	* __ANON_0
+	* VIDE
+	* PARENXR
+	* GEN
+	* SOURCE_NUM
+	* LP
+	* POET_SYMB
+	* DOT_SEP
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* DECL
+	* NODOTGEN
+	* AUTH
+	* GLOSS
+	* CASE
+	* MOOD
+	* COLON_SEP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #471 SOLVED by changing !equals_variant_xr: (REFLBL | "pp., ") (added optional pp., instead of = since the cases seem pretty much the same)
+--------------------
+Original text: blunnen pp., blunnon pret. pl. of blinnan.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* OEDREF
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* SNS_POET_SYMB
+	* LP
+	* LP
+	* LP
+	* LP
+	* GE_PREF
+	* GE_PREF
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #475 SOLVED (added optional lbl and oedref to: biblref: ("(" vide bibl lbl? oedref? ")") | vide bibl ) 
+--------------------
+Original text: blyscan ‘_rutilare_,’ #HGl# 434^75 (v. OEG 1196 and ‘_blush_’).
+
+Error: Unexpected error: No terminal matches 'a' in the current parser context, at line 1 col 49
+
+'_rutilare_,' #HGl# 434^75 (v. OEG 1196 and '_blush_').
+                                        ^
+Expected one of: 
+	* SRCVAR
+	* LP
+	* SOURCE
+	* MSREF
+	* __ANON_2
+	* RPAR
+	* SOURCE_NUM
+
+
+==================================================
+
+ENTRY #484 MANUAL Rare? _'beech_'-_tree_, 
+--------------------
+Original text: bōc I. fn. ds. and nap. bēc _‘beech_’-_tree_, _WW_; Mdf: _beech-nut_, NC
+274: ‘_book,’ writing, Bible_, _Bl, Jn, CP_; AO, Æ. Crīstes b. _gospel_:
+_deed, charter, conveyance_, _LL_. II. pret. 3 sg. of bacan.
+
+Error: Unexpected error: No terminal matches '_' in the current parser context, at line 1 col 39
+
+bōc I. fn. ds. and nap. bēc _'beech_'-_tree_, _WW_; Mdf: _beech-nut_, NC 274: 
+                                      ^
+Expected one of: 
+	* VARIANT
+	* GE_OPT
+	* LP
+	* GE_PREF
+
+
+==================================================
+
+ENTRY #504 SOLVED before 
+--------------------
+Original text: bōcon pret. pl. of bacan.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* OEDREF
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* SNS_POET_SYMB
+	* LP
+	* LP
+	* LP
+	* LP
+	* GE_PREF
+	* GE_PREF
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #517 MANUAL (only five cases with exc.)
+--------------------
+Original text: ±bod (+ exc. N) n. _command, message, precept_, _Bo, Hy_; Æ:
+_preaching_. [‘_bode_,’ ‘_i-bod_’; _Ger._ gebot]
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 12
+
+±bod (+ exc. N) n. _command, message, precept_, _Bo
+           ^
+Expected one of: 
+	* LP
+	* GE_PREF
+	* VARIANT
+	* AUTH
+	* POET_SYMB
+	* SOURCE
+	* GE_OPT
+	* RP
+	* SOURCE_NUM
+
+
+==================================================
+
+ENTRY #522 SOLVED before
+--------------------
+Original text: boden pp. of bēodan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 14
+
+boden pp. of bēodan.
+             ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #538 SOLVED before
+--------------------
+Original text: bogen I. _name of a plant_, #Lcd#. II. pp. of būgan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 47
+
+I. _name of a plant_, #Lcd#. II. pp. of būgan.
+                                        ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* ROM_NUM
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #549 MANUAL (bibl where only etym should be, only a few cases)
+--------------------
+Original text: bōhtimber n. _building timber_, AS 1^3. [bōgian, ES 42·172]
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* SOURCE
+	* SOURCE_NUM
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #559 MANUAL (a variant form at the very end of an entry. rare)
+--------------------
+Original text: boldwela † m. _wealth_: _splendid dwelling, paradise, heaven_:
+_village_, #Gen# 1799. (botl-)
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* RP
+	* VARIANT
+	* AUTH
+	* SOURCE
+	* SOURCE_NUM
+	* POET_SYMB
+	* LP
+	* LP
+	* LP
+	* LP
+	* GE_PREF
+	* GE_PREF
+	* GE_OPT
+	* GE_OPT
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #560 SOLVED before
+--------------------
+Original text: bolgen pp. of belgan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 15
+
+bolgen pp. of belgan.
+              ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #566 MANUAL (bibl where only etym should be, only a few cases)
+--------------------
+Original text: bolttimber n. _building timber_, AS 1^3. [botl; v. ES 42^172]
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* SOURCE
+	* SOURCE_NUM
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #571 SOLVED (added DEFREF: /(?!as\ssb\.|[IV]{1,4}\.)[āäæÐÆǣēīōöðȳūüa-zA-Z\-\*\(\)]+,?/  and  quote: (TRANSLATION def_ref? ... ). Might very well backfire. 
+--------------------
+Original text: bōndeland n. _land held by a_ bōnda, #Chr# 777#e#. [_ON._ bōndi]
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 31
+
+bōndeland n. _land held by a_ bōnda, #Chr# 777#e#. [_ON._ bōndi]
+                              ^
+Expected one of: 
+	* SEMICOL_SEP
+	* TRANSLATION
+	* GE_PREF
+	* GE_OPT
+	* SOURCE
+	* DGR
+	* QMSENSE
+	* SINGLECASE
+	* QM
+	* LSQB
+	* USGLBL
+	* PERS
+	* LPAR
+	* NUM
+	* POS
+	* __ANON_0
+	* VIDE
+	* PARENXR
+	* GEN
+	* SOURCE_NUM
+	* LP
+	* POET_SYMB
+	* DOT_SEP
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* DECL
+	* NODOTGEN
+	* AUTH
+	* GLOSS
+	* CASE
+	* MOOD
+	* COLON_SEP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #593 SOLVED before
+--------------------
+Original text: boren pp. of beran.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 14
+
+boren pp. of beran.
+             ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #595 MANUAL 
+--------------------
+Original text: borg m. _pledge, security, bail, debt, obligation_, _LL_ (v. 2·331;
+641); CP: _bondsman_: _debtor_. [‘_borrow_’ sb.]
+
+Error: Unexpected error: No terminal matches 'C' in the current parser context, at line 1 col 75
+
+ebt, obligation_, _LL_ (v. 2·331; 641); CP: _bondsman_: _debtor_. ['_borrow_' sb
+                                        ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* QMSENSE
+	* SINGLECASE
+	* LSQB
+	* PERS
+	* USGLBL
+	* SNS_POET_SYMB
+	* LPAR
+	* NUM
+	* POS
+	* __ANON_0
+	* EDCOMM
+	* PARENXR
+	* SUBST
+	* VIDE
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* TNS
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* OEDREF
+	* DECL
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* CASE
+	* MOOD
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #597 SOLVED before
+--------------------
+Original text: borgen pp. of beorgan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 15
+
+borgen pp. of beorgan.
+              ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #612 SOLVED before
+--------------------
+Original text: borsten pp. of berstan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 16
+
+borsten pp. of berstan.
+               ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #622 SOLVED (made the last comma in DEFREF optional)
+--------------------
+Original text: bōtlēas _unpardonable, not to be atoned for by_ bōt.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 49
+
+_unpardonable, not to be atoned for by_ bōt.
+                                        ^
+Expected one of: 
+	* SEMICOL_SEP
+	* TRANSLATION
+	* GE_PREF
+	* GE_OPT
+	* SOURCE
+	* DGR
+	* QMSENSE
+	* SINGLECASE
+	* QM
+	* LSQB
+	* USGLBL
+	* PERS
+	* LPAR
+	* NUM
+	* POS
+	* __ANON_0
+	* VIDE
+	* PARENXR
+	* GEN
+	* SOURCE_NUM
+	* LP
+	* POET_SYMB
+	* DOT_SEP
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* DECL
+	* NODOTGEN
+	* AUTH
+	* GLOSS
+	* CASE
+	* MOOD
+	* COLON_SEP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #624
+--------------------
+Original text: bōtwyrðe _pardonable, that can be atoned for by_ bōt. [cp. bōtlēas]
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 50
+
+_pardonable, that can be atoned for by_ bōt. [cp. bōtlēas]
+                                        ^
+Expected one of: 
+	* SEMICOL_SEP
+	* TRANSLATION
+	* GE_PREF
+	* GE_OPT
+	* SOURCE
+	* DGR
+	* QMSENSE
+	* SINGLECASE
+	* QM
+	* LSQB
+	* USGLBL
+	* PERS
+	* LPAR
+	* NUM
+	* POS
+	* __ANON_0
+	* VIDE
+	* PARENXR
+	* GEN
+	* SOURCE_NUM
+	* LP
+	* POET_SYMB
+	* DOT_SEP
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* DECL
+	* NODOTGEN
+	* AUTH
+	* GLOSS
+	* CASE
+	* MOOD
+	* COLON_SEP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #643 SOLVED (so apparently noun declensions also exist in this dictionary. had to add to DECLENSION this option | [sw](?=(f|m|n)) for cases like sf., sm., wm. etc.)
+--------------------
+Original text: brādnes sf. _breadth, greatness, extent, surface_, Æ: _liberality_.
+
+Error: Unexpected error: No terminal matches 's' in the current parser context, at line 1 col 9
+
+brādnes sf. _breadth, greatness, extent, surface
+        ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* SOURCE
+	* DGR
+	* ROM_NUM
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* SNS_POET_SYMB
+	* QM
+	* NUM
+	* POS
+	* __ANON_0
+	* PARENXR
+	* GEN
+	* SOURCE_NUM
+	* LP
+	* SPELLVAR
+	* VERB_INFL_TYPE
+	* POET_SYMB
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* AUTH
+	* GLOSS
+	* CASE
+	* MOOD
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #645 SOLVED (usually there wouldn't be = in cases like this one, it's either "=" of "gram+ of". But added an optional reflbl to xr_section.2: ( usglbl? parenbibl?  ((reflbl? gramgrp | reflbl? infgramgrp) OF) anyway)
+--------------------
+Original text: bræc I. _a strip of unfilled land_? (BT), KC. II. = pret. 3 sg. of
+brecan.
+
+Error: Unexpected error: No terminal matches '3' in the current parser context, at line 1 col 59
+
+f unfilled land_? (BT), KC. II. = pret. 3 sg. of brecan.
+                                        ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* ROM_NUM
+	* QMSENSE
+	* LSQB
+	* USGLBL
+	* LPAR
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* OEDREF
+	* COLLOC
+	* GLOSS
+	* CASE
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #652 SOLVED before
+--------------------
+Original text: brǣcon pret. pl. of brecan.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* OEDREF
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* SNS_POET_SYMB
+	* LP
+	* LP
+	* LP
+	* LP
+	* GE_PREF
+	* GE_PREF
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #654 SOLVED (by adding lbl? pos? to the first option in infgramgrp)
+--------------------
+Original text: brǣd I. f. _breadth, width_, AO. [brād] II. f. _flesh_, #Ph# 240.
+[_OHG._ brāt] III. m. _trick, fraud, deceit, craft_. [= *brægd;
+‘_braid_’] IV. pret. 3 sg. of brēdan, bregdan. V. pres. 3 sg. and pp. of
+brǣdan.
+
+Error: Unexpected error: No terminal matches 'o' in the current parser context, at line 1 col 201
+
+brēdan, bregdan. V. pres. 3 sg. and pp. of brǣdan.
+                                        ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* SNS_POET_SYMB
+	* USGLBL
+	* NUM
+	* POS
+	* __ANON_0
+	* PARENXR
+	* GEN
+	* LP
+	* SPELLVAR
+	* VERB_INFL_TYPE
+	* POET_SYMB
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* GLOSS
+	* CASE
+	* MOOD
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #668
+--------------------
+Original text: brægden (e) I. (±) _deceitful, crafty_, AO. adv. -līce. [bregdan] II.
+_fraud_.
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 55
+
+ (±) _deceitful, crafty_, AO. adv. -līce. [bregdan] II. _fraud_.
+                                        ^
+Expected one of: 
+	* LP
+	* TRANSLATION
+	* VARIANT
+	* GLOSS
+	* QMSENSE
+	* USGLBL
+	* VALEN
+
+
+==================================================
+
+ENTRY #696 SOLVED (Added to etym these two rules: "synonym: reflbl SYN qm? parenbibl?" and "!sqbr_dash_variant: "= " SQBRDASHVAR qm? parenbibl?", First for [ = word] (that’s a hyperlink, so a reference to an existing entry). Second for [= -word] or [= word-] that are not a link, but just a variant form written that way. 
+--------------------
+Original text: brandstæfn (o^1) _high-prowed_? #An# 504. [= brant- ?]
+
+Error: Unexpected error: No terminal matches '?' in the current parser context, at line 1 col 53
+
+o^1) _high-prowed_? #An# 504. [= brant- ?]
+                                        ^
+Expected one of: 
+	* SEMICOL_SEP
+	* GE_PREF
+	* SOURCE
+	* GE_OPT
+	* ROM_NUM
+	* REFLBL
+	* COMPARE
+	* VIDE
+	* SOURCE_NUM
+	* LANG
+	* WORD
+	* LP
+	* POET_SYMB
+	* COMMA
+	* RSQB
+	* OEDREF
+	* AUTH
+	* COLON_SEP
+	* LBL
+
+
+==================================================
+
+ENTRY #709 MANUAL (orth variant in the same parentheses as so-called spell variants - rare case.)
+--------------------
+Original text: breahtm I. (bearhtm; æ, e, eo, y) m. _cry, noise, revelry_. II. =
+bearhtm
+
+Error: Unexpected error: No terminal matches 'æ' in the current parser context, at line 1 col 22
+
+breahtm I. (bearhtm; æ, e, eo, y) m. _cry, noise, revelry_. I
+                     ^
+Expected one of: 
+	* LP
+	* GE_PREF
+	* VARIANT
+	* AUTH
+	* POET_SYMB
+	* SOURCE
+	* GE_OPT
+	* RP
+	* SOURCE_NUM
+
+
+==================================================
+
+ENTRY #718 SOLVED (by adding optional biblref after oedref in etym, and also reworking sourcenum to exclude [] from possible characters, and include fixed [] use cases as an option at the end (\[0-9a-z]+\])?/ in order to stop sourcenum from consuming the last ] of etym)
+--------------------
+Original text: brēc fp. _breeches_, _Lcd, RB_. ['_breech_'; v. ES 38·345]
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* SOURCE
+	* SOURCE_NUM
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #763 SOLVED by fixing some parentheses issues, and making only one single gramgrp in grambiblhom possible. 
+--------------------
+Original text: brēme (oe, ȳ) I. adj. _famous, glorious, noble_, _PPs_; AO. [‘_breme_’]
+II. adv.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* VERB_INFL_TYPE
+	* POS
+	* LBL
+	* AUTH
+	* SOURCE
+	* SOURCE_NUM
+	* POET_SYMB
+	* LP
+	* LP
+	* LP
+	* LP
+	* GE_PREF
+	* GE_PREF
+	* GE_OPT
+	* GE_OPT
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #779 MANUAL ?? 
+--------------------
+Original text: brēneð pres. 3 sg. of *brēnan _to make or dye brown_? (GK; BT reads
+breneð = berneð pres. 3 sg. of bernan) #Run# 15.
+
+Error: Unexpected error: No terminal matches 'r' in the current parser context, at line 1 col 63
+
+*brēnan _to make or dye brown_? (GK; BT reads breneð = berneð pres. 3 sg. of ber
+                                        ^
+Expected one of: 
+	* SRCVAR
+	* DOT_SEP
+	* SOURCE
+	* MSREF
+	* __ANON_2
+	* RP
+	* SOURCE_NUM
+
+
+==================================================
+
+ENTRY #813 SOLVED (Inclided A-Z in REFWORD)
+--------------------
+Original text: Breot- = Bryt-
+
+Error: Unexpected error: No terminal matches 'B' in the current parser context, at line 1 col 10
+
+Breot- = Bryt-
+         ^
+Expected one of: 
+	* VARIANT
+	* PREFSUFXR
+	* REFNUMWORD
+	* REFWORD
+
+
+==================================================
+
+ENTRY #815 SOLVED (Inclided A-Z in REFWORD)
+--------------------
+Original text: Breotas = Brittas  [[redirected to “Brytas” (Bryt)]]
+
+Error: Unexpected error: No terminal matches 'B' in the current parser context, at line 1 col 11
+
+Breotas = Brittas [[redirected to "Brytas" (Bryt)]
+          ^
+Expected one of: 
+	* VARIANT
+	* PREFSUFXR
+	* REFNUMWORD
+	* REFWORD
+
+
+==================================================
+
+ENTRY #816 MANUAL (Afraid to include A-Z in orth_variant as it may break a lot of things. ANyway there are few cases with variants with capital letters)
+--------------------
+Original text: Breoten, Breoton = Briten  [[redirected to “Bryten”]]
+
+Error: Unexpected error: No terminal matches 'B' in the current parser context, at line 1 col 10
+
+Breoten, Breoton = Briten [[redirected to "Bryten
+         ^
+Expected one of: 
+	* VARIANT
+	* GE_OPT
+	* LP
+	* GE_PREF
+
+
+==================================================
+
+ENTRY #817 MANUAL RARE CASE. 
+--------------------
+Original text: brēoton = (1) bryten; (2) pret. pl. of brēatan.
+  [[redirected to “brēotan”]]
+
+Error: Unexpected error: No terminal matches 'p' in the current parser context, at line 1 col 33
+
+brēoton = (1) bryten; (2) pret. pl. of brēatan. [[redirected to "brēotan
+                                ^
+Expected one of: 
+	* LP
+	* GE_PREF
+	* TNS
+	* GE_OPT
+	* CASE
+	* INFVARIANT
+	* DGR
+	* LBL
+	* PERS
+	* GEN
+
+
+==================================================
+
+ENTRY #858 MANUAL (only 19 cases with "(or ? ... )" )
+--------------------
+Original text: brimfaroð n. _sea-shore_ (BT) #Da# 322 (or ? 2 words).
+
+Error: Unexpected error: No terminal matches '?' in the current parser context, at line 1 col 44
+
+mfaroð n. _sea-shore_ (BT) #Da# 322 (or ? 2 words).
+                                        ^
+Expected one of: 
+	* TNS
+	* CASE
+	* DGR
+	* LBL
+	* GEN
+
+
+==================================================
+
+ENTRY #881 SOLVED before 
+--------------------
+Original text: Brit- = Bryt-
+
+Error: Unexpected error: No terminal matches 'B' in the current parser context, at line 1 col 9
+
+Brit- = Bryt-
+        ^
+Expected one of: 
+	* VARIANT
+	* PREFSUFXR
+	* REFNUMWORD
+	* REFWORD
+
+
+==================================================
+
+ENTRY #893 SOLVED before
+--------------------
+Original text: brocen pp. of (1) brecan, (2) brūcan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 19
+
+brocen pp. of (1) brecan, (2) brūcan.
+                  ^
+Expected one of: 
+	* GE_PREF
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* SUBST
+	* VIDE
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* NODOTGEN
+	* COLLOC
+	* CASE
+	* MOOD
+	* LBL
+
+
+==================================================
+
+ENTRY #903 SOLVED before
+--------------------
+Original text: brōden pp. of brēdan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 15
+
+brōden pp. of brēdan.
+              ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #910 SOLVED before
+--------------------
+Original text: brogden pp. of bregdan. [‘_browden_’]
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 16
+
+brogden pp. of bregdan. ['_browden_']
+               ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #914 SOLVED (added another optional bibl in biblref: !biblref: ("(" vide bibl lbl? (oedref|bibl)? ")") | vide bibl) )
+--------------------
+Original text: ±brogn _bough, bush, branch_, NG (v. ES 38·340 and JAW).
+
+Error: Unexpected error: No terminal matches 'a' in the current parser context, at line 1 col 48
+
+_bough, bush, branch_, NG (v. ES 38·340 and JAW).
+                                        ^
+Expected one of: 
+	* SRCVAR
+	* LP
+	* SOURCE
+	* MSREF
+	* __ANON_2
+	* RPAR
+	* SOURCE_NUM
+
+
+==================================================
+
+ENTRY #916 SOLVED before
+--------------------
+Original text: brōht pp., brōhton pret. pl. of bringan.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* OEDREF
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* SNS_POET_SYMB
+	* LP
+	* LP
+	* LP
+	* LP
+	* GE_PREF
+	* GE_PREF
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #928
+--------------------
+Original text: Broten = Bryten
+
+Error: Unexpected error: No terminal matches 'B' in the current parser context, at line 1 col 10
+
+Broten = Bryten
+         ^
+Expected one of: 
+	* VARIANT
+	* PREFSUFXR
+	* REFNUMWORD
+	* REFWORD
+
+
+==================================================
+
+ENTRY #929
+--------------------
+Original text: broten pp. of brēotan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 15
+
+broten pp. of brēotan.
+              ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #930 MANUAL too random
+--------------------
+Original text: brotettan _to burst forth, shoot, sprout_? (Napier) = brogdettan? (BT),
+v. OEG 1218n.
+
+Error: Unexpected error: No terminal matches 'r' in the current parser context, at line 1 col 50
+
+ _to burst forth, shoot, sprout_? (Napier) = brogdettan? (BT), v. OEG 1218n.
+                                        ^
+Expected one of: 
+	* SRCVAR
+	* DOT_SEP
+	* SOURCE
+	* MSREF
+	* __ANON_2
+	* RP
+	* SOURCE_NUM
+
+
+==================================================
+
+ENTRY #934 MANUAL? An inflected variant form that acts like a related entry. Rare? 
+--------------------
+Original text: brōðor m. ds. brēðer ‘_brother_,’ _Chr, Mt, Lk_. nap. (±) brōðor,
+brōðru, _Gen, Jn_: _fellow-man_, _Ps_: _co-religionist_, _Mt_: _monk_.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 59
+
+er '_brother_,' _Chr, Mt, Lk_. nap. (±) brōðor, brōðru, _Gen, Jn_: _fellow-man_,
+                                        ^
+Expected one of: 
+	* INFVARIANT
+
+
+==================================================
+
+ENTRY #955
+--------------------
+Original text: +browen pp. of brēowan.
+
+Error: Unexpected error: No terminal matches 'b' in the current parser context, at line 1 col 16
+
++browen pp. of brēowan.
+               ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* LPAR
+	* NUM
+	* POS
+	* EDCOMM
+	* __ANON_0
+	* SUBST
+	* VIDE
+	* PARENXR
+	* GEN
+	* DOTSCOLLOC
+	* LP
+	* DOT
+	* COMMA
+	* TNS
+	* GRAMREF
+	* INFVARIANT
+	* ONEWORD
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* COLLOC
+	* GLOSS
+	* HOMREF
+	* CASE
+	* MOOD
+	* RP
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #960 SOLVED (removed "|ge_pref? INFVARIANT infgramgrp" from inflect_var as it was matching "brugdon pret." incorrectly)
+--------------------
+Original text: brūdon, brugdon pret. pl. of brēdan, bregdan.
+
+Error: Unexpected error: No terminal matches '.' in the current parser context, at line 1 col 45
+
+on, brugdon pret. pl. of brēdan, bregdan.
+                                        ^
+Expected one of: 
+	* GE_PREF
+	* TRANSLATION
+	* GE_OPT
+	* SOURCE
+	* DGR
+	* REFLBL
+	* SINGLECASE
+	* QMSENSE
+	* LSQB
+	* PERS
+	* USGLBL
+	* SNS_POET_SYMB
+	* QM
+	* NUM
+	* POS
+	* __ANON_0
+	* SUBST
+	* PARENXR
+	* GEN
+	* SOURCE_NUM
+	* LP
+	* SPELLVAR
+	* VARIANT
+	* POET_SYMB
+	* TNS
+	* INFVARIANT
+	* VALEN
+	* DECL
+	* OEDREF
+	* NODOTGEN
+	* AUTH
+	* GLOSS
+	* CASE
+	* MOOD
+	* LBL
+	* MINUS
+
+
+==================================================
+
+ENTRY #968
+--------------------
+Original text: brungen pp., brungon pret. pl. of bringan.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* OEDREF
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* SNS_POET_SYMB
+	* LP
+	* LP
+	* LP
+	* LP
+	* GE_PREF
+	* GE_PREF
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
+ENTRY #973
+--------------------
+Original text: bruðon pret. pl. of brēoðan.
+
+Error: Parse error: Unexpected end-of-input. Expected one of: 
+	* OEDREF
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* LP
+	* SNS_POET_SYMB
+	* LP
+	* LP
+	* LP
+	* LP
+	* GE_PREF
+	* GE_PREF
+... (error message truncated - showing first 50 lines)
+
+==================================================
+
