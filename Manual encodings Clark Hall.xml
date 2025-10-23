@@ -1,0 +1,2712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/DARIAH-ERIC/lexicalresources/master/Schemas/TEILex0/out/TEILex0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="lex-0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title></title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher></publisher>
+            <availability>
+               <licence></licence>
+            </availability>
+         </publicationStmt>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language role="sourceLanguage" ident="ang"></language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+     
+      <!--         
+        ID naming for entries and senses.
+        Roman number homonyms: hom. entries I/II/III/... = xml:id="lemma_n"; senses iside that hom. entry: <sense xml:id="lemma_n.n" n=I/II/III...>, 
+           nested sense (in case of ":" under the same hom.: xml:id="lemma_n.n.n" 
+           collocations: xml:id="word_word", senses: "xml:id="word_word.n", nested senses: "xml:id="word_word.n.n"
+           Just senses, no hom. or related ebntries: <sense xml:id="lemma.n">, nested senses: "xml:id="lemma.n.n"   
+      -->
+      <!-- 
+      The only validation issues left are "ȳ" inside xml id's and <mentioned> inside <etym>. Removing teilex0 schema would solve these. 
+      
+      and cases when there's gramGrp inside XR (see ādumbian ~line 2338) 
+      
+      -->
+   
+  <text>
+      <body> 
+
+<!-- bǣtan I. to bait, hunt, worry, Æ. [v. ‘bait’]: (BT) make fast? (Sedgef. = III.)
+
+II. to beat against the wind? Bo 144^31. [ON. beita]
+
+III. to furnish with a bit or bridle, saddle, curb. -->
+         <entry xml:id="bǣtan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>bǣtan</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>                                    
+            </gramGrp>
+            <entry xml:id="bǣtan_1" type="homonymicEntry" xml:lang="ang" n="I">             
+                <lbl type="homNum">I.</lbl>
+               <sense xml:id="bǣtan_1.1">
+                  <sense xml:id="bǣtan_1.1.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>to bait, hunt, worry,</quote>
+                        <bibl type="attestation" source="#Æ">
+                           <title>Æ</title>
+                        </bibl>
+                     </cit>               
+                  </sense>  
+                  <metamark>.</metamark> 
+                  <etym>
+                     [<lbl norm="vide">v.</lbl><mentioned xml:lang="en" corresp="#OED_bait">'bait'</mentioned>]
+                  </etym>   
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="bǣtan_1.1.2">
+                     <cit type="translation" xml:lang="en">
+                        <bibl type="attestation" source="#BT">
+                           <title>(BT)</title> 
+                        </bibl>
+                        <quote>make fast<note cert="low" resp="author">?</note></quote>
+                        <note>(Sedgef. = III.)</note> 
+                     </cit>   
+                  </sense>               
+               </sense>
+            </entry>
+            <entry xml:id="bǣtan_2" type="homonymicEntry" xml:lang="ang" n="II">          
+                <lbl type="homNum">II.</lbl> 
+               <sense xml:id="bǣtan_2.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>to beat against the wind<note cert="low" resp="author">?</note></quote>
+                  <bibl type="attestation" source="#Bo">
+                     <title>Bo</title>
+                     <citedRange unit="folium">144</citedRange>
+                     <citedRange unit="line">31</citedRange>
+                  </bibl>
+               </cit>
+                  <metamark>.</metamark>
+                  <etym>[<lang value="non" expand="Old Norse">ON.</lang><mentioned>beita</mentioned>]</etym> 
+               </sense>
+            </entry>
+            <entry xml:id="bǣtan_3" type="homonymicEntry" xml:lang="ang" n="III">
+               <lbl type="homNum">III.</lbl> 
+               <sense xml:id="bǣtan_3.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to furnish with a bit or bridle, saddle, curb.</quote>
+                  </cit>
+               </sense>
+            </entry>
+         </entry>
+         
+<!-- +bǣte, +bǣtel n. bit, bridle pl. trappings, BH. -->         
+         <entry xml:id="bǣte" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth extent="full" expand="ge-bǣte"><lbl expand="ge-">+</lbl><seg>bǣte</seg></orth>,
+            </form>                    
+            <form type="variant">
+               <orth extent="full" expand="ge-bǣtel"><lbl expand="ge-">+</lbl><seg>bǣtel</seg></orth> 
+            </form>
+            <gramGrp> 
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="neuter">n.</gram>  
+            </gramGrp>
+            <sense xml:id="bǣte.1">                                          <!-- sense .1 and .2 used here instead of 1.1 and 1.2 since they are too different. (?)(a few more similar cases later in the document) -->
+                  <cit type="translation" xml:lang="en">
+                     <quote>bit, bridle</quote>
+                  </cit>          
+            </sense>
+               <!-- should be ";" here -->
+            <sense xml:id="bǣte.2">                                                       
+                  <gramGrp>
+                     <gram type="number" value="plural">pl.</gram>
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>trappings,</quote>
+                     <bibl type="attestation" source="#BH">
+                        <title>BH</title>
+                     </bibl>
+                  </cit>                                            
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- āwiht I. n. ‘aught,’ anything, something, Ps.
+
+II. adv. at all, by any means. tō āhte at all.
+
+III. good, of value, Æ. -->
+         <entry xml:id="āwiht" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>āwiht</orth>  
+            </form>
+            <entry xml:id="āwiht_1" type="homonymicEntry" xml:lang="ang" n="I">
+                <lbl type="homNum">I.</lbl> 
+               <gramGrp>
+                  <gram type="pos" value="noun"/>
+                  <gram type="gender" value="neuter">n.</gram>
+               </gramGrp>
+               <sense xml:id="āwiht_1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote><xr type="related"><ref type="sense" target="#OED_aught">‘aught,’</ref></xr>anything, something,</quote>
+                     <bibl type="attestation" source="#Ps">
+                        <title>Ps</title>
+                     </bibl>
+                  </cit>
+               </sense>
+              <metamark>.</metamark>
+            </entry>
+            <entry xml:id="āwiht_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl> 
+               <gramGrp>
+                  <gram type="pos" value="adverb">adv.</gram> 
+               </gramGrp>
+               <sense xml:id="āwiht_2.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>at all, by any means.</quote> 
+                  </cit>            
+               </sense>
+            </entry>
+            <entry xml:id="tō_āhte" type="relatedEntry" xml:lang="ang"> 
+               <form type="collocation">
+                  <orth> tō āhte </orth>  
+               </form>
+                  <sense xml:id="tō_āhte.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>at all</quote> 
+                     </cit>
+                  </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="āwiht_3" type="homonymicEntry" xml:lang="ang" n="III">
+                <lbl type="homNum">III.</lbl> 
+               <gramGrp>
+                  <gram type="pos" value="adjective"/>
+               </gramGrp>
+               <sense xml:id="āwiht_3.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>good, of value,</quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ</title>
+                     </bibl>
+                  </cit>
+               </sense>
+            </entry>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- cafortūn (æ, ea1, e2) m. vestibule, court, court-yard, Æ: hall, residence, Æ. -->
+         <entry xml:id="cafortūn" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>cafortūn</orth>
+            </form>
+            <form type="variant">
+               (<orth extent="part" expand="cæfortūn">æ</orth>,                           
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="ceafortūn">ea<lbl rend="sup">1</lbl></orth>, 
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="cafertūn">e<lbl rend="sup">2</lbl></orth>)  
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>  
+               <gram type="gender" value="masculine">m.</gram>       
+            </gramGrp>
+            <sense xml:id="cafortūn.1">
+               <sense xml:id="cafortūn.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>vestibule, court, court-yard,</quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="cafortūn.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>hall, residence,</quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ</title>
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+         </entry> 
+
+<!-- be-ðurfan swv. pres., 3 sg. -ðearf, pl. -ðurfon, pret. -ðorfte. (w. g. or a.) to need, have need of, want, Æ, CP. -->
+         <entry xml:id="be-ðurfan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth type="segmented">               <!-- "segmented" necessary or not? -->
+                  <seg>be</seg>
+                  <seg>-ðurfan</seg>
+               </orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="strong-weak verb">swv.</gram>
+            </gramGrp>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="tense" value="present">pres.,</gram>                                        
+                  <gram type="person" value="third">3</gram>
+                  <gram type="number" value="singular">sg.</gram>
+               </gramGrp>               
+               <orth extent="part" expand="be-ðearf">-ðearf</orth>,    
+               </form>
+             <form type="inflected">
+                <gramGrp>
+                   <gram type="number" value="plural">pl.</gram>
+                </gramGrp>
+                <orth extent="part" expand="be-ðurfon">-ðurfon</orth>,   
+             </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="tense" value="past">pret.</gram>
+               </gramGrp>
+               <orth extent="part" expand="be-ðorfte">-ðorfte</orth>    
+            </form>
+            <metamark>.</metamark> 
+            <sense xml:id="be-ðurfan.1">
+               <gramGrp>
+                  <gram type="government"><lbl norm="with genitive or accusative">(w. g. or a.)</lbl></gram> <!-- how would that work with a search? Maybe it needs (implicit?) gram for every case after all? -->
+               </gramGrp>                              
+               <cit type="translation" xml:lang="en">
+                  <quote>to need, have need of, want,</quote>
+                  <bibl type="attestation" source="#Æ">
+                     <title>Æ;</title>
+                  </bibl>
+                  <bibl type="attestation" source="#CP">
+                     <title>CP</title>
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+               
+<!-- lind I. f. lime-tree, linden, Gl; Æ; Mdf: (†) shield (of wood). [‘lind’]
+II. = lynd -->
+         <entry xml:id="lind" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>lind</orth>
+            </form>
+            <entry xml:id="lind_1" type="homonymicEntry" xml:lang="ang" n="I">
+                <lbl type="homNum">I.</lbl> 
+               <gramGrp>
+                  <gram type="pos" value="noun"/>
+                  <gram type="gender" value="feminine">f.</gram>
+               </gramGrp>
+               <sense xml:id="lind_1.1">
+                  <sense xml:id="lind_1.1.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>lime-tree, linden,</quote>
+                        <bibl type="attestation" source="#Gl">
+                           <title>Gl;</title>
+                        </bibl>
+                        <bibl type="attestation" source="#Æ">
+                           <title>Æ;</title>
+                        </bibl>
+                        <bibl type="attestation" source="#Mdf">
+                           <title>Mdf</title>
+                        </bibl>
+                     </cit>             
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="lind_1.1.2">
+                     <usg type="textType" expand="attested in poetical texts only">(†)</usg>
+                     <cit type="translation" xml:lang="en">
+                        <quote>shield</quote>  
+                        <gloss>(of wood)</gloss>
+                     </cit>
+                  </sense>
+               </sense>
+               <metamark>.</metamark>
+               <xr type="related"><ref type="sense" target="#OED_lind">[‘lind’]</ref></xr>    <!-- "[" and "]" have to stay inside <ref>, otherwise invalid. Or should use <pc> -->
+            </entry>
+            <entry xml:id="lind_2" xml:lang="ang" type="homonymicEntry" n="II">
+                <lbl type="homNum">II.</lbl>                  
+               <xr type="related" expand="orthographic variant">
+                  <lbl>=</lbl>
+                  <ref target="#lynd" type="entry">lynd</ref>
+               </xr>
+            </entry>
+         </entry>
+                       
+ <!-- habban anv. ptc. pres. hæbbende; pres. 1 sg. hæbbe, 2. hæfst, 3. hæfð, pl. hæbbað, habbað; pret. 3 sg. hæfde; subj. hæbbe; imperat. hafa; pp. (±) hæf(e)d 
+                        to ‘have,’ Bl, G:
+                        possess, own, hold, B, Bl, G: 
+                        keep, retain, Bl, VPs:
+                        entertain, cherish:
+                        esteem, consider, BH:
+                        be subject to, experience, Mk:
+                        obtain, Chr, Mt:
+                        assert, Lcd:
+                        used as auxiliary to indicate past tense, have, Æ, Chr, Ex.
+                        h. for consider:
+                           (+) hold, keep from, preserve, retain, CP, Æ.
+                        yfle +h. afflict, torment. -->     
+         <entry xml:id="habban" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>habban</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="anomalous verb">anv.</gram>
+            </gramGrp>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="pos" value="participle">ptc.</gram>
+                  <gram type="tense" value="present">pres.</gram>
+               </gramGrp>
+               <orth>hæbbende</orth>;
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="tense" value="present">pres.</gram>
+                  <gram type="person" value="first">1</gram>
+                  <gram type="number" value="singular">sg.</gram>
+               </gramGrp>
+               <orth>hæbbe</orth>,
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="person" value="second">2.</gram>
+               </gramGrp>
+               <orth>hæfst</orth>,
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="person" value="third">3.</gram>
+               </gramGrp>
+               <orth>hæfð</orth>,
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="number" value="plural">pl.</gram>
+               </gramGrp>
+               <orth>hæbbað</orth>,
+               <orth>habbað</orth>;                          
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="tense" value="past">pret.</gram>
+                  <gram type="person" value="third">3</gram>
+                  <gram type="number" value="singular">sg.</gram>
+               </gramGrp>
+               <orth>hæfde</orth>;
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="mood" value="subjunctive">subj.</gram>
+               </gramGrp>
+               <orth>hæbbe</orth>;
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="mood" value="imperative">imperat.</gram>
+               </gramGrp>
+               <orth>hafa</orth>;
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="pos" value="past participle">pp.</gram>  
+               </gramGrp>
+               <orth extent="full" expand="hæfd, ge-hæfd, hæfed, ge-hæfed"><lbl expand="#ge-_optional">(±)</lbl>hæf(e)d</orth>
+            </form>
+            <sense xml:id="habban.1">
+               <sense xml:id="habban.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to <xr type="related"><ref type="sense" target="#OED_have">'have,'</ref></xr></quote>
+                     <bibl type="attestation" source="#Bl">
+                        <title>Bl,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#G">
+                        <title>G</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="habban.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>possess, own, hold,</quote>
+                     <bibl type="attestation" source="#B">
+                        <title>B,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Bl">
+                        <title>Bl,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#G">
+                        <title>G</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+
+               <sense xml:id="habban.1.3">
+                  <cit type="translation" xml:lang="en">
+                     <quote>keep, retain,</quote>
+                     <bibl type="attestation" source="#Bl">
+                        <title>Bl,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#VPs">
+                        <title>VPs</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="habban.1.4">
+                  <cit type="translation" xml:lang="en">
+                     <quote>entertain, cherish</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="habban.1.5">
+                  <cit type="translation" xml:lang="en">
+                     <quote>esteem, consider,</quote>
+                     <bibl type="attestation" source="#BH">
+                        <title>BH</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="habban.1.6">
+                  <cit type="translation" xml:lang="en">
+                     <quote>be subject to, experience,</quote>
+                     <bibl type="attestation" source="#Mk">
+                        <title>Mk</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="habban.1.7">
+                  <cit type="translation" xml:lang="en">
+                     <quote>obtain,</quote>
+                     <bibl type="attestation" source="#Chr">
+                        <title>Chr,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Mt">
+                        <title>Mt</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="habban.1.8">
+                  <cit type="translation" xml:lang="en">
+                     <quote>assert,</quote>
+                     <bibl type="attestation" source="#Lcd">
+                        <title>Lcd</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="habban.1.9">
+                  <gloss>used as auxiliary to indicate past tense,</gloss>   <!-- gloss? note? Rection/government/dependency? -->
+                  <cit type="translation" xml:lang="en">
+                     <quote>have,</quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Chr">
+                        <title>Chr,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Ex">
+                        <title>Ex</title>
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+            <entry xml:id="habban_for" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">
+                  <orth><ref type="oRef">h.</ref>for</orth>  <!-- expand="habban_for" necessary as orth attribute? -->
+               </form>
+               <sense xml:id="habban_for.1">
+                  <sense xml:id="habban_for.1.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>consider</quote>
+                     </cit>
+                  </sense>
+                  <sense xml:id="habban_for.1.2">    
+                     <form type="variant">
+                        <orth extent="prefix" expand="ge-habban for"><lbl expand="ge-">+</lbl></orth>       
+                     </form>
+                     <cit type="translation" xml:lang="en">
+                        <quote>hold, keep from, preserve, retain,</quote>
+                        <bibl type="attestation" source="#CP">
+                           <title>CP,</title>
+                        </bibl>
+                        <bibl type="attestation" source="#Æ">
+                           <title>Æ</title>
+                        </bibl>
+                     </cit>
+                  </sense>
+               </sense>
+            </entry>
+            <entry xml:id="yfle_ge-habban" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">
+                  <orth>yfle</orth>
+                  <orth extent="prefix" expand="ge-habban"><lbl expand="ge-">+</lbl><seg><ref type="oRef">h.</ref></seg></orth>                                               
+               </form>
+               <sense xml:id="yfle_ge-habban.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>afflict, torment</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+         </entry>
+     
+         <!-- trym † (e) n. small piece, short length. fōtes t. a foot’s length. -->         
+         <entry xml:id="trym" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>trym</orth>
+            </form>
+            <usg type="textType" expand="attested in poetic texts only">†</usg>
+            <form type="variant">
+               (<orth extent="part" expand="trem">e</orth>)                           
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="neuter">n.</gram>
+            </gramGrp>
+            <sense xml:id="trym.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>small piece, short length</quote>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+            <entry xml:id="fōtes_trym" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">
+                  <orth>fōtes<ref type="oRef">t.</ref></orth>
+               </form>
+               <sense xml:id="fōtes_trym.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>a foot’s length</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+         </entry>
+                  
+<!-- līhtan (ē, ēo, ȳ) I. (±) to make ‘light,’ easy, relieve, alleviate, CP, Lcd, LL: dismount, ‘alight,’ BH (y).
+II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light, dawn, Da (ȳ): ‘light,’ kindle. -->
+         <entry xml:id="līhtan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>līhtan</orth>
+            </form>
+            <form type="variant">
+               (<orth extent="part" expand="lēhtan">ē</orth>,
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="lēohtan">ēo</orth>,
+            </form>
+            <form type="variant" xml:id="lȳhtan_var">          <!-- why not valid?? only not valid with "ȳ" -->
+               <orth extent="part" expand="lȳhtan">ȳ</orth>)
+            </form>
+            <form type="variant" xml:id="lyhtan_var" rend="implicit">   <!-- implicit variant for the one only mentioned after the source -->
+               <orth extent="part" expand="lyhtan"/>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>   
+            </gramGrp>
+            <entry xml:id="līhtan_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl> 
+               <sense xml:id="līhtan_1.1">
+                  <sense xml:id="līhtan_1.1.1">
+                     <form type="variant">
+                        <orth extent="prefix" expand="līhtan, gelīhtan"><lbl expand="#ge-_optional">(±)</lbl></orth>
+                     </form>
+                     <cit type="translation" xml:lang="en">
+                        <quote>to make <xr type="related"><ref type="sense" target="#OED_light">'light,'</ref></xr>easy, relieve, alleviate,</quote>
+                        <bibl type="attestation" source="#CP">
+                           <title>CP,</title>
+                        </bibl>
+                        <bibl type="attestation" source="#Lcd">
+                           <title>Lcd,</title>
+                        </bibl>
+                        <bibl type="attestation" source="#LL">
+                           <title>LL</title>
+                        </bibl>
+                     </cit>
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="līhtan_1.1.2">
+                     <cit type="translation" xml:lang="en">
+                        <quote>dismount,<xr type="related"><ref type="sense" target="#OED_alight">'alight,'</ref></xr></quote>
+                        <bibl type="attestation" source="#BH">
+                           <title>BH</title> <lbl><ref type="variant" target="#lyhtan_var">(y)</ref></lbl> <!-- added new type value "variant". seems to be valid -->
+                           <!-- or <note> <ptr target="lyhtan_var"/>(y)</note>  (invalid).     or..? --> 
+                        </bibl>
+                     </cit>
+                  </sense>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="līhtan_2" type="homonymicEntry" xml:lang="ang" n="II">
+                <lbl type="homNum">II.</lbl> 
+               <form type="variant">
+                  (<orth extent="part" expand="liehtan">ie</orth>,
+               </form>
+               <form type="variant">              
+                  <orth extent="part" expand="lȳhtan">ȳ</orth>)
+               </form>
+               <sense xml:id="līhtan_2.1">
+                  <sense xml:id="līhtan_2.1.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>to lighten, illuminate, give light, shine,</quote>
+                        <bibl type="attestation" source="#Æ">
+                           <title>Æ,</title>
+                        </bibl>
+                        <bibl type="attestation" source="#Jn">
+                           <title>Jn</title> <lbl><ref type="variant" target="#lȳhtan_var">(ȳ)</ref></lbl>                   
+                        </bibl>
+                     </cit>
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="līhtan_2.1.2">
+                     <cit type="translation" xml:lang="en">
+                        <quote>grow light, dawn,</quote>
+                        <bibl type="attestation" source="#Da">
+                           <title>Da</title> <lbl><ref type="variant" target="#lȳhtan_var">(ȳ)</ref></lbl>                   
+                        </bibl>
+                     </cit>
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="līhtan_2.1.3">
+                     <cit type="translation" xml:lang="en">
+                        <quote><xr type="related"><ref type="sense" target="#OED_light">'light,' </ref></xr>kindle</quote>
+                     </cit>
+                  </sense>
+               </sense>
+            </entry>
+            <metamark>.</metamark>
+         </entry>
+                 
+<!-- ±edcwician (cwyc-, cuc-) to re-quicken, revive, Æ. -->       
+         <entry xml:id="edcwician" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth type="segmented" extent="prefix" expand="edcwician, ge-edcwician"><lbl expand="#ge-_optional">±</lbl></orth>
+               <orth>edcwician</orth>
+            </form>
+            <form type="variant">
+               (<orth extent="part" expand="edcwycian, ge-edcwycian"><seg>cwyc-</seg></orth>, 
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="edcucian, ge-edcucian"><seg>cuc-</seg>)</orth>     
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>   
+            </gramGrp>
+            <sense xml:id="edcwician_v.1">
+               <cit type="translation" xml:lang="en">
+                  <quote> to re-quicken, revive,</quote>
+                  <bibl type="attestation" source="#Æ">
+                     <title>Æ</title> 
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- ord m. point, spear-point, spear, B, CP: source, beginning, Æ, CP: front, vanguard, Æ: chief, prince; in pl. first men, the flower. [‘ord’] -->  
+         <entry xml:id="ord" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ord</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="masculine">m.</gram>
+            </gramGrp>
+            <sense xml:id="ord.1">
+               <sense xml:id="ord.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>point, spear-point, spear,</quote>
+                     <bibl type="attestation" source="#B">
+                        <title>B,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="ord.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>source, beginning,</quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="ord.1.3">
+                  <cit type="translation" xml:lang="en">
+                     <quote>front, vanguard,</quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="ord.1.4">
+                  <cit type="translation" xml:lang="en">
+                     <quote>chief, prince</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">;</metamark>
+               <sense xml:id="ord.2">
+                  <lbl type="usage">in</lbl> 
+                  <gramGrp>
+                     <gram type="number" value="plural">pl.</gram>        
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>first men, the flower</quote>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+            <xr type="related"><ref type="sense" target="#OED_ord">[‘ord’]</ref></xr>
+         </entry>
+        
+        
+<!-- bæc I. n. ‘back,’ Bo, MtL, Ps; CP. on b. backwards, behind, ‘aback.’ on b. settan, lǣtan to neglect. ofer b. backwards, back. under b. behind, backwards, back. 
+            ofer b. būgan to turn back, flee. clǣne b. habban to be straightforward, honest, LL 128[5].
+        II. mfn. beck, brook. v. ES 29·411. -->
+         <entry xml:id="bæc" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>bæc</orth>
+            </form>
+            <entry xml:id="bæc_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <gramGrp>
+                  <gram type="pos" value="noun"/>
+                  <gram type="gender" value="neuter">n.</gram>
+               </gramGrp>
+               <sense xml:id="bæc_1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote><xr type="related"><ref type="sense" target="#OED_back">'back,'</ref></xr></quote>
+                     <bibl type="attestation" source="#Bo">
+                        <title>Bo,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#MtL">
+                        <title>MtL,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Ps">
+                        <title>Ps;</title>
+                     </bibl>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="on_bæc" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">                                                     <!-- or "phrase" ? -->
+                  <orth>on <ref type="oRef">b.</ref></orth>        
+               </form>
+               <sense xml:id="on_bæc.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>backwards, behind, <xr type="related"><ref type="sense" target="#OED_aback">'aback.'</ref></xr></quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="on_bæc_settan" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">                                                  <!-- or "phrase" ? -->
+                  <orth>on <ref type="oRef">b.</ref>settan</orth>,  
+               </form>
+               <form type="variant">
+                  <orth extent="part" expand="on bæc lǣtan"><seg>lǣtan</seg></orth> <!-- extent? expand? seg? underscores in expand?-->
+               </form>
+               <sense xml:id="on_bæc_settan.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to neglect</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="ofer_bæc" type="relatedEntry" xml:lang="ang">
+                  <form type="collocation">
+                     <orth>ofer<ref type="oRef">b.</ref></orth>
+                  </form>
+                  <sense xml:id="ofer_bæc.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>backwards, back</quote>
+                     </cit>
+                  </sense>
+                  <metamark>.</metamark>
+            </entry>
+            <entry xml:id="under_bæc" type="relatedEntry" xml:lang="ang">
+                  <form type="collocation">
+                     <orth>under <ref type="oRef">b.</ref></orth>
+                  </form>
+                  <sense xml:id="under_bæc.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>behind, backwards, back</quote>
+                     </cit>
+                  </sense>
+                  <metamark>.</metamark>
+            </entry>
+            <entry xml:id="ofer_bæc_bugan" type="relatedEntry" xml:lang="ang">
+                  <form type="collocation">
+                     <orth>ofer <ref type="oRef">b.</ref> būgan</orth>
+                  </form>
+                  <sense xml:id="ofer_bæc_bugan.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>to turn back, flee</quote>
+                     </cit>
+                  </sense>
+                  <metamark>.</metamark>
+            </entry>
+            <entry xml:id="clæne_bæc_habban" type="relatedEntry" xml:lang="ang">
+                  <form type="collocation">
+                     <orth>clǣne <ref type="oRef">b.</ref> habban</orth>
+                  </form>
+                  <sense xml:id="clæne_bæc_habban.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>to be straightforward, honest</quote>
+                        <bibl type="attestation" source="#LL">
+                           <title>LL</title>
+                           <citedRange unit="section">128</citedRange>
+                           <citedRange unit="clause">[5]</citedRange> 
+                        </bibl>
+                     </cit>
+                  </sense>
+                  <metamark>.</metamark>
+            </entry>
+            <entry xml:id="bæc_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl>
+               <gramGrp>
+                  <gram type="gender" value="masculine, feminine, neuter">mfn.</gram>
+                  <gram type="pos" value="noun"/>   
+               </gramGrp>
+               <sense xml:id="bæc_2.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>beck, brook</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <xr type="related" expand="bibliographic reference"><lbl norm="vide">v.</lbl><ref target="#ES" type="bibl">ES 29·411</ref></xr> 
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- fōt m. ds. fēt, fōte, nap. fēt, fōtas foot (as limb and as measure), B, LL, NG; Æ, AO, CP. -->
+         <entry xml:id="fōt" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>fōt</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="masculine">m.</gram>
+            </gramGrp>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="case" value="dative">d</gram>
+                  <gram type="number" value="singular">s.</gram>
+               </gramGrp>
+               <orth>fēt</orth>,
+               <orth>fōte</orth>,
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="case" value="nominative, accusative">na</gram>
+                  <gram type="number" value="plural">p.</gram>
+               </gramGrp>
+               <orth>fēt</orth>,
+               <orth>fōtas</orth>
+            </form>
+            <sense xml:id="fōt.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>foot</quote>
+                  <gloss>(as limb and as measure)</gloss>
+                  <bibl type="attestation" source="#B">
+                     <title>B,</title>
+                  </bibl>
+                  <bibl type="attestation" source="#LL">
+                     <title>LL,</title>
+                  </bibl>
+                  <bibl type="attestation" source="#NG">
+                     <title>NG;</title>
+                  </bibl>
+                  <bibl type="attestation" source="#Æ">
+                     <title>Æ,</title>
+                  </bibl>
+                  <bibl type="attestation" source="#AO">
+                     <title>AO,</title>
+                  </bibl>
+                  <bibl type="attestation" source="#CP">
+                     <title>CP</title>
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- wāt I. pres. 3 sg. of witan.
+II. pret. 3 sg. of wītan.
+III. = wǣt -->
+         <entry xml:id="wāt" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>wāt</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>   
+            </gramGrp>
+            <entry xml:id="wāt_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <gramGrp>
+                  <gram type="pos" value="verb"/>
+                  <gram type="tense" value="present">pres.</gram>
+                  <gram type="person" value="third">3</gram>
+                  <gram type="number" value="singular">sg.</gram>
+               </gramGrp>
+               <xr type="related" expand="inflected form">
+                  <lbl>of</lbl>
+                  <ref target="#witan" type="entry">witan</ref> 
+               </xr>
+               <metamark>.</metamark> 
+            </entry>
+            <entry xml:id="wāt_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl>
+               <gramGrp>
+                  <gram type="pos" value="verb"/>
+                  <gram type="tense" value="past">pret.</gram>
+                  <gram type="person" value="third">3</gram>
+                  <gram type="number" value="singular">sg.</gram>
+               </gramGrp>
+               <xr type="related" expand="inflected form">
+                  <lbl>of</lbl>
+                  <ref target="#wītan" type="entry">wītan</ref> 
+               </xr>
+               <metamark>.</metamark> 
+            </entry>
+            <entry xml:id="wāt_3" type="homonymicEntry" xml:lang="ang" n="III">
+               <lbl type="homNum">III.</lbl>
+               <xr type="related" expand="orthographic variant">
+                  <lbl>=</lbl>
+                  <ref target="#wǣt" type="entry">wǣt</ref>
+               </xr>
+               <metamark>.</metamark> 
+            </entry>
+         </entry>
+         
+<!-- ±etan5 (ea, eo) to 'eat,' Æ, AO, Jn: devour, consume, Jn; CP: (reflex.) provision oneself: (+) eat together. -->
+         <entry xml:id="etan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth extent="prefix" expand="etan, ge-etan"><lbl expand="#ge-_optional">±</lbl><seg>etan</seg></orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="strong verb"/>
+               <gram type="inflectionType"><hi rend="superscript">5</hi></gram>          
+            </gramGrp>
+            <form type="variant">
+               (<orth extent="part" expand="eatan"><seg>ea</seg></orth>,
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="eotan"><seg>eo</seg></orth>)
+            </form>
+            <sense xml:id="etan.1">
+               <sense xml:id="etan.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to <xr type="related"><ref type="sense" target="#OED_eat">'eat,'</ref></xr></quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#AO">
+                        <title>AO,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Jn">
+                        <title>Jn</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="etan.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>devour, consume,</quote>
+                     <bibl type="attestation" source="#Jn">
+                        <title>Jn;</title>
+                     </bibl>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="etan.1.3">
+                  <gramGrp>
+                     (<gram type="valency" value="reflexive">reflex.</gram>) 
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>provision oneself</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="etan.1.4">
+                  <form type="variant">
+                     <orth extent="prefix" expand="ge-etan"><lbl expand="ge-">(+)</lbl>
+                     </orth>
+                  </form>
+                  <cit type="translation" xml:lang="en">
+                     <quote>eat together</quote>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+         
+         <!-- hǣlan I. (±) to ‘heal,’ cure, save, CP, Lcd, Mt, Ps; Æ (+): greet, salute, GD 3627. +hǣl! Hosanna! [hāl]
+II. to castrate, Lcd 3·18622. -->
+         <entry xml:id="hǣlan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>hǣlan</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+            </gramGrp>
+            <entry xml:id="hǣlan_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <form type="variant">
+                  <orth extent="prefix" expand="hǣlan, ge-hǣlan"><lbl expand="#ge-_optional">(±)</lbl></orth>
+               </form>
+               <sense xml:id="hǣlan_1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to <xr type="related"><ref type="sense" target="#OED_heal">‘heal,’</ref></xr> cure, save,</quote>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Lcd">
+                        <title>Lcd,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Mt">
+                        <title>Mt,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Ps">
+                        <title>Ps;</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ</title> <lbl><ref type="variant" target="#gehǣlan_var">(+)</ref></lbl>  <!-- ? --> 
+                     </bibl>
+                  </cit>
+               </sense>
+               <sense xml:id="hǣlan_1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>greet, salute,</quote>
+                     <bibl type="attestation" source="#GD">
+                        <title>GD</title>
+                        <citedRange unit="page">36</citedRange> 
+                        <citedRange unit="line"><hi rend="superscript">27</hi></citedRange>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="hǣl" type="relatedEntry" xml:lang="ang">
+               <form type="phrase">                    <!-- phrase??  -->
+                  <orth extent="prefix" expand="ge-hǣl!"><lbl expand="ge-">+</lbl><seg>hǣl!</seg></orth>                    <!-- keep the ! in orth? -->
+               </form>
+               <sense xml:id="hǣl.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>Hosanna!</quote>
+                  </cit>
+               </sense>
+               <xr type="related"><ref type="entry" target="#hāl">[hāl]</ref></xr>  
+            </entry>
+            <entry xml:id="hǣlan_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl>
+               <sense xml:id="hǣlan_2.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to castrate,</quote>
+                     <bibl type="attestation" source="#Lcd">
+                        <title>Lcd</title>
+                        <citedRange unit="volume">3·</citedRange>
+                        <citedRange unit="page">186</citedRange>
+                        <citedRange unit="line"><hi rend="superscript">22</hi></citedRange> 
+                     </bibl>
+                  </cit>
+               </sense>
+            </entry>
+           <metamark>.</metamark>
+         </entry>
+         
+<!-- ±fremian, fremman to further, advance, support, An, B: frame, make, do, perpetrate, commit, afford, B, Gen; CP: (w. d.) avail, benefit, do good, Æ, Mt. ['freme'] -->
+         <entry xml:id="fremian" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth extent="full" expand="fremian, ge-fremian"><lbl expand="ge-_optional">±</lbl><seg>fremian</seg></orth>,
+            </form>
+            <form type="variant">
+               <orth>fremman</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+            </gramGrp>
+            <sense xml:id="fremian.1">
+               <sense xml:id="fremian.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to further, advance, support,</quote>
+                     <bibl type="attestation" source="#An">
+                        <title>An,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#B">
+                        <title>B</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="fremian.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>frame, make, do, perpetrate, commit, afford,</quote>
+                     <bibl type="attestation" source="#B">
+                        <title>B,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Gen">
+                        <title>Gen;</title>
+                     </bibl>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="fremian.1.3"> 
+                  <gramGrp>
+                     <gram type="government"><lbl norm="with dative">(w. d.)</lbl></gram>      
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>avail, benefit, do good,</quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Mt">
+                        <title>Mt</title>
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+            <xr type="related"><ref type="sense" target="#OED_freme">['freme']</ref></xr>  
+         </entry>
+         
+<!-- cēne bold, brave, fierce, CP, Lcd, Ma; Æ, AO: powerful, VPs: learned, clever, Met 1051. ['keen'; Ger. kühn] also adv. -->
+         <entry xml:id="cēne" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>cēne</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="adjective"/>
+            </gramGrp>
+            <sense xml:id="cēne.1">
+               <sense xml:id="cēne.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>bold, brave, fierce,</quote>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Lcd">
+                        <title>Lcd,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Ma">
+                        <title>Ma;</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#AO">
+                        <title>AO</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="cēne.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>powerful,</quote>
+                     <bibl type="attestation" source="#VPs">
+                        <title>VPs</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="cēne.1.3">
+                  <cit type="translation" xml:lang="en">
+                     <quote>learned, clever,</quote>
+                     <bibl type="attestation" source="#Met">
+                        <title>Met</title>
+                        <citedRange>10^51</citedRange> <!-- no unit here, couldn't verify, but probably page line as usual in these cases -->
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+            <xr type="related"><ref type="sense" target="#OED_keen">['keen';</ref></xr>
+            <etym><lang value="de" expand="German">Ger.</lang><mentioned>kühn</mentioned>]</etym>   
+            <!-- OR
+               <etym>
+                  <lbl>[</lbl>
+                  <cit type="etymon” xml:lang=”de”>
+                     <lang value="de" expand="German">Ger.</lang>
+                     <form><orth>kühn</orth></form> 
+                  </cit>
+               </etym>
+            -->
+            <lbl type="usage">also</lbl>
+            <gramGrp>
+               <gram type="pos" value="adverb">adv.</gram>     
+            </gramGrp>
+         </entry>
+         
+<!-- gearo (gearu) I. (wk gearwa) gsmn. -(o)wes; asm. gearone; napn. gearu prepared, ready, equipped, finished, Chr, W. ['yare']
+II. = gearwe adv. -->
+         <entry xml:id="gearo" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>gearo</orth>
+            </form>
+            <form type="variant">
+               (<orth>gearu</orth>)
+            </form>
+            <entry xml:id="gearo_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <gramGrp>
+                  <gram type="pos" value="adjective"/>
+               </gramGrp>
+               <form type="variant">
+                  <gramGrp>
+                     (<gram type="declension" value="weak">wk</gram> 
+                  </gramGrp>
+                  <orth>gearwa</orth>)
+               </form>
+               <form type="inflected">
+                  <gramGrp>
+                     <gram type="case" value="genitive">g</gram>
+                     <gram type="number" value="singular">s</gram>
+                     <gram type="gender" value="masculine, neuter">mn.</gram>
+                  </gramGrp>
+                  <orth extent="part" expand="gearowes, gearwes">-(o)wes</orth>;  
+               </form>
+               <form type="inflected">
+                  <gramGrp>
+                     <gram type="case" value="accusative">a</gram>
+                     <gram type="number" value="singular">s</gram>
+                     <gram type="gender" value="masculine">m.</gram>
+                  </gramGrp>
+                  <orth>gearone</orth>;
+               </form>
+               <form type="inflected">
+                  <gramGrp>
+                     <gram type="case" value="nominative, accusative">na</gram>
+                     <gram type="number" value="plural">p</gram>
+                     <gram type="gender" value="neuter">n.</gram>
+                  </gramGrp>
+                  <orth>gearu</orth>
+               </form>
+               <sense xml:id="gearo_1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>prepared, ready, equipped, finished,</quote>
+                     <bibl type="attestation" source="#Chr">
+                        <title>Chr,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#W">
+                        <title>W</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+               <xr type="related"><ref type="sense" target="#OED_yare">['yare']</ref></xr>
+            </entry>
+            <entry xml:id="gearo_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl>
+               <xr type="related" expand="orthographic variant">
+                  <lbl>=</lbl>
+                  <ref target="#gearwe" type="entry">gearwe</ref>
+               </xr>
+               <gramGrp>
+                  <gram type="pos" value="adverb">adv.</gram>  
+               </gramGrp>
+            </entry>
+         </entry>
+         
+<!-- georn-ful, -fullic desirous, eager, zealous, diligent, AO, CP. adv. -līce, Æ. -->
+         <entry xml:id="georn-ful" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth type="segmented">             
+                  <seg>georn</seg> 
+                  <seg>-ful</seg>
+               </orth>
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="georn-fullic"><seg>-fullic</seg></orth>
+            </form>   
+            <gramGrp>
+               <gram type="pos" value="adjective"/>
+            </gramGrp>
+            <sense xml:id="georn-ful.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>desirous, eager, zealous, diligent,</quote>
+                  <bibl type="attestation" source="#AO">
+                     <title>AO,</title>
+                  </bibl>
+                  <bibl type="attestation" source="#CP">
+                     <title>CP</title>
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+            <entry xml:id="georn-fullīce" type="relatedEntry" xml:lang="ang">
+               <gramGrp>
+                  <gram type="pos" value="adjective">adj.</gram>
+               </gramGrp>
+               <form type="lemma">
+                  <orth extent="part" expand="georn-fullīce">
+                     <seg>-līce</seg>
+                  </orth>
+               </form>
+               <bibl type="attestation" source="#Æ"> 
+                  <title>Æ</title>
+               </bibl>
+               <metamark>.</metamark>
+            </entry>
+         </entry>
+         
+<!-- betera ‘better,’ AO, Mk. followed by g. = better in respect of.... -->
+         <entry xml:id="betera" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>betera</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="adjective"/>  
+               <gram type="degree" value="comparative"/>
+            </gramGrp>
+            <sense xml:id="betera.1">
+               <cit type="translation" xml:lang="en">
+                  <quote><xr type="related"><ref type="sense" target="#OED_better">‘better,’</ref></xr></quote>
+                  <bibl type="attestation" source="#AO">
+                     <title>AO,</title>
+                  </bibl>
+                  <bibl type="attestation" source="#Mk">
+                     <title>Mk</title>
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+            <sense xml:id="betera.2">            
+               <gramGrp>
+                  <gram type="government"><lbl norm="followed by genitive">followed by g. =</lbl></gram>
+               </gramGrp>
+               <cit type="translation" xml:lang="en">
+                  <quote>better in respect of...</quote>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+
+<!-- ±lǣran (ē) to teach, instruct, A, BH: enjoin, advise, persuade, urge, preach. l. forð hand down (to others): (+) convert: (+) †recall, ES 37·197. ±lǣred learned (opposed to lǣwed),
+     hence clerical (as opposed to lay), spiritual (as opposed to temporal), Æ, CP. [‘lere’] -->
+         <entry xml:id="lǣran" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth extent="prefix" expand="lǣran, ge-lǣran"><lbl expand="#ge-_optional">±</lbl><seg>lǣran</seg></orth>
+            </form>
+            <form type="variant">
+               (<orth extent="part" expand="lēran">ē</orth>)
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+            </gramGrp>
+            <sense xml:id="lǣran.1">
+               <sense xml:id="lǣran.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to teach, instruct,</quote>
+                     <bibl type="attestation" source="#A">
+                        <title>A,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#BH">
+                        <title>BH</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="lǣran.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>enjoin, advise, persuade, urge, preach</quote>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+            <entry xml:id="lǣran_forð" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">
+                  <orth><ref type="oRef">l.</ref>forð</orth>  
+               </form>
+               <sense xml:id="lǣran_forð.1">
+                  <sense xml:id="lǣran_forð.1.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>hand down</quote>
+                        <gloss>(to others)</gloss>                     
+                     </cit>
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark> 
+                  <sense xml:id="lǣran_forð.1.2">
+                     <form type="variant">
+                        (<orth extent="prefix" expand="ge-lǣran forð"><lbl expand="ge-">+</lbl></orth>)
+                     </form>
+                     <cit type="translation" xml:lang="en">
+                        <quote>convert</quote>
+                     </cit>
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="lǣran_forð.1.3">
+                     <form type="variant">
+                         (<orth extent="prefix" expand="ge-lǣran forð"><lbl expand="ge-">+</lbl></orth>)
+                     </form>
+                     <usg type="domain" expand="attested in poetic texts only">†</usg> 
+                     <cit type="translation" xml:lang="en">
+                        <quote>recall,</quote>
+                        <bibl type="attestation" source="#ES">
+                           <title>ES</title>
+                           <citedRange unit="volume">37·</citedRange>  
+                           <citedRange unit="page">197</citedRange> 
+                        </bibl>
+                     </cit>
+                  </sense>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="lǣred" type="relatedEntry" xml:lang="ang">
+               <form type="lemma">
+                  <orth extent="prefix" expand="lǣred, ge-lǣred"><lbl expand="#ge-_optional">±</lbl><seg>lǣred</seg></orth>
+               </form>
+               <sense xml:id="lǣred.1">                                             
+                  <cit type="translation" xml:lang="en">
+                     <quote>learned</quote>
+                     <gloss>(opposed to <xr type="antonymy"><ref type="entry" target="#lǣwed">lǣwed</ref></xr>),</gloss>  
+                     <lbl>hence</lbl>  
+                     <quote>clerical</quote>
+                     <gloss>(as opposed to lay)</gloss>
+                     <quote>spiritual</quote>
+                     <gloss>(as opposed to temporal)</gloss>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+               <xr type="related"><ref type="sense" target="#OED_lere">['lere']</ref></xr>
+            </entry>
+         </entry>
+      
+<!-- be-byrgan (AO) -byrian I. to raise a mound to, bury, inter, Æ. ['bebury']
+II. = bebeorgan -->
+         <entry xml:id="be-byrgan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth type="segmented">             
+                  <seg>be</seg>
+                  <seg>-byrgan</seg>
+               </orth>
+               <bibl type="attestation" source="#AO">
+                  <title>AO</title>
+               </bibl>
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="be-byrian">-byrian</orth>    
+            </form>
+            <entry xml:id="be-byrgan_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <gramGrp>
+                  <gram type="pos" value="verb"/>
+               </gramGrp>
+               <sense xml:id="be-byrgan_1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to raise a mound to, bury, inter,</quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+               <xr type="related"><ref type="entry" target="#OED_bebury">['bebury']</ref></xr>
+            </entry>
+            <entry xml:id="be-byrgan_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl>
+               <xr type="related" expand="orthographic variant"><lbl>=</lbl><ref type="entry" target="#bebeorgan">bebeorgan</ref></xr>
+            </entry>
+         </entry>
+         
+<!-- wealh-moru, -more (a^1) f., -mora m. carrot, parsnip. -->
+         <entry xml:id="wealh-moru" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth type="segmented">
+                  <seg>wealh</seg>
+                  <seg>-moru,</seg>
+               </orth>
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="walh-more"><seg>-more</seg> (a<lbl rend="sup">1</lbl>)</orth> 
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="feminine">f.</gram>,
+            </gramGrp>
+            <form type="variant">
+               <orth extent="part" expand="wealh-mora"><seg>-mora</seg></orth>
+               <gramGrp>
+                  <gram type="gender" value="masculine">m.</gram>
+               </gramGrp>
+            </form>
+            <sense xml:id="wealh-moru.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>carrot, parsnip</quote>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- try-mes (Mt) mf., -messe f., -messa m. a drachm weight: an English coin. (v. LL 2·683): a Roman coin, 'tremissis,' = 3 denarii. ['thrimsa'] -->
+         <entry xml:id="try-mes" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth type="segmented">
+                  <seg>try</seg>
+                  <seg>-mes</seg>
+               </orth>
+               <gramGrp>
+                  <gram type="gender" value="masculine, feminine">mf.</gram>,
+                     <gram type="pos" value="noun"/>
+               </gramGrp>
+               <bibl type="attestation" source="#Mt">
+                  <title>(Mt)</title>
+               </bibl>
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="try-messe"><seg>-messe</seg></orth>
+               <gramGrp>
+                  <gram type="gender" value="feminine">f.</gram>,
+               </gramGrp>
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="try-messa"><seg>-messa</seg></orth>
+               <gramGrp>
+                  <gram type="gender" value="masculine">m.</gram>
+               </gramGrp>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+            </gramGrp>
+            <sense xml:id="try-mes.1">
+               <sense xml:id="try-mes.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>a drachm weight</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="try-mes.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>an English coin.</quote>
+                  </cit>
+               </sense>
+               <xr type="related" expand="bibliographic reference"><lbl norm="vide">v. </lbl><ref target="#LL" type="bibl">ES 2·683</ref></xr>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="try-mes.1.3">
+                  <cit type="translation" xml:lang="en">
+                     <quote>a Roman coin, <xr type="related"><ref type="sense" target="#OED_tremissis">'tremissis,'</ref></xr><gloss><lbl>= </lbl>3 denarii</gloss></quote>  <!-- gloss inside or outside quote? Also what about other cases? -->
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+            <xr type="related"><ref type="sense" target="#OED_thrimsa">['thrimsa']</ref></xr>
+         </entry>
+         
+<!-- ðēah I. (ē) conj. and adv. 'though,' although, even if, that, however, nevertheless, yet, still, Bl, Bo; CP. ð. ðe although. swā ð. nevertheless, yet. ð. hwæðere v. ðēahhwæðere.
+II. pret. 3 sg. of ðēon. -->
+         <entry xml:id="ðēah" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ðēah</orth>
+            </form>
+            <entry xml:id="ðēah_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <form type="variant">
+                  (<orth extent="part" expand="ðēh"><seg>ē</seg></orth>)  
+               </form>
+               <gramGrp>
+                  <gram type="pos" value="conjunction">conj.</gram>
+                  <lbl>and</lbl>                                        
+                  <gram type="pos" value="adverb">adv.</gram>
+               </gramGrp>
+               <sense xml:id="ðēah_1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote><xr type="related"><ref type="sense" target="#OED_though">'though,'</ref></xr> although, even if, that, however, nevertheless, yet, still,</quote>
+                     <bibl type="attestation" source="#Bl">
+                        <title>Bl,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Bo">
+                        <title>Bo;</title>
+                     </bibl>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="ðēah_ðe" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">
+                  <orth><ref type="oRef">ð.</ref>ðe</orth>
+               </form>
+               <sense xml:id="ðēah_ðe.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>although</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="swā_ðēah" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">
+                  <orth>swā <ref type="oRef">ð.</ref></orth>
+               </form>
+               <sense xml:id="swā_ðēah.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>nevertheless, yet</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="ðēah_hwæðere" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">
+                  <orth><ref type="oRef">ð. </ref>hwæðere</orth>
+               </form>
+               <xr type="related" expand="orthografic variant"><lbl norm="vide">v.</lbl><ref target="#ðēahhwæðere" type="entry">ðēahhwæðere</ref></xr>  <!-- related entry without sense, but with XR -->
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="ðēah_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl>
+               <gramGrp>
+                  <gram type="pos" value="verb"/>
+                  <gram type="tense" value="past">pret.</gram>
+                  <gram type="person" value="third">3</gram>
+                  <gram type="number" value="singular">sg.</gram>
+               </gramGrp>
+               <xr type="related" expand="inflected form">
+                  <lbl>of</lbl>
+                  <ref target="#ðēon" type="entry">ðēon</ref>
+               </xr>
+            </entry>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- cild (y) (nap. cild, cild-ra, -ru; gp. -ra) n. 'child,' infant, Mt, Lcd, etc.; Æ, AO, CP: a youth of gentle birth, KC. -->
+         <entry xml:id="cild" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>cild</orth>
+            </form>
+            <form type="variant">
+               (<orth extent="part" expand="cyld"><seg></seg></orth>)
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  (<gram type="case" value="nominative, accusative">na</gram>
+                  <gram type="number" value="plural">p.</gram>
+               </gramGrp>
+               <orth>cild,</orth>
+               <orth type="segmented"><seg>cild</seg><seg>-ra,</seg></orth>     
+               <orth extent="part" expand="cild-ru"><seg>-ru;</seg></orth>                                                                          
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="case" value="genitive">g</gram>
+                  <gram type="number" value="plural">p.</gram>
+               </gramGrp>
+               <orth extent="part" expand="cild-ra"><seg>-ra</seg></orth>)
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="neuter">n.</gram>
+            </gramGrp>
+            <sense xml:id="cild.1">
+               <sense xml:id="cild.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote><xr type="related"><ref type="sense" target="#OED_child">'child,'</ref></xr> infant,</quote>
+                     <bibl type="attestation" source="#Mt">
+                        <title>Mt,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Lcd">
+                        <title>Lcd,</title>
+                     </bibl>
+                     <lbl>etc.;</lbl>                               
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#AO">
+                        <title>AO,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="cild.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>a youth of gentle birth,</quote>
+                     <bibl type="attestation" source="#KC">
+                        <title>KC</title>
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- āfȳran to emasculate. āfȳred (CP), āfȳrd pp. as sb. eunuch. --> 
+         <entry xml:id="āfȳran" type="mainEntry" xml:lang="ang">                
+            <form type="lemma">
+               <orth>āfȳran</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+            </gramGrp>
+            <sense xml:id="āfȳran.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>to emasculate</quote>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+            <entry xml:id="āfȳred" type="relatedEntry" xml:lang="ang">
+               <form type="lemma">
+                  <orth>āfȳred</orth>
+                  <bibl type="attestation" source="#CP">
+                     <title>(CP),</title>
+                  </bibl>
+               </form>
+               <form type="variant">
+                  <orth>āfȳrd</orth>
+               </form>
+               <gramGrp>
+                  <gram type="pos" value="past participle">pp.</gram>   
+               </gramGrp>
+               <sense xml:id="āfȳred.1">
+                  <lbl type="usage">as</lbl> 
+                  <gramGrp>                         
+                     <gram type="pos" value="substantive">sb.</gram> <!-- sb. was moved inside sense -->
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>eunuch</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+         </entry>
+         
+<!-- westerne western, westerly; wester(r)a more westerly; westema, westmest (AO) most westerly. -->
+         <entry xml:id="westerne" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>westerne</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="adjective"/>
+            </gramGrp>
+            <sense xml:id="westerne.1">
+               <sense xml:id="westerne.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>western, westerly</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">;</metamark>
+               <sense xml:id="westerne.1.2">
+                  <form type="variant">
+                     <orth extent="full" expand="westera, westerra">wester(r)a</orth>  
+                  </form>
+                  <cit type="translation" xml:lang="en">
+                     <quote>more westerly</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">;</metamark>
+               <sense xml:id="westerne.1.3">
+                  <form type="variant">
+                     <orth>westema</orth>,
+                  </form>
+                  <form type="variant">                  
+                     <orth>westmest</orth>
+                     <bibl type="attestation" source="#AO">
+                        <title>(AO)</title>                        
+                     </bibl>
+                  </form>
+                  <cit type="translation" xml:lang="en">
+                     <quote>most westerly</quote>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- niðera (eo, y) (comp.) adj. niðemest, nyðemest (superl.; positive not found) lower, under, lowest, Bo, WW; CP. ['nether'] -->
+         <entry xml:id="niðera" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>niðera</orth>
+               <form type="variant">
+                  (<orth extent="part" expand="neoðera"><seg>eo</seg></orth>,
+                  <orth extent="part" expand="nyðera"><seg>y</seg></orth>)
+               </form>
+               <gramGrp>
+                  (<gram type="degree" value="comparative">comp.</gram>)
+                  <gram type="pos" value="adjective">adj.</gram>  
+               </gramGrp>
+            </form>
+            <form type="variant">
+               <orth>niðemest,</orth>
+               <orth>nyðemest</orth>   <!-- grouping these two variants together because they share a grammatical property (superl.)? -->
+               <gramGrp>
+                  (<gram type="degree" value="superlative">superl.</gram>;
+                  <lbl>positive not found)</lbl>                               <!-- or note? -->
+               </gramGrp>
+            </form>
+            <sense xml:id="niðera.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>lower, under, lowest,</quote>
+                  <bibl type="attestation" source="#Bo">
+                     <title>Bo,</title>
+                  </bibl>
+                  <bibl type="attestation" source="#WW">
+                     <title>WW;</title>
+                  </bibl>
+                  <bibl type="attestation" source="#CP">
+                     <title>CP</title>
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+            <xr type="related"><ref type="sense" target="#OED_nether">['nether']</ref></xr>
+         </entry>
+         
+<!-- āhefegian (CP), -hef(i)gian (æ) to make heavy, oppress. -->
+         <entry xml:id="āhefegian" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>āhefegian</orth>
+               <bibl type="attestation" source="#CP">
+                  <title>(CP),</title>
+               </bibl>
+            </form>
+            <form type="variant">
+               <orth extent="part" expand="æhefgian, æhefigian"><seg>-hef(i)gian (æ)</seg></orth>  <!-- again, should (æ) be included in orth like this? Are āhefgian and āhefigian also possible? -->
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+            </gramGrp>
+            <sense xml:id="āhefegian.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>to make heavy, oppress</quote>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- ðrirēðre with three rows of oars. as sb. trireme, AO (īe). -->  
+         <entry xml:id="ðrirēðre" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ðrirēðre</orth>
+            </form>
+            <form type="variant" xml:id="ðrīerēðre_var" rend="implicit">          
+               <orth extent="part" expand="ðrīerēðre"/>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="adjective"/>
+            </gramGrp>
+            <sense xml:id="ðrirēðre.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>with three rows of oars</quote>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+            <sense xml:id="ðrirēðre.2">   
+               <lbl type="usage">as</lbl>
+               <gramGrp>
+                  <gram type="pos" value="substantive">sb.</gram>  
+               </gramGrp>
+               <cit type="translation" xml:lang="en">
+                  <quote>trireme,</quote>
+                  <bibl type="attestation" source="#AO">
+                     <title>AO </title><lbl><ref type="variant" target="ðrīerēðre_var">(īe)</ref></lbl>
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+         
+<!-- fīf usu. indecl. before sb.; but when alone, has na. fīfe, g. fīfa, d. fīfum 'five,' A, Gen, Mt. -->
+         <entry xml:id="fīf" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>fīf</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="numeral"/> 
+            </gramGrp> 
+            <lbl type="usage" norm="usually">usu.</lbl>
+            <gramGrp>
+               <gram type="declension" value="indeclinable">indecl.</gram>
+            </gramGrp>
+            <lbl type="usage">before</lbl>
+            <gramGrp>
+               <gram type="pos" value="substantive">sb.</gram>;
+            </gramGrp>
+            <lbl type="usage">but when alone, has</lbl>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="case" value="nominative, accusative">na.</gram>
+               </gramGrp>
+               <orth>fīfe</orth>,
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="case" value="genitive">g.</gram>
+               </gramGrp>
+               <orth>fīfa</orth>,
+            </form>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="case" value="dative">d.</gram>
+               </gramGrp>
+               <orth>fīfum</orth>
+            </form>
+            <sense xml:id="fīf.1">
+               <cit type="translation" xml:lang="en">
+                  <quote><xr type="related"><ref type="sense" target="#OED_five">'five,'</ref></xr></quote>
+                  <bibl type="attestation" source="#A">
+                     <title>A,</title>
+                  </bibl>
+                  <bibl type="attestation" source="#Gen">
+                     <title>Gen,</title>
+                  </bibl>
+                  <bibl type="attestation" source="#Mt">
+                     <title>Mt</title>
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>  
+         
+<!-- lāgon = lǣgon pret. pl. of licgan. --> 
+         <entry xml:id="lāgon" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>lāgon</orth>
+            </form>
+            <form type="variant"> 
+               <lbl>=</lbl>
+               <orth>lǣgon</orth> 
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+               <gram type="tense" value="past">pret.</gram>
+               <gram type="number" value="plural">pl.</gram>
+            </gramGrp>
+            <xr type="related" expand="inflected form">
+               <lbl>of</lbl>
+               <ref target="#licgan" type="entry">licgan</ref>
+            </xr>
+            <metamark>.</metamark>
+         </entry>  
+         
+
+         
+<!-- bā nafn. and am. of bēgen both. -->          
+         <entry xml:id="bā" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>bā</orth>
+            </form>
+            <gramGrp>
+               <gram type="case" value="nominative, accusative">na</gram>
+               <gram type="gender" value="feminine, neuter">fn.</gram>
+               <lbl>and</lbl>
+               <gram type="case" value="accusative">a</gram>
+               <gram type="gender" value="masculine">m.</gram>
+            </gramGrp>
+            <xr type="related" expand="inflected form">
+               <lbl>of</lbl>
+               <ref type="entry" target="#bēgen">bēgen</ref>
+            </xr>
+            <sense xml:id="bā.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>both</quote>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+
+<!-- āborgian to be surety for, LL: (w. æt) borrow. -->   <!-- comment? variant? relared entry? -->
+         <entry xml:id="āborgian" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>āborgian</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+            </gramGrp>
+            <sense xml:id="āborgian.1">
+               <sense xml:id="āborgian.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to be surety for,</quote>
+                     <bibl type="attestation" source="#LL">
+                        <title>LL</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="āborgian.1.2">                
+                  <gramGrp>
+                     <lbl type="usage" norm="with">(w.</lbl>
+                     <gram type="collocate">æt</gram>)          
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>borrow</quote>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+          
+<!-- ācēocian (tr.) to choke: (intr.) burn out. -->        
+         <entry xml:id="ācēocian" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ācēocian</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/> 
+            </gramGrp>
+            <sense xml:id="ācēocian.1">
+               <sense xml:id="ācēocian_v.1.1">
+                  <gramGrp>
+                     (<gram type="valency" value="transitive">tr.</gram>)
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>to choke</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="ācēocian.1.2">
+                  <gramGrp>
+                     (<gram type="valency" value="intransitive">intr.</gram>)
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>burn out</quote>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+         </entry> 
+         
+<!-- āfȳsan (intr.) to hasten: inspire with longing, Bl: (tr.) urge, impel, excite: drive away. [fūs] -->
+         <entry xml:id="āfȳsan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>āfȳsan</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/> 
+            </gramGrp>
+            <sense xml:id="āfȳsan.1">
+               <gramGrp>
+                  <gram type="valency" value="intransitive">(intr.)</gram>  
+               </gramGrp>
+               <sense xml:id="āfȳsan.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to hasten</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="āfȳsan.1.2">
+                  <gramGrp>
+                     <gram type="valency" value="intransitive"/>  
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>inspire with longing,</quote>
+                     <bibl type="attestation" source="#Bl">
+                        <title>Bl</title>
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark function="senseSeparator">:</metamark>
+            <sense xml:id="āfȳsan.2">
+               <gramGrp>
+                  <gram type="valency" value="transitive">(tr.)</gram>
+               </gramGrp>
+               <sense xml:id="āfȳsan.2.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>urge, impel, excite</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="āfȳsan.2.2">
+                  <gramGrp>
+                     <gram type="valency" value="transitive"/>
+                  </gramGrp>
+                  <cit type="translation" xml:lang="en">
+                     <quote>drive away</quote>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+            <xr type="related"><ref type="entry" target="#fūs">[fūs]</ref></xr>
+         </entry>    
+         
+         <!-- ǣht I. f. (rare in sg.) possessions, goods, lands, wealth, cattle, Mk; AO: ownership, control. [āgan: 'aught' sb.] II. = ōht -->
+         <entry xml:id="ǣht" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ǣht</orth>
+            </form>
+            <entry xml:id="ǣht_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <gramGrp>
+                  <gram type="pos" value="noun"/>
+                  <gram type="gender" value="feminine">f.</gram>
+               </gramGrp>
+               <lbl type="usage">(rare in</lbl>
+               <gramGrp>
+                  <gram type="number" value="singular">sg.</gram>)
+               </gramGrp>
+               <sense xml:id="ǣht_1.1">
+                  <sense xml:id="ǣht_1.1.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>possessions, goods, lands, wealth, cattle,</quote>
+                        <bibl type="attestation" source="#Mk">
+                           <title>Mk;</title>
+                        </bibl>
+                        <bibl type="attestation" source="#AO">
+                           <title>AO</title>
+                        </bibl>
+                     </cit>
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="ǣht_1.1.2">
+                     <cit type="translation" xml:lang="en">
+                        <quote>ownership, control</quote>
+                     </cit>
+                  </sense>
+               </sense>
+               <metamark>.</metamark>
+               <xr><ref type="entry" target="#āgan">[āgan:</ref></xr><xr type="related"><ref type="sense" target="#OED_aught">'aught'</ref></xr> 
+               <gramGrp><gram type="pos" value="substantive">sb.</gram>]</gramGrp> 
+            </entry>
+            <entry xml:id="ǣht_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl>
+               <xr type="related" expand="orthographic variant">
+                  <lbl>=</lbl>
+                  <ref target="#ōht" type="entry">ōht</ref>
+               </xr>
+            </entry>
+         </entry>
+
+<!-- ǣlc [ēlc, ylc (VPs); v. 'each'] I. (pron. subst.) any, all, every, each (one), Æ, AO, CP. ǣlc...ōðrum the one...the other. II. (adj. pron.) each, Lcd: any, CP. -->
+         <entry xml:id="ǣlc" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ǣlc</orth>
+            </form>
+            <form type="variant">
+               [<orth>ēlc</orth>,
+            </form>
+            <form type="variant">
+               <orth>ylc</orth>
+               <bibl type="attestation" source="#VPs">
+                  <title>(VPs);</title>
+               </bibl>
+            </form>
+            <xr type="related"><lbl norm="vide">v.</lbl> <ref type="sense" target="#OED_each">'each']</ref></xr> 
+            <entry xml:id="ǣlc_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <gramGrp>
+                  (<gram type="pos" value="pronoun">pron.</gram>
+                  <gram type="pos" value="substantive">subst.</gram>) 
+               </gramGrp>
+               <sense xml:id="ǣlc_1.1"> 
+                  <cit type="translation" xml:lang="en">
+                     <quote>any, all, every, each <gloss>(one)</gloss>,</quote>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#AO">
+                        <title>AO,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="ǣlc_ōðrum" type="relatedEntry" xml:lang="ang">
+               <form type="collocation">
+                  <orth>ǣlc...ōðrum</orth> 
+               </form>
+               <sense xml:id="ǣlc_ōðrum.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>the one...the other</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="ǣlc_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl>
+               <gramGrp>
+                  (<gram type="pos" value="adjective">adj.</gram>
+                  <gram type="pos" value="pronoun">pron.</gram>) 
+               </gramGrp>
+               <sense xml:id="ǣlc_2.1">
+                  <sense xml:id="ǣlc_2.1.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>each,</quote>
+                        <bibl type="attestation" source="#Lcd">
+                           <title>Lcd</title>
+                        </bibl>
+                     </cit>
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="ǣlc_2.1.2">
+                     <cit type="translation" xml:lang="en">
+                        <quote>any,</quote>
+                        <bibl type="attestation" source="#CP">
+                           <title>CP</title>
+                        </bibl>
+                     </cit>
+                  </sense>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+         </entry>
+
+<!-- æfesn, æfesen f. relish, dainty, special pasturage, pannage; the charge for special pasturage, LL. -->
+         <entry xml:id="æfesn" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>æfesn,</orth>
+            </form>
+            <form type="variant">
+               <orth>æfesen</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="feminine">f.</gram>
+            </gramGrp>
+            <sense xml:id="æfesn.1">
+               <sense xml:id="æfesn.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>relish, dainty, special pasturage, pannage</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">;</metamark>
+               <sense xml:id="æfesn.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>the charge for special pasturage,</quote>
+                     <bibl type="attestation" source="#LL">
+                        <title>LL</title>
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+
+<!-- ācennan to bring forth, produce, renew, Bo, WG; Æ: attribute to. ['akenne(d)'] --> 
+         <entry xml:id="ācennan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ācennan</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+            </gramGrp>
+            <sense xml:id="ācennan.1">
+               <sense xml:id="ācennan.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to bring forth, produce, renew,</quote>
+                     <bibl type="attestation" source="#Bo">
+                        <title>Bo,</title>
+                     </bibl>
+                     <bibl type="attestation" source="#WG">
+                        <title>WG;</title>
+                     </bibl>
+                     <bibl type="attestation" source="#Æ">
+                        <title>Æ</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="ācennan.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>attribute to</quote>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+            <xr type="related"><ref type="sense" target="#OED_akenne">['akenne(d)']</ref></xr> 
+         </entry>
+
+<!-- ādumbian to become dumb, keep silence, Mk; Æ. [v. 'dumb' vb.] -->
+         <entry xml:id="ādumbian" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ādumbian</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+            </gramGrp>
+            <sense xml:id="ādumbian.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>to become dumb, keep silence,</quote>
+                  <bibl type="attestation" source="#Mk">
+                     <title>Mk;</title>
+                  </bibl>
+                  <bibl type="attestation" source="#Æ">
+                     <title>Æ</title>
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+            <xr type="related"><lbl norm="vide">[v.</lbl> <ref type="sense" target="#OED_dumb">'dumb'</ref><gramGrp><gram type="pos" value="verb">vb.]</gram></gramGrp></xr>
+         </entry>
+
+<!-- ād-faru f. ds. -fære way or path to the funeral pile, B 3010. -->
+         <entry xml:id="ād-faru" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth type="segmented">
+                  <seg>ād</seg>
+                  <seg>-faru</seg>
+               </orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="feminine">f.</gram>
+            </gramGrp>
+            <form type="inflected">
+               <gramGrp>
+                  <gram type="case" value="dative">d</gram>
+                  <gram type="number" value="singular">s.</gram>
+               </gramGrp>
+               <orth type="segmented" extent="part" expand="ād-fære"><seg>-fære</seg></orth> 
+            </form>
+            <sense xml:id="ād-faru.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>way or path to the funeral pile,</quote>
+                  <bibl type="attestation" source="#B">
+                     <title>B</title>
+                     <citedRange unit="line">3010</citedRange>
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+
+<!-- æfreda m. what is taken or separated from, OEG (Napier). [æf; hreda (hreddan)]: tow, oakum (BT). -->
+         <entry xml:id="æfreda" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>æfreda</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="masculine">m.</gram>
+            </gramGrp>
+            <sense xml:id="æfreda.1">
+               <sense xml:id="æfreda.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>what is taken or separated from,</quote>
+                     <bibl type="attestation" source="#OEG">
+                        <title>OEG</title>
+                        <editor>(Napier)</editor> 
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+               <xr type="related"><ref type="entry" target="#æf"><lbl>[</lbl>æf;</ref><ref type="entry" target="#hreda">hreda</ref><ref type="entry" target="#hreddan">(hreddan)</ref><lbl>]</lbl></xr> 
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="æfreda.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>tow, oakum</quote>
+                     <bibl type="attestation" source="#BT">
+                        <title>(BT)</title>
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+
+<!-- ælmeslic charitable: depending on alms, poor, -līce, adv. charitably, OET. (Ct.) -->
+         <entry xml:id="ælmeslic" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ælmeslic</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="adjective"/>
+            </gramGrp>
+            <sense xml:id="ælmeslic.1">
+               <sense xml:id="ælmeslic.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>charitable</quote>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="ælmeslic.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>depending on alms, poor</quote>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>,</metamark>  
+            <entry xml:id="ælmeslīce" type="relatedEntry" xml:lang="ang">
+               <form type="lemma"> 
+                  <orth extent="part" expand="ælmeslīce"><seg>-līce</seg></orth>
+               </form>
+            <gramGrp>
+               <gram type="pos" value="adverb">adv.</gram>
+            </gramGrp>
+               <sense xml:id="ælmeslīce.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>charitably,</quote>
+                  <bibl type="attestation" source="#OET">
+                     <title>OET</title>
+                  </bibl>
+                  <metamark>.</metamark>
+                  <bibl type="attestation" source="#Ct">
+                     <title>(Ct.)</title>
+                  </bibl>
+               </cit>
+            </sense>
+            </entry>
+         </entry>
+
+<!-- ǣr- = I. early, former. II. intensitive prefix. -->
+         <entry xml:id="ǣr-" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth type="segmented"><seg>ǣr-</seg></orth> 
+            </form>
+            <entry xml:id="ǣr-_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <gramGrp>
+                  <gram type="pos" value="adjective"/>
+               </gramGrp>
+               <sense xml:id="ǣr-_1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>early, former</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="ǣr-_2" type="homonymicEntry" xml:lang="ang" n="II">
+                  <lbl type="homNum">II.</lbl>
+                  <lbl type="usage">intensitive prefix</lbl>
+                  <metamark>.</metamark>
+            </entry>
+         </entry>
+         
+         <!-- ǣre I. = ȳre. II. in comp. = -oared. --> 
+         <entry xml:id="ǣre" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ǣre</orth>
+            </form>
+            <entry xml:id="ǣre_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl>
+               <xr type="related" expand="orthographic variant">
+                  <lbl>=</lbl>
+                  <ref target="#ȳre" type="entry">ȳre</ref>
+               </xr>
+            </entry>
+            <metamark>.</metamark>
+            <entry xml:id="ǣre_2" type="homonymicEntry" xml:lang="ang" n="II">
+               <lbl type="homNum">II.</lbl>
+               <lbl type="usage" expand="in compounds">in comp.</lbl> 
+               <form type="variant">
+                  <orth extent="part">-oared</orth> 
+               </form>
+            </entry>
+            <metamark>.</metamark>
+         </entry>
+
+<!-- ærnan to 'run,' ride, gallop, BH: (+) to ride, run to, reach, gain by running or riding, AO: = +iernan --> 
+         <entry xml:id="ærnan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ærnan</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="verb"/>
+            </gramGrp>
+            <sense xml:id="ærnan.1">
+               <sense xml:id="ærnan.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>to <xr type="related"><ref type="sense" target="#OED_run">'run,'</ref></xr> ride, gallop,</quote>
+                     <bibl type="attestation" source="#BH">
+                        <title>BH</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="ærnan.1.2">
+                  <form type="variant">
+                     <orth extent="prefix" expand="ge-ærnan"><lbl expand="ge-">(+)</lbl></orth> 
+                  </form>
+                  <cit type="translation" xml:lang="en">
+                     <quote>to ride, run to, reach, gain by running or riding,</quote>
+                     <bibl type="attestation" source="#AO">
+                        <title>AO</title>
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark function="senseSeparator">:</metamark>  
+            <xr type="related" expand="orthographic variant">
+               <lbl>=</lbl>
+               <ref target="#ge-iernan" type="entry">+iernan</ref> 
+            </xr>
+         </entry>
+
+<!-- ǣspryng nf. spring, fountain, CP. [ēa]: departure, Creat 77. -->
+         <entry xml:id="ǣspryng" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>ǣspryng</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="gender" value="neuter, feminine">nf.</gram>
+            </gramGrp>
+            <sense xml:id="ǣspryng.1">
+               <sense xml:id="ǣspryng.1.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>spring, fountain,</quote>
+                     <bibl type="attestation" source="#CP">
+                        <title>CP</title>
+                     </bibl>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+               <xr type="related"><ref type="entry" target="#ēa"><lbl>[</lbl>ēa<lbl>]</lbl></ref></xr>
+               <metamark function="senseSeparator">:</metamark>
+               <sense xml:id="ǣspryng.1.2">
+                  <cit type="translation" xml:lang="en">
+                     <quote>departure,</quote>
+                     <bibl type="attestation" source="#Creat">
+                        <title>Creat</title>
+                        <citedRange unit="line">77</citedRange>
+                     </bibl>
+                  </cit>
+               </sense>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+
+      <!-- renmōd of venomous spirit, malignant (or? two words), GnE 163. --> 
+         <entry xml:id="renmōd" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>renmōd</orth>
+            </form>
+            <gramGrp>
+               <gram type="pos" value="adjective"/>
+            </gramGrp>
+            <sense xml:id="renmōd.1">
+               <cit type="translation" xml:lang="en">
+                  <quote>of venomous spirit, malignant</quote>
+                  <note>(or? two words)</note>
+                  <bibl type="attestation" source="#GnE">
+                     <title>GnE</title>
+                     <citedRange unit="line">163</citedRange> 
+                  </bibl>
+               </cit>
+            </sense>
+            <metamark>.</metamark>
+         </entry>
+      <!-- āgan I. (conj. Wt 546) to own, possess, have, obtain, An, Bo, Ma, Mt; AO, CP: give, give up, deliver, restore: have to pay, ‘owe,’ Mt, Lk: have to do, ANS 123·417. ā. ūt find out, discover.
+
+II. pret. 3 sg. of āginnan (onginnan). -->
+      
+         <entry xml:id="āgan" type="mainEntry" xml:lang="ang">
+            <form type="lemma">
+               <orth>āgan</orth>  
+            </form>
+            <entry xml:id="āgan_1" type="homonymicEntry" xml:lang="ang" n="I">
+               <lbl type="homNum">I.</lbl> 
+               <note>(conj. <ref type="bibliography" target="#Wt">Wt 546</ref>)</note>
+               <gramGrp>
+                  <gram type="pos" value="verb"/> 
+               </gramGrp> 
+               <sense xml:id="āgan_1.1"> 
+                  <sense xml:id="āgan_1.1.1">
+                     <cit type="translation" xml:lang="en">
+                        <quote>to own, possess, have, obtain,</quote>
+                        <bibl type="attestation" source="#An">
+                           <title>An,</title>
+                        </bibl>
+                        <bibl type="attestation" source="#Bo">
+                           <title>Bo,</title>
+                        </bibl>
+                        <bibl type="attestation" source="#Ma">
+                           <title>Ma,</title>
+                        </bibl>
+                        <bibl type="attestation" source="#Mt">
+                           <title>Mt;</title>
+                        </bibl>
+                        <bibl type="attestation" source="#AO">
+                           <title>AO,</title>
+                        </bibl>
+                        <bibl type="attestation" source="#CP">
+                           <title>CP</title>
+                        </bibl>
+                     </cit>        
+                  </sense> 
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="āgan_1.1.2">
+                     <cit type="translation" xml:lang="en">
+                        <quote>give, give up, deliver, restore</quote>
+                     </cit>
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="āgan_1.1.3">
+                     <cit type="translation" xml:lang="en">
+                        <quote>have to pay, <xr type="related"><ref type="sense" target="#OED_owe">'owe,'</ref></xr></quote>
+                        <bibl type="attestation" source="#MT">
+                           <title>MT,</title>
+                        </bibl>
+                        <bibl type="attestation" source="#LK">
+                           <title>LK</title>
+                        </bibl>
+                     </cit>
+                  </sense>
+                  <metamark function="senseSeparator">:</metamark>
+                  <sense xml:id="āgan_1.1.4">
+                     <cit type="translation" xml:lang="en">
+                        <quote>have to do</quote>
+                        <bibl type="attestation" source="#ANS">
+                           <title>ANS</title>
+                           <citedRange unit="folium">123·417</citedRange>
+                        </bibl>  
+                     </cit>           
+                  </sense>
+               </sense>
+               <metamark>.</metamark>
+            </entry>
+            <entry xml:id="āgan_ūt" type="relatedEntry" xml:lang="ang" >
+               <form type="collocation">                                     
+                  <orth> <ref type="oRef">ā.</ref>ūt</orth>               
+               </form>
+               <sense xml:id="āgan_ūt.1">
+                  <cit type="translation" xml:lang="en">
+                     <quote>find out, discover</quote>
+                  </cit>
+               </sense>
+               <metamark>.</metamark>
+            </entry>      
+            <entry xml:id="āgan_2" xml:lang="ang" type="homonymicEntry" n="II">
+               <lbl type="homNum">II.</lbl>  
+               <gramGrp>
+                  <gram type="pos" value="verb"/>
+                  <gram type="tense" value="past">pret.</gram>
+                  <gram type="person" value="third">3</gram>
+                  <gram type="number" value="singular">sg.</gram>
+               </gramGrp> 
+               <xr type="related" expand="inflected form">  
+                  <lbl>of </lbl>   
+                  <ref target="#āginnan" type="entry">āginnan</ref>
+                  <ref target="#onginnan" type="entry">(onginnan)</ref>                
+               </xr>
+            </entry>
+            <metamark>.</metamark>
+         </entry>
+   
+      </body>
+  </text>
+</TEI>
