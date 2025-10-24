@@ -1,0 +1,522 @@
+1) The working version of the parser grammr. For a version with better readability look at the second version of the grammar below. 
+
+?start: entry
+
+entry: headword ((preceding_content? main_content) | (etym? (poet_symb | ge_pref)* form* xr_section+)) subsequent_content?
+
+preceding_content: etym? gramgrp? (poet_symb | ge_pref | form )* gramgrp?
+main_content: hom_entry+ | sense_section+ | simple_xr
+subsequent_content: ((etym | biblref) metamark?)* sb? relatedentry* parenvidexr? editorcomm?
+
+hom_entry: ROM_NUM ( ((preceding_content? (simple_xr | sense_section+))|etym? (poet_symb | ge_pref)* form* xr_section+)|grambiblhom ) subsequent_content?
+
+sb: SUBST (preceding_content? (xr_section+ | sense_section+)) subsequent_content?
+
+relatedentry.4:  ((oneword gramgrp? | collocation| inflect_var (bibl|parenbibl|DOT_SEP)*) parenbibl?  ((poet_symb |  form)* sb | (((poet_symb | form)* xr_section+ | (poet_symb | gramgrp | form)* (simple_xr | sense_section+))) (sb|((etym | biblref) metamark?)*)) | adv_word etym? ) editorcomm?
+
+collocation: COLLOC | DOTSCOLLOC
+oneword: ONEWORD 
+!adv_word: ", "? "adv. " (" -"? WORD)  (DOT_SEP | sense_section |COMMA? (bibl|parenbibl))*
+
+
+!headword: ge_pref? WORD VERB_INFL_TYPE? qm? (bibl | parenbibl)? (gramgrp ", ")?
+
+form.4: (inflect_var |( orth_variant)|(inflect_var spell_var) | spell_var | orth_variant  )  (bibl | parenbibl | parenbibl COMMA)? qm? poet_symb?
+spell_var: SPELLVAR
+!orth_variant: (", "|"-") ge_pref? VARIANT+ spell_var? GEN? COMMA?| LP lbl? ge_pref? VARIANT+ GEN? bibl?  RP
+inflect_var.5: LP? COMMA? (lbl? infgramgrp ge_pref? INFVARIANT ((COMMA|SEMICOL_SEP) infgramgrp ge_pref? INFVARIANT)*) RP?
+
+grambiblhom: gramgrp bibl metamark | gramgrp // for cases like "II. adv. Æ."
+
+poet_symb: POET_SYMB
+sense_poet_symb: LP POET_SYMB RP | SNS_POET_SYMB
+ge_pref: LP? (GE_PREF | GE_OPT) RP?
+
+infgramgrp.12: ((lbl? tense person lbl? person? number lbl? number? lbl? pos?)|(lbl? case gen number)|(lbl? gen case number)|(lbl? case number gen )|(lbl? case gen)|(lbl? case number)|(lbl? tense number?)|(lbl? degree)|(lbl? singlecase))+
+gramgrp.10: (lbl? declension tense person number)|(lbl? mood tense number)|(lbl? tense number)+|(lbl? pos tense)+|(lbl? (pos degree)|(degree pos))+|(lbl? nodotgen number)+|(lbl? mood number)+|(lbl? gen)+|(lbl? pos VERB_INFL_TYPE)+ | (lbl? pos)+ |(lbl? number)+|(lbl? tense)+|(lbl? person)+|(lbl? mood)+|(lbl? degree)+|caseofsb|(lbl? declension)+|(lbl? valency)+|(lbl? singlecase)+
+gen: GEN
+nodotgen: NODOTGEN
+pos.3: POS
+case: lbl? CASE
+singlecase: SINGLECASE
+number: NUM
+tense: TNS
+person: PERS
+mood: MOOD
+degree: DGR
+caseofsb.5: CASE OF POS
+declension: DECL
+valency.10: VALEN+ parenbibl?
+lbl: LBL
+
+simple_xr: usglbl? parenbibl? reflbl (refword | refwords) parenxr? (parenbibl  | biblref | xrsense)? "."?
+xr_section.2: ( usglbl? parenbibl?  ((reflbl? gramgrp | reflbl? infgramgrp) OF)  (refword | refwords) parenxr? (parenbibl  | biblref | xrsense)? "."? ) | parenvidexr | equals_variant_xr
+reflbl: REFLBL
+refword: ge_pref? REFWORD  ("." | homref|gramref| (LP|COMMA) REFWORD )? COMMA? RP?
+refwords: ge_pref? REFNUMWORD | PREFSUFXR | ge_pref? REFWORD LBL ge_pref? REFWORD
+homref: HOMREF
+gramref: GRAMREF
+xrsense: cit (metamark | qm | (etym | biblref) metamark?) | oedref
+parenvidexr: LP (vide|compare) refword RP
+parenxr.6: PARENXR | LP gramgrp OF refword RP
+!equals_variant_xr: (REFLBL | "pp., ") ge_pref? VARIANT ((infgramgrp | gramgrp) OF) refword
+
+
+
+sense_section: firstsense othersenses*
+firstsense: (government | usage |sense_poet_symb |ge_pref |etym)* ( cit (metamark | qm |inflect_var| (etym | (biblref| biblref bibl|parenvidexr)) metamark?) | oedref)
+othersenses: (usage| sense_poet_symb |ge_pref| parenbibl| etym |gramgrp|government)* (cit (metamark | qm |inflect_var| (etym | biblref) metamark?) | oedref)
+
+cit: parenxr? quote (gramgrp | orth_variant | parenxr)* (qm? bibl | parenbibl)*
+quote: (TRANSLATION def_ref?|usage|gloss|qmsense|government)+
+bibl: (poet_symb |ge_pref)* author? (SOURCE | SOURCE_NUM | parenbibl)+  etc? sourcevar? msref?
+sourcevar: SRCVAR
+msref: MSREF
+parenbibl: LP ((poet_symb |ge_pref)* author? (SOURCE|SOURCE_NUM)+  etc? sourcevar? msref?) DOT_SEP? RP COMMA?
+oedref: OEDREF
+gloss: GLOSS
+qmsense: QMSENSE (SOURCE RP COMMA)?
+qm: QM (metamark | COMMA)? | lbl QM
+usage.7: (LP? ((usglbl gramgrp+)|(usglbl (WORD COMMA?)+ etc?)) RP?) | (LP USGPREP RP COMMA?)
+!government: LP? valency? usglbl+ (case ("pers."|"thing")?)+ (lbl valency)? (lbl WORD)? RP? COMMA?
+usglbl: USGLBL+
+author.5: AUTH
+etc: /(etc\.|_etc\._);?/
+def_ref: DEFREF
+
+metamark: COLON_SEP | semicolsep | DOT_SEP parenbibl?
+semicolsep: SEMICOL_SEP
+
+!etym: "[" ( (vide | compare)? qm? oldengword* (vide | compare)? (oedref |qm | gramgrp)* oldengword* langword* synonym* sqbr_dash_variant* biblref?) "]"
+vide: VIDE
+compare: COMPARE
+langword: LANG (WORD | COMMA WORD)+ SEMICOL_SEP? | LANG SEMICOL_SEP? | lbl LANG
+oldengword: WORD ROM_NUM? (bibl|parenbibl)? (COLON_SEP | SEMICOL_SEP)? COMMA?
+!biblref: ("(" vide bibl lbl? (oedref|bibl)? ")") | vide bibl
+synonym: reflbl SYN qm? parenbibl?
+!sqbr_dash_variant: "= " SQBRDASHVAR qm? parenbibl?
+
+editorcomm: EDCOMM
+
+COLON_SEP: /:/
+SEMICOL_SEP: /;/
+DOT_SEP: /\./
+COMMA: /,/
+QM: /\?|\(\?\)/
+LP:/\(/
+RP:/\)/
+
+ROM_NUM: /\s?[IV]{1,4}\./
+
+COLLOC.5: /((?<=\.\s)(?![IV]{1,4}\.)([+±āæÆǣēīōðȳūüA-Za-z\.]+([+±āæÆǣēīōðȳūüA-Za-z\.\)\()]+)?,\s)?[+±āæÆǣēīōðȳūüA-Za-z\.]+([+±āæÆǣēīōðȳūüA-Za-z\.\)\()]+)?(?!\spp\.\s)(\s[+±āæÆǣēīōðȳūüa-z\.]+([+±āæÆǣēīōðȳūüa-z\.\)\()]+)?){1,3}(;\s([+±āæÆǣēīōðȳūüa-z\.]+([+±āæÆǣēīōðȳūüa-z\.\)\()]+)?,\s)?[+±āæÆǣēīōðȳūüa-z\.]+([+±āæÆǣēīōðȳūüa-z\.\)\()]+)?(\s[+±āæÆǣēīōðȳūüa-z\.]+([+±āæÆǣēīōðȳūüa-z\.\)\()]+)?){1,3})*(?!as\ssb\.|[IV]{1,4}\.))|((?<=\.'\s)(?![IV]{1,4}\.|as\ssb\.|[a-z]\.\s[a-z]\.\s)([+±āæÆǣēīōðȳūüa-zA-Z\.]+,\s)?[+±āæÆǣēīōðȳūüa-zA-Z\.]+(\s[+±āæÆǣēīōðȳūüa-zA-Z\.]+){1,2}(?!as\ssb\.|[IV]{1,4}\.))/
+DOTSCOLLOC.6: /(([+±āæÆǣēīōðȳūüa-zA-Z\.]+\s)|([+±āæÆǣēīōðȳūüa-zA-Z\]+\([+±āæÆǣēīōðȳūüa-zA-Z\]+\)[+±āæÆǣēīōðȳūüa-zA-Z\.]+\s))?[+±āæÆǣēīōðȳūüa-zA-Z]+\.\.\.[+±āæÆǣēīōðȳūüa-zA-Z]+(?!as\ssb\.|[IV]{1,4}\.)/
+ONEWORD: /((?<=\.\s)(?![IV]{1,4}\.|as\ssb\.)[-+±āæÆǣēīōðȳūüa-zA-Z][+±āæÆǣēīōðȳūüa-zA-Z]+)|((?<=\.'\s)(?![IV]{1,4}\.|as\ssb\.)[+±āæÆǣēīōðȳūüa-zA-Z][+±āæÆǣēīōðȳūüa-zA-Z]+)/
+
+WORD: /(?!as\ssb\.|[IV]{1,4}\.)[āäæÐÆǣēīōöðȳūüa-zA-Z\-\*\(\)]+/
+
+POET_SYMB: /[†‡],?(?=\s)|[†‡],?(?=([#_]?[ÆA-Z]))/
+SNS_POET_SYMB: /[†‡](?=_)|\([†‡]\)/
+GE_PREF: /(?!as\ssb\.|[IV]{1,4}\.)\+/
+GE_OPT: /(?!as\ssb\.|[IV]{1,4}\.)±/
+
+SUBST.20: /(?<=(\.\s|:\s|;\s))\(?(used\s)?(as\s)?sb\.\)?\s?=?/
+
+
+VARIANT: /(?<!\.\s)\??(=\s)?[-*āæǣēīōœ̄ðȳūüa-z]+[)(-āæǣēīōðȳūüa-z]*[-āæǣēīōðȳūüa-z)]+[?,;]?/
+INFVARIANT: /(?<=(\.\s|,\s))(=\s)?(?!(?:often|rare|only|in|and|or|also|from|but)\b)[-āæǣēīōœ̄ðȳūüa-z]+[)(-āæǣēīōðȳūüa-z]+[-āæǣēīōðȳūüa-z]+(,\s(?!(pret|pres|sg|pl|sing|imperat|subj|impers)\b)[-āæǣēīōœ̄ðȳūüa-z]+[)(-āæǣēīōðȳūüa-z]+[-āæǣēīōðȳūüa-z]+)*\??/
+SPELLVAR: /\s\(((=\s)?(?!(sv\^)\b)[āæǣēīōœ̄ðȳūüa-z-]{1,6}(\^[0-5]{1})?\??)((,|;)\s([āæǣēœ̄īōðȳūüa-z-]{1,4}(\^[0-5]{1})?))*\??\)/
+
+GEN: /\(?[mnf]{1,3}[.?]{1,2}\)?\s?/
+NODOTGEN.1:/[mnf]{1,3}/
+POS: /\(?(interj\.|interrog\.\sparticle|accented\sverbal\sprefix|subst\.|sv\.|wv\.|\bsv\b|\bwv\b|sb\.|vb\.|anv\.|swv\.|adj\.|adv\.|prep\.|pron\.|ptc\.|pp\.|num\.|conj\.),?\)?\s?/
+VERB_INFL_TYPE: /\^[0-9]\)?/
+CASE.2:/(?!and|in)([nagdi]{1,2}\.?|[agdi]{1,2}(?!f\.\s|m\.\s))[;,]?\s?/
+SINGLECASE: /dat\.|gen\./
+NUM:/(sbpl\.|sg\.|sing\.|pl\.|(?<!\s)[sp]\.?)\,?\s?/
+TNS:/(pret\.|pres\.),?\s?/
+PERS:/[1-3]\.?,?\s?/
+MOOD: /(ind\.|imperat\.|subj\.),?\s?/
+DGR: /\(?(comp\.|sup\.|superl\.)\)?,?\s?/
+DECL.5: /\(?(indecl\.|strong|wk\.)\)? | [sw](?=(f|m|n))/
+VALEN: /\(?(tr\.|intr\.|refl\.|pers\.\sand\simpers\.|impers\.|pers\.|tr\.\sintr\.)\)?,?\s?/
+OF: /of/
+OR: /_or_/
+LBL.5: /(and|or|also|from|but)(?=\s)/
+USGLBL.10: /(occl\.|often|rare|only|in|but\susu\.|usu\.|rarely|esp\.|w\.\s?|used\sas)(?=\s)/
+USGPREP: /æt|on|of|tō|fram|be|wið/
+
+REFLBL: /==|=|v\.\salso|v\.|\?=/
+REFWORD: /(?!as\ssb\.|[IV]{1,4}\.)[A-ZāæÐÆǣēīōðȳūüa-z-*?]+([āæÐÆǣēīōðȳūüa-z-*?)()]+[āæÐÆǣēīōðȳūüa-z-*?]+)?/
+REFNUMWORD: /(\([1-3]\)\s_?[āæÆǣēīōðȳūüa-zA-Z\-\^0-9\*]+_?)(,|;|(\s([IV]{1,4}\.,?;?)))\s(\([1-3]\)\s(?!pret\.|pres\.)[+±āæÆǣēīōðȳūüa-zA-Z\-\^0-9\*]+(,|;|(\s([IV]{1,4}\.,?;?)))*\s?)*\.?/
+HOMREF: /(?<!\.\s)[IV]{1,4}\.(\sand\s[IV]{1,4}\.)?/
+GRAMREF: /\(?(interj\.|interrog\.\sparticle|accented\sverbal\sprefix|subst\.|sv\.|sb\.|vb\.|anv\.|swv\.|adj\.|adv\.|prep\.|pron\.|ptc\.|pp\.|num\.|conj\.),?\)?\s?/
+PREFSUFXR: /[āæǣēīōðȳūüa-z\(\)-]+(,\s[āæǣēīōðȳūüa-z\(\)-]+)+[?!.]?/
+
+TRANSLATION.1: /'?(_|\(_|_\()'?.*?_[',!]*/
+GLOSS.3: /(((?<=_\s)\((i\.e\.\s)?['a-z-.0-9A-Z]+(\s[?a-z-.0-9A-Z]+)*\),?)|(\(['a-z-.0-9A-Z]+(\s[?a-z-.0-9A-Z]+)*\)(?=\s_)),?)|\(gram\.\)/
+QMSENSE: /\(.*?\?.*?_.*?_\),?|\(_.*?_\s?\?\s?\)?,?/
+DEFREF: /(?!as\ssb\.|[IV]{1,4}\.)[āäæÐÆǣēīōöðȳūüa-z\-\*\(\)]+,?/
+
+SOURCE.5: /[#_]?[ÆA-Z][A-Za-z]{,4}[#_]?[,;?]?\s?/
+SOURCE_NUM: /((([0-9·^´#]+)[a-z]?(\s\([0-9]+\)[a-z]?)?[,;]?)|(\(([0-9·^´,#]+)[a-z]?(\s\([0-9]+\)[a-z]?)?[,;]?\)))(\[0-9a-z]+\])?/
+SRCVAR: /(?<=\s)\([-āæǣēīōðȳūüa-z]{1,6}(\^[0-9])?\)[,;?]?/
+MSREF: /\([A-Z][a-z]+\.\s([A-Za-z]\s)*([xiv]{1,4})\)/
+AUTH: /\((Tupper)\)/
+
+OEDREF: /\s?'_.*?_(\^[0-9])?[.,]?';?\s?/
+VIDE: /v\.\salso|v\.\s|V\.\s/
+COMPARE: /cp\./
+LANG: /_[A-Z][A-Za-z]*\._\s?/
+PARENXR.2: /\(\??=\s[+±āæÆǣēīōðȳūüa-zA-Z*\?_]{4,}(\)|;?\s[ÆA-Za-z]*\s[\^0-9·•]*\)),?/
+SYN: /(?!as\ssb\.|[IV]{1,4}\.)[āäæÐÆǣēīōöðȳūüa-zA-Z\*\(\)]+/
+SQBRDASHVAR: /-[āäæÐÆǣēīōöðȳūüa-zA-Z\*\(\)]+|[āäæÐÆǣēīōöðȳūüa-zA-Z\*\(\)]+-/
+
+EDCOMM: /\[\[.*?\]\]/
+
+%ignore " "
+%import common.NEWLINE
+%ignore NEWLINE 
+
+---------------------------------------------------------------------------------------------------
+2) This version is formatted for better readability and is only for viewing, it doesn't actually work.
+
+?start: entry
+
+entry:
+  headword
+  (
+    (preceding_content? main_content)
+    |
+    (etym? (poet_symb | ge_pref)* form* xr_section+)
+  )
+  subsequent_content?
+
+preceding_content:
+  etym? gramgrp? (poet_symb | ge_pref | form )* gramgrp?
+
+main_content:
+  hom_entry+
+  | sense_section+
+  | simple_xr
+
+subsequent_content:
+  ((etym | biblref) metamark?)* sb? relatedentry* parenvidexr? editorcomm?
+
+hom_entry:
+  ROM_NUM
+  (
+    (
+      (preceding_content? (simple_xr | sense_section+))
+      |
+      etym? (poet_symb | ge_pref)* form* xr_section+
+    )
+    |
+    grambiblhom
+  )
+  subsequent_content?
+
+sb:
+  SUBST (preceding_content? (xr_section+ | sense_section+)) subsequent_content?
+
+relatedentry.4:
+  (
+    (
+      (oneword gramgrp? | collocation | inflect_var (bibl | parenbibl | DOT_SEP)*)
+      parenbibl?
+      (
+        ( (poet_symb | form)* sb )
+        |
+        (
+          (
+            (poet_symb | form)* xr_section+
+            |
+            (poet_symb | gramgrp | form)* (simple_xr | sense_section+)
+          )
+          ( sb | ((etym | biblref) metamark?)* )
+        )
+      )
+    )
+    |
+    adv_word etym?
+  )
+  editorcomm?
+
+collocation: COLLOC | DOTSCOLLOC
+oneword: ONEWORD
+
+!adv_word:
+  ", "? "adv. " (" -"? WORD)
+  (DOT_SEP | sense_section | COMMA? (bibl | parenbibl))*
+
+!headword:
+  ge_pref? WORD VERB_INFL_TYPE? qm? (bibl | parenbibl)? (gramgrp ", ")?
+
+form.4:
+  (
+    inflect_var
+    | (inflect_var spell_var)
+    | spell_var
+    | orth_variant
+  )
+  (bibl | parenbibl | parenbibl COMMA)? qm? poet_symb?
+
+spell_var: SPELLVAR
+
+!orth_variant:
+  (", " | "-") ge_pref? VARIANT+ spell_var? GEN? COMMA?
+  | LP lbl? ge_pref? VARIANT+ GEN? bibl? RP
+
+inflect_var.5:
+  LP? COMMA?
+  (lbl? infgramgrp ge_pref? INFVARIANT ((COMMA | SEMICOL_SEP) infgramgrp ge_pref? INFVARIANT)*)
+  RP?
+
+grambiblhom:
+  gramgrp bibl metamark
+  | gramgrp  // for cases like "II. adv. Æ."
+
+poet_symb: POET_SYMB
+sense_poet_symb: LP POET_SYMB RP | SNS_POET_SYMB
+ge_pref: LP? (GE_PREF | GE_OPT) RP?
+
+infgramgrp.12:
+  (
+    (lbl? tense person lbl? person? number lbl? number? lbl? pos?)
+    | (lbl? case gen number)
+    | (lbl? gen case number)
+    | (lbl? case number gen)
+    | (lbl? case gen)
+    | (lbl? case number)
+    | (lbl? tense number?)
+    | (lbl? degree)
+    | (lbl? singlecase)
+  )+
+
+gramgrp.10:
+  (lbl? declension tense person number)
+  | (lbl? mood tense number)
+  | (lbl? tense number)+
+  | (lbl? pos tense)+
+  | (lbl? (pos degree) | (degree pos))+
+  | (lbl? nodotgen number)+
+  | (lbl? mood number)+
+  | (lbl? gen)+
+  | (lbl? pos VERB_INFL_TYPE)+
+  | (lbl? pos)+
+  | (lbl? number)+
+  | (lbl? tense)+
+  | (lbl? person)+
+  | (lbl? mood)+
+  | (lbl? degree)+
+  | caseofsb
+  | (lbl? declension)+
+  | (lbl? valency)+
+  | (lbl? singlecase)+
+
+gen: GEN
+nodotgen: NODOTGEN
+pos.3: POS
+case: lbl? CASE
+singlecase: SINGLECASE
+number: NUM
+tense: TNS
+person: PERS
+mood: MOOD
+degree: DGR
+caseofsb.5: CASE OF POS
+declension: DECL
+valency.10: VALEN+ parenbibl?
+lbl: LBL
+
+simple_xr:
+  usglbl? parenbibl? reflbl (refword | refwords) parenxr?
+  (parenbibl | biblref | xrsense)? "."?
+
+xr_section.2:
+  (
+    usglbl? parenbibl?
+    (
+      (reflbl? gramgrp | reflbl? infgramgrp) OF
+    )
+    (refword | refwords) parenxr? (parenbibl | biblref | xrsense)? "."?
+  )
+  | parenvidexr
+  | equals_variant_xr
+
+reflbl: REFLBL
+
+refword:
+  ge_pref? REFWORD
+  ("." | homref | gramref | (LP | COMMA) REFWORD)? COMMA? RP?
+
+refwords:
+  ge_pref? REFNUMWORD
+  | PREFSUFXR
+  | ge_pref? REFWORD LBL ge_pref? REFWORD
+
+homref: HOMREF
+gramref: GRAMREF
+xrsense: cit (metamark | qm | (etym | biblref) metamark?) | oedref
+parenvidexr: LP (vide | compare) refword RP
+parenxr.6: PARENXR | LP gramgrp OF refword RP
+
+!equals_variant_xr:
+  (REFLBL | "pp., ") ge_pref? VARIANT ((infgramgrp | gramgrp) OF) refword
+
+sense_section:
+  firstsense othersenses*
+
+firstsense:
+  (government | usage | sense_poet_symb | ge_pref | etym)*
+  (cit (metamark | qm | inflect_var | (etym | (biblref | biblref bibl | parenvidexr)) metamark?) | oedref)
+
+othersenses:
+  (usage | sense_poet_symb | ge_pref | parenbibl | etym | gramgrp | government)*
+  (cit (metamark | qm | inflect_var | (etym | biblref) metamark?) | oedref)
+
+cit:
+  parenxr? quote (gramgrp | orth_variant | parenxr)* (qm? bibl | parenbibl)*
+
+quote:
+  (TRANSLATION def_ref? | usage | gloss | qmsense | government)+
+
+bibl:
+  (poet_symb | ge_pref)* author? (SOURCE | SOURCE_NUM | parenbibl)+ etc? sourcevar? msref?
+
+sourcevar: SRCVAR
+msref: MSREF
+
+parenbibl:
+  LP ((poet_symb | ge_pref)* author? (SOURCE | SOURCE_NUM)+ etc? sourcevar? msref?) DOT_SEP? RP COMMA?
+
+oedref: OEDREF
+gloss: GLOSS
+qmsense: QMSENSE (SOURCE RP COMMA)?
+qm: QM (metamark | COMMA)? | lbl QM
+
+usage.7:
+  (LP? ((usglbl gramgrp+) | (usglbl (WORD COMMA?)+ etc?)) RP?)
+  | (LP USGPREP RP COMMA?)
+
+!government:
+  LP? valency? usglbl+ (case ("pers." | "thing")?)+ (lbl valency)?
+  (lbl WORD)? RP? COMMA?
+
+usglbl: USGLBL+
+author.5: AUTH
+etc: /(etc\.|_etc\._);?/
+def_ref: DEFREF
+
+metamark: COLON_SEP | semicolsep | DOT_SEP parenbibl?
+semicolsep: SEMICOL_SEP
+
+!etym:
+  "["
+  (
+    (vide | compare)? qm? oldengword*
+    (vide | compare)?
+    (oedref | qm | gramgrp)* oldengword* langword* synonym*
+    sqbr_dash_variant* biblref?
+  )
+  "]"
+
+vide: VIDE
+compare: COMPARE
+
+langword:
+  LANG (WORD | COMMA WORD)+ SEMICOL_SEP?
+  | LANG SEMICOL_SEP?
+  | lbl LANG
+
+oldengword:
+  WORD ROM_NUM? (bibl | parenbibl)? (COLON_SEP | SEMICOL_SEP)? COMMA?
+
+!biblref:
+  ("(" vide bibl lbl? (oedref | bibl)? ")") | vide bibl
+
+synonym:
+  reflbl SYN qm? parenbibl?
+
+!sqbr_dash_variant:
+  "= " SQBRDASHVAR qm? parenbibl?
+
+editorcomm: EDCOMM
+
+COLON_SEP: /:/
+SEMICOL_SEP: /;/
+DOT_SEP: /\./
+COMMA: /,/
+QM: /\?|\(\?\)/
+LP: /\(/
+RP: /\)/
+
+ROM_NUM: /\s?[IV]{1,4}\./
+
+COLLOC.5: /((?<=\.\s)(?![IV]{1,4}\.)([+±āæÆǣēīōðȳūüA-Za-z\.]+([+±āæÆǣēīōðȳūüA-Za-z\.\)\()]+)?,\s)?[+±āæÆǣēīōðȳūüA-Za-z\.]+([+±āæÆǣēīōðȳūüA-Za-z\.\)\()]+)?(?!\spp\.\s)(\s[+±āæÆǣēīōðȳūüa-z\.]+([+±āæÆǣēīōðȳūüa-z\.\)\()]+)?){1,3}(;\s([+±āæÆǣēīōðȳūüa-z\.]+([+±āæÆǣēīōðȳūüa-z\.\)\()]+)?,\s)?[+±āæÆǣēīōðȳūüa-z\.]+([+±āæÆǣēīōðȳūüa-z\.\)\()]+)?(\s[+±āæÆǣēīōðȳūüa-z\.]+([+±āæÆǣēīōðȳūüa-z\.\)\()]+)?){1,3})*(?!as\ssb\.|[IV]{1,4}\.))|((?<=\.'\s)(?![IV]{1,4}\.|as\ssb\.|[a-z]\.\s[a-z]\.\s)([+±āæÆǣēīōðȳūüa-zA-Z\.]+,\s)?[+±āæÆǣēīōðȳūüa-zA-Z\.]+(\s[+±āæÆǣēīōðȳūüa-zA-Z\.]+){1,2}(?!as\ssb\.|[IV]{1,4}\.))/
+DOTSCOLLOC.6: /(([+±āæÆǣēīōðȳūüa-zA-Z\.]+\s)|([+±āæÆǣēīōðȳūüa-zA-Z\]+\([+±āæÆǣēīōðȳūüa-zA-Z\]+\)[+±āæÆǣēīōðȳūüa-zA-Z\.]+\s))?[+±āæÆǣēīōðȳūüa-zA-Z]+\.\.\.[+±āæÆǣēīōðȳūüa-zA-Z]+(?!as\ssb\.|[IV]{1,4}\.)/
+ONEWORD: /((?<=\.\s)(?![IV]{1,4}\.|as\ssb\.)[-+±āæÆǣēīōðȳūüa-zA-Z][+±āæÆǣēīōðȳūüa-zA-Z]+)|((?<=\.'\s)(?![IV]{1,4}\.|as\ssb\.)[+±āæÆǣēīōðȳūüa-zA-Z][+±āæÆǣēīōðȳūüa-zA-Z]+)/
+
+WORD: /(?!as\ssb\.|[IV]{1,4}\.)[āäæÐÆǣēīōöðȳūüa-zA-Z\-\*\(\)]+/
+
+POET_SYMB: /[†‡],?(?=\s)|[†‡],?(?=([#_]?[ÆA-Z]))/
+SNS_POET_SYMB: /[†‡](?=_)|\([†‡]\)/
+GE_PREF: /(?!as\ssb\.|[IV]{1,4}\.)\+/
+GE_OPT: /(?!as\ssb\.|[IV]{1,4}\.)±/
+
+SUBST.20: /(?<=(\.\s|:\s|;\s))\(?(used\s)?(as\s)?sb\.\)?\s?=?/
+
+VARIANT: /(?<!\.\s)\??(=\s)?[-*āæǣēīōœ̄ðȳūüa-z]+[)(-āæǣēīōðȳūüa-z]*[-āæǣēīōðȳūüa-z)]+[?,;]?/
+INFVARIANT: /(?<=(\.\s|,\s))(=\s)?(?!(?:often|rare|only|in|and|or|also|from|but)\b)[-āæǣēīōœ̄ðȳūüa-z]+[)(-āæǣēīōðȳūüa-z]+[-āæǣēīōðȳūüa-z]+(,\s(?!(pret|pres|sg|pl|sing|imperat|subj|impers)\b)[-āæǣēīōœ̄ðȳūüa-z]+[)(-āæǣēīōðȳūüa-z]+[-āæǣēīōðȳūüa-z]+)*\??/
+SPELLVAR: /\s\(((=\s)?(?!(sv\^)\b)[āæǣēīōœ̄ðȳūüa-z-]{1,6}(\^[0-5]{1})?\??)((,|;)\s([āæǣēœ̄īōðȳūüa-z-]{1,4}(\^[0-5]{1})?))*\??\)/
+
+GEN: /\(?[mnf]{1,3}[.?]{1,2}\)?\s?/
+NODOTGEN.1: /[mnf]{1,3}/
+POS: /\(?(interj\.|interrog\.\sparticle|accented\sverbal\sprefix|subst\.|sv\.|wv\.|\bsv\b|\bwv\b|sb\.|vb\.|anv\.|swv\.|adj\.|adv\.|prep\.|pron\.|ptc\.|pp\.|num\.|conj\.),?\)?\s?/
+VERB_INFL_TYPE: /\^[0-9]\)?/
+CASE.2: /(?!and|in)([nagdi]{1,2}\.?|[agdi]{1,2}(?!f\.\s|m\.\s))[;,]?\s?/
+SINGLECASE: /dat\.|gen\./
+NUM: /(sbpl\.|sg\.|sing\.|pl\.|(?<!\s)[sp]\.?)\,?\s?/
+TNS: /(pret\.|pres\.),?\s?/
+PERS: /[1-3]\.?,?\s?/
+MOOD: /(ind\.|imperat\.|subj\.),?\s?/
+DGR: /\(?(comp\.|sup\.|superl\.)\)?,?\s?/
+DECL.5: /\(?(indecl\.|strong|wk\.)\)? | [sw](?=(f|m|n))/
+VALEN: /\(?(tr\.|intr\.|refl\.|pers\.\sand\simpers\.|impers\.|pers\.|tr\.\sintr\.)\)?,?\s?/
+OF: /of/
+OR: /_or_/
+LBL.5: /(and|or|also|from|but)(?=\s)/
+USGLBL.10: /(occl\.|often|rare|only|in|but\susu\.|usu\.|rarely|esp\.|w\.\s?|used\sas)(?=\s)/
+USGPREP: /æt|on|of|tō|fram|be|wið/
+
+REFLBL: /==|=|v\.\salso|v\.|\?=/
+REFWORD: /(?!as\ssb\.|[IV]{1,4}\.)[A-ZāæÐÆǣēīōðȳūüa-z-*?]+([āæÐÆǣēīōðȳūüa-z-*?)()]+[āæÐÆǣēīōðȳūüa-z-*?]+)?/
+REFNUMWORD: /(\([1-3]\)\s_?[āæÆǣēīōðȳūüa-zA-Z\-\^0-9\*]+_?)(,|;|(\s([IV]{1,4}\.,?;?)))\s(\([1-3]\)\s(?!pret\.|pres\.)[+±āæÆǣēīōðȳūüa-zA-Z\-\^0-9\*]+(,|;|(\s([IV]{1,4}\.,?;?)))*\s?)*\.?/
+HOMREF: /(?<!\.\s)[IV]{1,4}\.(\sand\s[IV]{1,4}\.)?/
+GRAMREF: /\(?(interj\.|interrog\.\sparticle|accented\sverbal\sprefix|subst\.|sv\.|sb\.|vb\.|anv\.|swv\.|adj\.|adv\.|prep\.|pron\.|ptc\.|pp\.|num\.|conj\.),?\)?\s?/
+PREFSUFXR: /[āæǣēīōðȳūüa-z\(\)-]+(,\s[āæǣēīōðȳūüa-z\(\)-]+)+[?!.]?/
+
+TRANSLATION.1: /'?(_|\(_|_\()'?.*?_[',!]*/
+GLOSS.3: /(((?<=_\s)\((i\.e\.\s)?['a-z-.0-9A-Z]+(\s[?a-z-.0-9A-Z]+)*\),?)|(\(['a-z-.0-9A-Z]+(\s[?a-z-.0-9A-Z]+)*\)(?=\s_)),?)|\(gram\.\)/
+QMSENSE: /\(.*?\?.*?_.*?_\),?|\(_.*?_\s?\?\s?\)?,?/
+DEFREF: /(?!as\ssb\.|[IV]{1,4}\.)[āäæÐÆǣēīōöðȳūüa-z\-\*\(\)]+,?/
+
+SOURCE.5: /[#_]?[ÆA-Z][A-Za-z]{,4}#[#_]?[,;?]?\s?/
+SOURCE_NUM: /((([0-9·^´#]+)[a-z]?(\s\([0-9]+\)[a-z]?)?[,;]?)|(\(([0-9·^´,#]+)[a-z]?(\s\([0-9]+\)[a-z]?)?[,;]?\)))(\[0-9a-z]+\])?/
+SRCVAR: /(?<=\s)\([-āæǣēīōðȳūüa-z]{1,6}(\^[0-9])?\)[,;?]?/
+MSREF: /\([A-Z][a-z]+\.\s([A-Za-z]\s)*([xiv]{1,4})\)/
+AUTH: /\((Tupper)\)/
+
+OEDREF: /\s?'_.*?_(\^[0-9])?[.,]?';?\s?/
+VIDE: /v\.\salso|v\.\s|V\.\s/
+COMPARE: /cp\./
+LANG: /_[A-Z][A-Za-z]*\._\s?/
+PARENXR.2: /\(\??=\s[+±āæÆǣēīōðȳūüa-zA-Z*\?_]{4,}(\)|;?\s[ÆA-Za-z]*\s[\^0-9·•]*\)),?/
+SYN: /(?!as\ssb\.|[IV]{1,4}\.)[āäæÐÆǣēīōöðȳūüa-zA-Z\*\(\)]+/
+SQBRDASHVAR: /-[āäæÐÆǣēīōöðȳūüa-zA-Z\*\(\)]+|[āäæÐÆǣēīōöðȳūüa-zA-Z\*\(\)]+-/
+
+EDCOMM: /\[\[.*?\]\]/
+
+%ignore " "
+%import common.NEWLINE
+%ignore NEWLINE
+
