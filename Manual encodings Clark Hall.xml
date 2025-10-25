@@ -3,6 +3,7 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/DARIAH-ERIC/lexicalresources/master/Schemas/TEILex0/out/TEILex0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" type="lex-0">
+   <!-- Metadata was removed for anonymity -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -44,14 +45,14 @@
 II. to beat against the wind? Bo 144^31. [ON. beita]
 
 III. to furnish with a bit or bridle, saddle, curb. -->
-         <entry xml:id="bǣtan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="bǣtan" resource=":bǣtan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>bǣtan</orth>
             </form>
             <gramGrp>
                <gram type="pos" value="verb"/>                                    
             </gramGrp>
-            <entry xml:id="bǣtan_1" type="homonymicEntry" xml:lang="ang" n="I">             
+            <entry xml:id="bǣtan_1" resource=":bǣtan_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">             
                 <lbl type="homNum">I.</lbl>
                <sense xml:id="bǣtan_1.1">
                   <sense xml:id="bǣtan_1.1.1">
@@ -78,7 +79,7 @@ III. to furnish with a bit or bridle, saddle, curb. -->
                   </sense>               
                </sense>
             </entry>
-            <entry xml:id="bǣtan_2" type="homonymicEntry" xml:lang="ang" n="II">          
+            <entry xml:id="bǣtan_2" resource=":bǣtan_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">          
                 <lbl type="homNum">II.</lbl> 
                <sense xml:id="bǣtan_2.1">
                <cit type="translation" xml:lang="en">
@@ -93,7 +94,7 @@ III. to furnish with a bit or bridle, saddle, curb. -->
                   <etym>[<lang value="non" expand="Old Norse">ON.</lang><mentioned>beita</mentioned>]</etym> 
                </sense>
             </entry>
-            <entry xml:id="bǣtan_3" type="homonymicEntry" xml:lang="ang" n="III">
+            <entry xml:id="bǣtan_3" resource=":bǣtan_3_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="III">
                <lbl type="homNum">III.</lbl> 
                <sense xml:id="bǣtan_3.1">
                   <cit type="translation" xml:lang="en">
@@ -104,7 +105,7 @@ III. to furnish with a bit or bridle, saddle, curb. -->
          </entry>
          
 <!-- +bǣte, +bǣtel n. bit, bridle pl. trappings, BH. -->         
-         <entry xml:id="bǣte" type="mainEntry" xml:lang="ang">
+         <entry xml:id="bǣte" resource=":bǣte_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth extent="full" expand="ge-bǣte"><lbl expand="ge-">+</lbl><seg>bǣte</seg></orth>,
             </form>                    
@@ -140,11 +141,11 @@ III. to furnish with a bit or bridle, saddle, curb. -->
 II. adv. at all, by any means. tō āhte at all.
 
 III. good, of value, Æ. -->
-         <entry xml:id="āwiht" type="mainEntry" xml:lang="ang">
+         <entry xml:id="āwiht" resource=":āwiht_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>āwiht</orth>  
             </form>
-            <entry xml:id="āwiht_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="āwiht_1" resource=":āwiht_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                 <lbl type="homNum">I.</lbl> 
                <gramGrp>
                   <gram type="pos" value="noun"/>
@@ -160,7 +161,7 @@ III. good, of value, Æ. -->
                </sense>
               <metamark>.</metamark>
             </entry>
-            <entry xml:id="āwiht_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="āwiht_2" resource=":āwiht_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl> 
                <gramGrp>
                   <gram type="pos" value="adverb">adv.</gram> 
@@ -171,7 +172,7 @@ III. good, of value, Æ. -->
                   </cit>            
                </sense>
             </entry>
-            <entry xml:id="tō_āhte" type="relatedEntry" xml:lang="ang"> 
+            <entry xml:id="tō_āhte" resource=":tō_āhte_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang"> 
                <form type="collocation">
                   <orth> tō āhte </orth>  
                </form>
@@ -182,7 +183,7 @@ III. good, of value, Æ. -->
                   </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="āwiht_3" type="homonymicEntry" xml:lang="ang" n="III">
+            <entry xml:id="āwiht_3" resource=":āwiht_3_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="III">
                 <lbl type="homNum">III.</lbl> 
                <gramGrp>
                   <gram type="pos" value="adjective"/>
@@ -200,7 +201,7 @@ III. good, of value, Æ. -->
          </entry>
          
 <!-- cafortūn (æ, ea1, e2) m. vestibule, court, court-yard, Æ: hall, residence, Æ. -->
-         <entry xml:id="cafortūn" type="mainEntry" xml:lang="ang">
+         <entry xml:id="cafortūn" resource=":cafortūn_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>cafortūn</orth>
             </form>
@@ -240,7 +241,7 @@ III. good, of value, Æ. -->
          </entry> 
 
 <!-- be-ðurfan swv. pres., 3 sg. -ðearf, pl. -ðurfon, pret. -ðorfte. (w. g. or a.) to need, have need of, want, Æ, CP. -->
-         <entry xml:id="be-ðurfan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="be-ðurfan" resource=":be-ðurfan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth type="segmented">               <!-- "segmented" necessary or not? -->
                   <seg>be</seg>
@@ -290,11 +291,11 @@ III. good, of value, Æ. -->
                
 <!-- lind I. f. lime-tree, linden, Gl; Æ; Mdf: (†) shield (of wood). [‘lind’]
 II. = lynd -->
-         <entry xml:id="lind" type="mainEntry" xml:lang="ang">
+         <entry xml:id="lind" resource=":lind_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>lind</orth>
             </form>
-            <entry xml:id="lind_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="lind_1" resource=":lind_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                 <lbl type="homNum">I.</lbl> 
                <gramGrp>
                   <gram type="pos" value="noun"/>
@@ -327,7 +328,7 @@ II. = lynd -->
                <metamark>.</metamark>
                <xr type="related"><ref type="sense" target="#OED_lind">[‘lind’]</ref></xr>    <!-- "[" and "]" have to stay inside <ref>, otherwise invalid. Or should use <pc> -->
             </entry>
-            <entry xml:id="lind_2" xml:lang="ang" type="homonymicEntry" n="II">
+            <entry xml:id="lind_2" resource=":lind_2_entry" typeof="ontolex:LexicalEntry" xml:lang="ang" type="homonymicEntry" n="II">
                 <lbl type="homNum">II.</lbl>                  
                <xr type="related" expand="orthographic variant">
                   <lbl>=</lbl>
@@ -349,7 +350,7 @@ II. = lynd -->
                         h. for consider:
                            (+) hold, keep from, preserve, retain, CP, Æ.
                         yfle +h. afflict, torment. -->     
-         <entry xml:id="habban" type="mainEntry" xml:lang="ang">
+         <entry xml:id="habban" resource=":habban_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>habban</orth>
             </form>
@@ -519,7 +520,7 @@ II. = lynd -->
                </sense>
             </sense>
             <metamark>.</metamark>
-            <entry xml:id="habban_for" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="habban_for" resource=":habban_for_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">
                   <orth><ref type="oRef">h.</ref>for</orth>  <!-- expand="habban_for" necessary as orth attribute? -->
                </form>
@@ -545,7 +546,7 @@ II. = lynd -->
                   </sense>
                </sense>
             </entry>
-            <entry xml:id="yfle_ge-habban" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="yfle_ge-habban" resource=":yfle_ge-habban_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">
                   <orth>yfle</orth>
                   <orth extent="prefix" expand="ge-habban"><lbl expand="ge-">+</lbl><seg><ref type="oRef">h.</ref></seg></orth>                                               
@@ -560,7 +561,7 @@ II. = lynd -->
          </entry>
      
          <!-- trym † (e) n. small piece, short length. fōtes t. a foot’s length. -->         
-         <entry xml:id="trym" type="mainEntry" xml:lang="ang">
+         <entry xml:id="trym" resource=":trym_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>trym</orth>
             </form>
@@ -578,7 +579,7 @@ II. = lynd -->
                </cit>
             </sense>
             <metamark>.</metamark>
-            <entry xml:id="fōtes_trym" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="fōtes_trym" resource=":fōtes_trym_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">
                   <orth>fōtes<ref type="oRef">t.</ref></orth>
                </form>
@@ -593,7 +594,7 @@ II. = lynd -->
                   
 <!-- līhtan (ē, ēo, ȳ) I. (±) to make ‘light,’ easy, relieve, alleviate, CP, Lcd, LL: dismount, ‘alight,’ BH (y).
 II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light, dawn, Da (ȳ): ‘light,’ kindle. -->
-         <entry xml:id="līhtan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="līhtan" resource=":līhtan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>līhtan</orth>
             </form>
@@ -612,7 +613,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
             <gramGrp>
                <gram type="pos" value="verb"/>   
             </gramGrp>
-            <entry xml:id="līhtan_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="līhtan_1" resource=":līhtan_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl> 
                <sense xml:id="līhtan_1.1">
                   <sense xml:id="līhtan_1.1.1">
@@ -645,7 +646,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="līhtan_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="līhtan_2" resource=":līhtan_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                 <lbl type="homNum">II.</lbl> 
                <form type="variant">
                   (<orth extent="part" expand="liehtan">ie</orth>,
@@ -686,7 +687,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
          </entry>
                  
 <!-- ±edcwician (cwyc-, cuc-) to re-quicken, revive, Æ. -->       
-         <entry xml:id="edcwician" type="mainEntry" xml:lang="ang">
+         <entry xml:id="edcwician" resource=":edcwician_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth type="segmented" extent="prefix" expand="edcwician, ge-edcwician"><lbl expand="#ge-_optional">±</lbl></orth>
                <orth>edcwician</orth>
@@ -712,7 +713,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
          </entry>
          
 <!-- ord m. point, spear-point, spear, B, CP: source, beginning, Æ, CP: front, vanguard, Æ: chief, prince; in pl. first men, the flower. [‘ord’] -->  
-         <entry xml:id="ord" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ord" resource=":ord_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ord</orth>
             </form>
@@ -778,11 +779,11 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
 <!-- bæc I. n. ‘back,’ Bo, MtL, Ps; CP. on b. backwards, behind, ‘aback.’ on b. settan, lǣtan to neglect. ofer b. backwards, back. under b. behind, backwards, back. 
             ofer b. būgan to turn back, flee. clǣne b. habban to be straightforward, honest, LL 128[5].
         II. mfn. beck, brook. v. ES 29·411. -->
-         <entry xml:id="bæc" type="mainEntry" xml:lang="ang">
+         <entry xml:id="bæc" resource=":bæc_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>bæc</orth>
             </form>
-            <entry xml:id="bæc_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="bæc_1" resource=":bæc_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <gramGrp>
                   <gram type="pos" value="noun"/>
@@ -807,7 +808,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="on_bæc" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="on_bæc" resource=":on_bæc_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">                                                     <!-- or "phrase" ? -->
                   <orth>on <ref type="oRef">b.</ref></orth>        
                </form>
@@ -818,7 +819,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="on_bæc_settan" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="on_bæc_settan" resource=":on_bæc_settan_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">                                                  <!-- or "phrase" ? -->
                   <orth>on <ref type="oRef">b.</ref>settan</orth>,  
                </form>
@@ -832,7 +833,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="ofer_bæc" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="ofer_bæc" resource=":ofer_bæc_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                   <form type="collocation">
                      <orth>ofer<ref type="oRef">b.</ref></orth>
                   </form>
@@ -843,7 +844,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
                   </sense>
                   <metamark>.</metamark>
             </entry>
-            <entry xml:id="under_bæc" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="under_bæc" resource=":under_bæc_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                   <form type="collocation">
                      <orth>under <ref type="oRef">b.</ref></orth>
                   </form>
@@ -854,7 +855,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
                   </sense>
                   <metamark>.</metamark>
             </entry>
-            <entry xml:id="ofer_bæc_bugan" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="ofer_bæc_bugan" resource=":ofer_bæc_bugan_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                   <form type="collocation">
                      <orth>ofer <ref type="oRef">b.</ref> būgan</orth>
                   </form>
@@ -865,7 +866,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
                   </sense>
                   <metamark>.</metamark>
             </entry>
-            <entry xml:id="clæne_bæc_habban" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="clæne_bæc_habban" resource=":clæne_bæc_habban_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                   <form type="collocation">
                      <orth>clǣne <ref type="oRef">b.</ref> habban</orth>
                   </form>
@@ -881,7 +882,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
                   </sense>
                   <metamark>.</metamark>
             </entry>
-            <entry xml:id="bæc_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="bæc_2" resource=":bæc_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl>
                <gramGrp>
                   <gram type="gender" value="masculine, feminine, neuter">mfn.</gram>
@@ -899,7 +900,7 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
          </entry>
          
 <!-- fōt m. ds. fēt, fōte, nap. fēt, fōtas foot (as limb and as measure), B, LL, NG; Æ, AO, CP. -->
-         <entry xml:id="fōt" type="mainEntry" xml:lang="ang">
+         <entry xml:id="fōt" resource=":fōt_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>fōt</orth>
             </form>
@@ -953,14 +954,14 @@ II. (ie, ȳ) to lighten, illuminate, give light, shine, Æ, Jn (ȳ): grow light,
 <!-- wāt I. pres. 3 sg. of witan.
 II. pret. 3 sg. of wītan.
 III. = wǣt -->
-         <entry xml:id="wāt" type="mainEntry" xml:lang="ang">
+         <entry xml:id="wāt" resource=":wāt_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>wāt</orth>
             </form>
             <gramGrp>
                <gram type="pos" value="verb"/>   
             </gramGrp>
-            <entry xml:id="wāt_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="wāt_1" resource=":wāt_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <gramGrp>
                   <gram type="pos" value="verb"/>
@@ -974,7 +975,7 @@ III. = wǣt -->
                </xr>
                <metamark>.</metamark> 
             </entry>
-            <entry xml:id="wāt_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="wāt_2" resource=":wāt_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl>
                <gramGrp>
                   <gram type="pos" value="verb"/>
@@ -988,7 +989,7 @@ III. = wǣt -->
                </xr>
                <metamark>.</metamark> 
             </entry>
-            <entry xml:id="wāt_3" type="homonymicEntry" xml:lang="ang" n="III">
+            <entry xml:id="wāt_3" resource=":wāt_3_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="III">
                <lbl type="homNum">III.</lbl>
                <xr type="related" expand="orthographic variant">
                   <lbl>=</lbl>
@@ -999,7 +1000,7 @@ III. = wǣt -->
          </entry>
          
 <!-- ±etan5 (ea, eo) to 'eat,' Æ, AO, Jn: devour, consume, Jn; CP: (reflex.) provision oneself: (+) eat together. -->
-         <entry xml:id="etan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="etan" resource=":etan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth extent="prefix" expand="etan, ge-etan"><lbl expand="#ge-_optional">±</lbl><seg>etan</seg></orth>
             </form>
@@ -1065,14 +1066,14 @@ III. = wǣt -->
          
          <!-- hǣlan I. (±) to ‘heal,’ cure, save, CP, Lcd, Mt, Ps; Æ (+): greet, salute, GD 3627. +hǣl! Hosanna! [hāl]
 II. to castrate, Lcd 3·18622. -->
-         <entry xml:id="hǣlan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="hǣlan" resource=":hǣlan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>hǣlan</orth>
             </form>
             <gramGrp>
                <gram type="pos" value="verb"/>
             </gramGrp>
-            <entry xml:id="hǣlan_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="hǣlan_1" resource=":hǣlan_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <form type="variant">
                   <orth extent="prefix" expand="hǣlan, ge-hǣlan"><lbl expand="#ge-_optional">(±)</lbl></orth>
@@ -1109,7 +1110,7 @@ II. to castrate, Lcd 3·18622. -->
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="hǣl" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="hǣl" resource=":hǣl_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="phrase">                    <!-- phrase??  -->
                   <orth extent="prefix" expand="ge-hǣl!"><lbl expand="ge-">+</lbl><seg>hǣl!</seg></orth>                    <!-- keep the ! in orth? -->
                </form>
@@ -1120,7 +1121,7 @@ II. to castrate, Lcd 3·18622. -->
                </sense>
                <xr type="related"><ref type="entry" target="#hāl">[hāl]</ref></xr>  
             </entry>
-            <entry xml:id="hǣlan_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="hǣlan_2" resource=":hǣlan_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl>
                <sense xml:id="hǣlan_2.1">
                   <cit type="translation" xml:lang="en">
@@ -1138,7 +1139,7 @@ II. to castrate, Lcd 3·18622. -->
          </entry>
          
 <!-- ±fremian, fremman to further, advance, support, An, B: frame, make, do, perpetrate, commit, afford, B, Gen; CP: (w. d.) avail, benefit, do good, Æ, Mt. ['freme'] -->
-         <entry xml:id="fremian" type="mainEntry" xml:lang="ang">
+         <entry xml:id="fremian" resource=":fremian_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth extent="full" expand="fremian, ge-fremian"><lbl expand="ge-_optional">±</lbl><seg>fremian</seg></orth>,
             </form>
@@ -1196,7 +1197,7 @@ II. to castrate, Lcd 3·18622. -->
          </entry>
          
 <!-- cēne bold, brave, fierce, CP, Lcd, Ma; Æ, AO: powerful, VPs: learned, clever, Met 1051. ['keen'; Ger. kühn] also adv. -->
-         <entry xml:id="cēne" type="mainEntry" xml:lang="ang">
+         <entry xml:id="cēne" resource=":cēne_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>cēne</orth>
             </form>
@@ -1264,14 +1265,14 @@ II. to castrate, Lcd 3·18622. -->
          
 <!-- gearo (gearu) I. (wk gearwa) gsmn. -(o)wes; asm. gearone; napn. gearu prepared, ready, equipped, finished, Chr, W. ['yare']
 II. = gearwe adv. -->
-         <entry xml:id="gearo" type="mainEntry" xml:lang="ang">
+         <entry xml:id="gearo" resource=":gearo_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>gearo</orth>
             </form>
             <form type="variant">
                (<orth>gearu</orth>)
             </form>
-            <entry xml:id="gearo_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="gearo_1" resource=":gearo_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <gramGrp>
                   <gram type="pos" value="adjective"/>
@@ -1320,7 +1321,7 @@ II. = gearwe adv. -->
                <metamark>.</metamark>
                <xr type="related"><ref type="sense" target="#OED_yare">['yare']</ref></xr>
             </entry>
-            <entry xml:id="gearo_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="gearo_2" resource=":gearo_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl>
                <xr type="related" expand="orthographic variant">
                   <lbl>=</lbl>
@@ -1333,7 +1334,7 @@ II. = gearwe adv. -->
          </entry>
          
 <!-- georn-ful, -fullic desirous, eager, zealous, diligent, AO, CP. adv. -līce, Æ. -->
-         <entry xml:id="georn-ful" type="mainEntry" xml:lang="ang">
+         <entry xml:id="georn-ful" resource=":georn-ful_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth type="segmented">             
                   <seg>georn</seg> 
@@ -1358,7 +1359,7 @@ II. = gearwe adv. -->
                </cit>
             </sense>
             <metamark>.</metamark>
-            <entry xml:id="georn-fullīce" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="georn-fullīce" resource=":georn-fullīce_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <gramGrp>
                   <gram type="pos" value="adjective">adj.</gram>
                </gramGrp>
@@ -1375,7 +1376,7 @@ II. = gearwe adv. -->
          </entry>
          
 <!-- betera ‘better,’ AO, Mk. followed by g. = better in respect of.... -->
-         <entry xml:id="betera" type="mainEntry" xml:lang="ang">
+         <entry xml:id="betera" resource=":betera_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>betera</orth>
             </form>
@@ -1408,7 +1409,7 @@ II. = gearwe adv. -->
 
 <!-- ±lǣran (ē) to teach, instruct, A, BH: enjoin, advise, persuade, urge, preach. l. forð hand down (to others): (+) convert: (+) †recall, ES 37·197. ±lǣred learned (opposed to lǣwed),
      hence clerical (as opposed to lay), spiritual (as opposed to temporal), Æ, CP. [‘lere’] -->
-         <entry xml:id="lǣran" type="mainEntry" xml:lang="ang">
+         <entry xml:id="lǣran" resource=":lǣran_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth extent="prefix" expand="lǣran, ge-lǣran"><lbl expand="#ge-_optional">±</lbl><seg>lǣran</seg></orth>
             </form>
@@ -1438,7 +1439,7 @@ II. = gearwe adv. -->
                </sense>
             </sense>
             <metamark>.</metamark>
-            <entry xml:id="lǣran_forð" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="lǣran_forð" resource=":lǣran_forð_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">
                   <orth><ref type="oRef">l.</ref>forð</orth>  
                </form>
@@ -1476,7 +1477,7 @@ II. = gearwe adv. -->
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="lǣred" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="lǣred" resource=":lǣred_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="lemma">
                   <orth extent="prefix" expand="lǣred, ge-lǣred"><lbl expand="#ge-_optional">±</lbl><seg>lǣred</seg></orth>
                </form>
@@ -1504,7 +1505,7 @@ II. = gearwe adv. -->
       
 <!-- be-byrgan (AO) -byrian I. to raise a mound to, bury, inter, Æ. ['bebury']
 II. = bebeorgan -->
-         <entry xml:id="be-byrgan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="be-byrgan" resource=":be-byrgan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth type="segmented">             
                   <seg>be</seg>
@@ -1517,7 +1518,7 @@ II. = bebeorgan -->
             <form type="variant">
                <orth extent="part" expand="be-byrian">-byrian</orth>    
             </form>
-            <entry xml:id="be-byrgan_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="be-byrgan_1" resource=":be-byrgan_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <gramGrp>
                   <gram type="pos" value="verb"/>
@@ -1533,14 +1534,14 @@ II. = bebeorgan -->
                <metamark>.</metamark>
                <xr type="related"><ref type="entry" target="#OED_bebury">['bebury']</ref></xr>
             </entry>
-            <entry xml:id="be-byrgan_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="be-byrgan_2" resource=":be-byrgan_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl>
                <xr type="related" expand="orthographic variant"><lbl>=</lbl><ref type="entry" target="#bebeorgan">bebeorgan</ref></xr>
             </entry>
          </entry>
          
 <!-- wealh-moru, -more (a^1) f., -mora m. carrot, parsnip. -->
-         <entry xml:id="wealh-moru" type="mainEntry" xml:lang="ang">
+         <entry xml:id="wealh-moru" resource=":wealh-moru_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth type="segmented">
                   <seg>wealh</seg>
@@ -1569,7 +1570,7 @@ II. = bebeorgan -->
          </entry>
          
 <!-- try-mes (Mt) mf., -messe f., -messa m. a drachm weight: an English coin. (v. LL 2·683): a Roman coin, 'tremissis,' = 3 denarii. ['thrimsa'] -->
-         <entry xml:id="try-mes" type="mainEntry" xml:lang="ang">
+         <entry xml:id="try-mes" resource=":try-mes_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth type="segmented">
                   <seg>try</seg>
@@ -1624,11 +1625,11 @@ II. = bebeorgan -->
          
 <!-- ðēah I. (ē) conj. and adv. 'though,' although, even if, that, however, nevertheless, yet, still, Bl, Bo; CP. ð. ðe although. swā ð. nevertheless, yet. ð. hwæðere v. ðēahhwæðere.
 II. pret. 3 sg. of ðēon. -->
-         <entry xml:id="ðēah" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ðēah" resource=":ðēah_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ðēah</orth>
             </form>
-            <entry xml:id="ðēah_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="ðēah_1" resource=":ðēah_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <form type="variant">
                   (<orth extent="part" expand="ðēh"><seg>ē</seg></orth>)  
@@ -1654,7 +1655,7 @@ II. pret. 3 sg. of ðēon. -->
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="ðēah_ðe" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="ðēah_ðe" resource=":ðēah_ðe_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">
                   <orth><ref type="oRef">ð.</ref>ðe</orth>
                </form>
@@ -1665,7 +1666,7 @@ II. pret. 3 sg. of ðēon. -->
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="swā_ðēah" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="swā_ðēah" resource=":swā_ðēah_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">
                   <orth>swā <ref type="oRef">ð.</ref></orth>
                </form>
@@ -1676,14 +1677,14 @@ II. pret. 3 sg. of ðēon. -->
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="ðēah_hwæðere" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="ðēah_hwæðere" resource=":ðēah_hwæðere_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">
                   <orth><ref type="oRef">ð. </ref>hwæðere</orth>
                </form>
                <xr type="related" expand="orthografic variant"><lbl norm="vide">v.</lbl><ref target="#ðēahhwæðere" type="entry">ðēahhwæðere</ref></xr>  <!-- related entry without sense, but with XR -->
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="ðēah_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="ðēah_2" resource=":ðēah_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl>
                <gramGrp>
                   <gram type="pos" value="verb"/>
@@ -1700,7 +1701,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
          
 <!-- cild (y) (nap. cild, cild-ra, -ru; gp. -ra) n. 'child,' infant, Mt, Lcd, etc.; Æ, AO, CP: a youth of gentle birth, KC. -->
-         <entry xml:id="cild" type="mainEntry" xml:lang="ang">
+         <entry xml:id="cild" resource=":cild_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>cild</orth>
             </form>
@@ -1763,7 +1764,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
          
 <!-- āfȳran to emasculate. āfȳred (CP), āfȳrd pp. as sb. eunuch. --> 
-         <entry xml:id="āfȳran" type="mainEntry" xml:lang="ang">                
+         <entry xml:id="āfȳran" resource=":āfȳran_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">                
             <form type="lemma">
                <orth>āfȳran</orth>
             </form>
@@ -1776,7 +1777,7 @@ II. pret. 3 sg. of ðēon. -->
                </cit>
             </sense>
             <metamark>.</metamark>
-            <entry xml:id="āfȳred" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="āfȳred" resource=":āfȳred_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="lemma">
                   <orth>āfȳred</orth>
                   <bibl type="attestation" source="#CP">
@@ -1803,7 +1804,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
          
 <!-- westerne western, westerly; wester(r)a more westerly; westema, westmest (AO) most westerly. -->
-         <entry xml:id="westerne" type="mainEntry" xml:lang="ang">
+         <entry xml:id="westerne" resource=":westerne_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>westerne</orth>
             </form>
@@ -1845,7 +1846,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
          
 <!-- niðera (eo, y) (comp.) adj. niðemest, nyðemest (superl.; positive not found) lower, under, lowest, Bo, WW; CP. ['nether'] -->
-         <entry xml:id="niðera" type="mainEntry" xml:lang="ang">
+         <entry xml:id="niðera" resource=":niðera_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>niðera</orth>
                <form type="variant">
@@ -1884,7 +1885,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
          
 <!-- āhefegian (CP), -hef(i)gian (æ) to make heavy, oppress. -->
-         <entry xml:id="āhefegian" type="mainEntry" xml:lang="ang">
+         <entry xml:id="āhefegian" resource=":āhefegian_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>āhefegian</orth>
                <bibl type="attestation" source="#CP">
@@ -1906,7 +1907,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
          
 <!-- ðrirēðre with three rows of oars. as sb. trireme, AO (īe). -->  
-         <entry xml:id="ðrirēðre" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ðrirēðre" resource=":ðrirēðre_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ðrirēðre</orth>
             </form>
@@ -1938,7 +1939,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
          
 <!-- fīf usu. indecl. before sb.; but when alone, has na. fīfe, g. fīfa, d. fīfum 'five,' A, Gen, Mt. -->
-         <entry xml:id="fīf" type="mainEntry" xml:lang="ang">
+         <entry xml:id="fīf" resource=":fīf_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>fīf</orth>
             </form>
@@ -1990,7 +1991,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>  
          
 <!-- lāgon = lǣgon pret. pl. of licgan. --> 
-         <entry xml:id="lāgon" type="mainEntry" xml:lang="ang">
+         <entry xml:id="lāgon" resource=":lāgon_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>lāgon</orth>
             </form>
@@ -2013,7 +2014,7 @@ II. pret. 3 sg. of ðēon. -->
 
          
 <!-- bā nafn. and am. of bēgen both. -->          
-         <entry xml:id="bā" type="mainEntry" xml:lang="ang">
+         <entry xml:id="bā" resource=":bā_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>bā</orth>
             </form>
@@ -2037,7 +2038,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- āborgian to be surety for, LL: (w. æt) borrow. -->   <!-- comment? variant? relared entry? -->
-         <entry xml:id="āborgian" type="mainEntry" xml:lang="ang">
+         <entry xml:id="āborgian" resource=":āborgian_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>āborgian</orth>
             </form>
@@ -2068,7 +2069,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
           
 <!-- ācēocian (tr.) to choke: (intr.) burn out. -->        
-         <entry xml:id="ācēocian" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ācēocian" resource=":ācēocian_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ācēocian</orth>
             </form>
@@ -2098,7 +2099,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry> 
          
 <!-- āfȳsan (intr.) to hasten: inspire with longing, Bl: (tr.) urge, impel, excite: drive away. [fūs] -->
-         <entry xml:id="āfȳsan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="āfȳsan" resource=":āfȳsan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>āfȳsan</orth>
             </form>
@@ -2152,11 +2153,11 @@ II. pret. 3 sg. of ðēon. -->
          </entry>    
          
          <!-- ǣht I. f. (rare in sg.) possessions, goods, lands, wealth, cattle, Mk; AO: ownership, control. [āgan: 'aught' sb.] II. = ōht -->
-         <entry xml:id="ǣht" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ǣht" resource=":ǣht_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ǣht</orth>
             </form>
-            <entry xml:id="ǣht_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="ǣht_1" resource=":ǣht_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <gramGrp>
                   <gram type="pos" value="noun"/>
@@ -2189,7 +2190,7 @@ II. pret. 3 sg. of ðēon. -->
                <xr><ref type="entry" target="#āgan">[āgan:</ref></xr><xr type="related"><ref type="sense" target="#OED_aught">'aught'</ref></xr> 
                <gramGrp><gram type="pos" value="substantive">sb.</gram>]</gramGrp> 
             </entry>
-            <entry xml:id="ǣht_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="ǣht_2" resource=":ǣht_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl>
                <xr type="related" expand="orthographic variant">
                   <lbl>=</lbl>
@@ -2199,7 +2200,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- ǣlc [ēlc, ylc (VPs); v. 'each'] I. (pron. subst.) any, all, every, each (one), Æ, AO, CP. ǣlc...ōðrum the one...the other. II. (adj. pron.) each, Lcd: any, CP. -->
-         <entry xml:id="ǣlc" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ǣlc" resource=":ǣlc_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ǣlc</orth>
             </form>
@@ -2213,7 +2214,7 @@ II. pret. 3 sg. of ðēon. -->
                </bibl>
             </form>
             <xr type="related"><lbl norm="vide">v.</lbl> <ref type="sense" target="#OED_each">'each']</ref></xr> 
-            <entry xml:id="ǣlc_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="ǣlc_1" resource=":ǣlc_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <gramGrp>
                   (<gram type="pos" value="pronoun">pron.</gram>
@@ -2235,7 +2236,7 @@ II. pret. 3 sg. of ðēon. -->
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="ǣlc_ōðrum" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="ǣlc_ōðrum" resource=":ǣlc_ōðrum_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="collocation">
                   <orth>ǣlc...ōðrum</orth> 
                </form>
@@ -2246,7 +2247,7 @@ II. pret. 3 sg. of ðēon. -->
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="ǣlc_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="ǣlc_2" resource=":ǣlc_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl>
                <gramGrp>
                   (<gram type="pos" value="adjective">adj.</gram>
@@ -2276,7 +2277,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- æfesn, æfesen f. relish, dainty, special pasturage, pannage; the charge for special pasturage, LL. -->
-         <entry xml:id="æfesn" type="mainEntry" xml:lang="ang">
+         <entry xml:id="æfesn" resource=":æfesn_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>æfesn,</orth>
             </form>
@@ -2307,7 +2308,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- ācennan to bring forth, produce, renew, Bo, WG; Æ: attribute to. ['akenne(d)'] --> 
-         <entry xml:id="ācennan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ācennan" resource=":ācennan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ācennan</orth>
             </form>
@@ -2341,7 +2342,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- ādumbian to become dumb, keep silence, Mk; Æ. [v. 'dumb' vb.] -->
-         <entry xml:id="ādumbian" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ādumbian" resource=":ādumbian_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ādumbian</orth>
             </form>
@@ -2364,7 +2365,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- ād-faru f. ds. -fære way or path to the funeral pile, B 3010. -->
-         <entry xml:id="ād-faru" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ād-faru" resource=":ād-faru_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth type="segmented">
                   <seg>ād</seg>
@@ -2395,7 +2396,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- æfreda m. what is taken or separated from, OEG (Napier). [æf; hreda (hreddan)]: tow, oakum (BT). -->
-         <entry xml:id="æfreda" type="mainEntry" xml:lang="ang">
+         <entry xml:id="æfreda" resource=":æfreda_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>æfreda</orth>
             </form>
@@ -2429,7 +2430,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- ælmeslic charitable: depending on alms, poor, -līce, adv. charitably, OET. (Ct.) -->
-         <entry xml:id="ælmeslic" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ælmeslic" resource=":ælmeslic_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ælmeslic</orth>
             </form>
@@ -2450,7 +2451,7 @@ II. pret. 3 sg. of ðēon. -->
                </sense>
             </sense>
             <metamark>,</metamark>  
-            <entry xml:id="ælmeslīce" type="relatedEntry" xml:lang="ang">
+            <entry xml:id="ælmeslīce" resource=":ælmeslīce_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang">
                <form type="lemma"> 
                   <orth extent="part" expand="ælmeslīce"><seg>-līce</seg></orth>
                </form>
@@ -2473,11 +2474,11 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- ǣr- = I. early, former. II. intensitive prefix. -->
-         <entry xml:id="ǣr-" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ǣr-" resource=":ǣr-_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth type="segmented"><seg>ǣr-</seg></orth> 
             </form>
-            <entry xml:id="ǣr-_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="ǣr-_1" resource=":ǣr-_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <gramGrp>
                   <gram type="pos" value="adjective"/>
@@ -2489,7 +2490,7 @@ II. pret. 3 sg. of ðēon. -->
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="ǣr-_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="ǣr-_2" resource=":ǣr-_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                   <lbl type="homNum">II.</lbl>
                   <lbl type="usage">intensitive prefix</lbl>
                   <metamark>.</metamark>
@@ -2497,11 +2498,11 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
          
          <!-- ǣre I. = ȳre. II. in comp. = -oared. --> 
-         <entry xml:id="ǣre" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ǣre" resource=":ǣre_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ǣre</orth>
             </form>
-            <entry xml:id="ǣre_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="ǣre_1" resource=":ǣre_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl>
                <xr type="related" expand="orthographic variant">
                   <lbl>=</lbl>
@@ -2509,7 +2510,7 @@ II. pret. 3 sg. of ðēon. -->
                </xr>
             </entry>
             <metamark>.</metamark>
-            <entry xml:id="ǣre_2" type="homonymicEntry" xml:lang="ang" n="II">
+            <entry xml:id="ǣre_2" resource=":ǣre_2_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="II">
                <lbl type="homNum">II.</lbl>
                <lbl type="usage" expand="in compounds">in comp.</lbl> 
                <form type="variant">
@@ -2520,7 +2521,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- ærnan to 'run,' ride, gallop, BH: (+) to ride, run to, reach, gain by running or riding, AO: = +iernan --> 
-         <entry xml:id="ærnan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ærnan" resource=":ærnan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ærnan</orth>
             </form>
@@ -2557,7 +2558,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
 <!-- ǣspryng nf. spring, fountain, CP. [ēa]: departure, Creat 77. -->
-         <entry xml:id="ǣspryng" type="mainEntry" xml:lang="ang">
+         <entry xml:id="ǣspryng" resource=":ǣspryng_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>ǣspryng</orth>
             </form>
@@ -2591,7 +2592,7 @@ II. pret. 3 sg. of ðēon. -->
          </entry>
 
       <!-- renmōd of venomous spirit, malignant (or? two words), GnE 163. --> 
-         <entry xml:id="renmōd" type="mainEntry" xml:lang="ang">
+         <entry xml:id="renmōd" resource=":renmōd_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>renmōd</orth>
             </form>
@@ -2614,11 +2615,11 @@ II. pret. 3 sg. of ðēon. -->
 
 II. pret. 3 sg. of āginnan (onginnan). -->
       
-         <entry xml:id="āgan" type="mainEntry" xml:lang="ang">
+         <entry xml:id="āgan" resource=":āgan_entry" typeof="ontolex:LexicalEntry" type="mainEntry" xml:lang="ang">
             <form type="lemma">
                <orth>āgan</orth>  
             </form>
-            <entry xml:id="āgan_1" type="homonymicEntry" xml:lang="ang" n="I">
+            <entry xml:id="āgan_1" resource=":āgan_1_entry" typeof="ontolex:LexicalEntry" type="homonymicEntry" xml:lang="ang" n="I">
                <lbl type="homNum">I.</lbl> 
                <note>(conj. <ref type="bibliography" target="#Wt">Wt 546</ref>)</note>
                <gramGrp>
@@ -2679,7 +2680,7 @@ II. pret. 3 sg. of āginnan (onginnan). -->
                </sense>
                <metamark>.</metamark>
             </entry>
-            <entry xml:id="āgan_ūt" type="relatedEntry" xml:lang="ang" >
+            <entry xml:id="āgan_ūt" resource=":āgan_ūt_entry" typeof="ontolex:LexicalEntry" type="relatedEntry" xml:lang="ang" >
                <form type="collocation">                                     
                   <orth> <ref type="oRef">ā.</ref>ūt</orth>               
                </form>
@@ -2690,7 +2691,7 @@ II. pret. 3 sg. of āginnan (onginnan). -->
                </sense>
                <metamark>.</metamark>
             </entry>      
-            <entry xml:id="āgan_2" xml:lang="ang" type="homonymicEntry" n="II">
+            <entry xml:id="āgan_2" resource=":āgan_2_entry" typeof="ontolex:LexicalEntry" xml:lang="ang" type="homonymicEntry" n="II">
                <lbl type="homNum">II.</lbl>  
                <gramGrp>
                   <gram type="pos" value="verb"/>
