@@ -50,7 +50,7 @@ jobs:
         run: |
           rm -rf review-demo
           mkdir -p review-demo
-          cp -r demo/.vitepress/dist/* review-demo/
+          cp -r .vitepress/dist/* review-demo/
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add site
