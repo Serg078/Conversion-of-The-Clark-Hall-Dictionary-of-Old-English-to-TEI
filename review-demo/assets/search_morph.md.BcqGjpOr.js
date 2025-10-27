@@ -1,1 +1,0 @@
-import{_ as e,c as r,o as t}from"./chunks/framework.B4KI33d0.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"search/morph.md","filePath":"search/morph.md"}'),a={name:"search/morph.md"};function o(s,c,n,p,m,h){return t(),r("div")}const i=e(a,[["render",o]]);export{d as __pageData,i as default};

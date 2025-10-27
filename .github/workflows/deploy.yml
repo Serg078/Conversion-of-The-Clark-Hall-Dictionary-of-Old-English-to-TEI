@@ -12,8 +12,7 @@ on:
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   # needed for the anonymous submission page
-  contents: write
-  #contents: read
+  contents: read
   pages: write
   id-token: write
 
@@ -30,7 +29,6 @@ defaults:
 jobs:
   # Build job
   build:
-    if: github.actor != 'github-actions'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -47,17 +45,6 @@ jobs:
         run: npm ci
       - name: Build with VitePress
         run: npm run docs:build
-      # Remove the section after making the repo public
-      - name: Commit the version for reviewers
-        run: |
-          rm -rf ../review-demo
-          mkdir -p ../review-demo
-          cp -r .vitepress/dist/* ../review-demo/
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add ../review-demo
-          git diff --cached --quiet || git commit -m "Add a folder with the built demo for anonymised GH pages"
-          git push
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
