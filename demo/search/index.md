@@ -1,6 +1,6 @@
-# Search the dictionary
+# Search the dictionary by entry
 
-This page provides various ways to search within the RDFa annotations of the dictionary
+This page provides a simple way to search within the RDFa annotations of the dictionary
 
 :::form
 
