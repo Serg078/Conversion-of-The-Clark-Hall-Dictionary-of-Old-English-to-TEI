@@ -50,12 +50,12 @@ jobs:
       # Remove the section after making the repo public
       - name: Commit the version for reviewers
         run: |
-          rm -rf review-demo
-          mkdir -p review-demo
-          cp -r .vitepress/dist/* review-demo/
+          rm -rf ../review-demo
+          mkdir -p ../review-demo
+          cp -r .vitepress/dist/* ../review-demo/
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add review-demo
+          git add ../review-demo
           git diff --cached --quiet || git commit -m "Add a folder with the built demo for anonymised GH pages"
           git push
       - name: Upload artifact
