@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.B4KI33d0.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"search/latin.md","filePath":"search/latin.md"}'),r={name:"search/latin.md"};function n(s,c,o,i,l,p){return a(),t("div")}const m=e(r,[["render",n]]);export{d as __pageData,m as default};
