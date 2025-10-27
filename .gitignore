@@ -1,3 +1,5 @@
+.DS_Store
+
 # JavaScript
 node_modules/
 demo/.vitepress/cache/

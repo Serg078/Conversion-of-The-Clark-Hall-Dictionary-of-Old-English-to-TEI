@@ -7,7 +7,7 @@ This page provides various ways to search within the RDFa annotations of the dic
 ```json params
 {
 	"endpoints": [
-		"http://localhost:5173/clark_hall_tei_rdfa.xml"
+		"https://clark-hall-tei-rdfa.netlify.app/clark_hall_tei_rdfa.xml"
 	],
 	"parameters": [
 		{
