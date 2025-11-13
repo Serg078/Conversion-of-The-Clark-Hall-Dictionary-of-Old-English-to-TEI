@@ -5,6 +5,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "CETEIcean": "^1.9.5",
     "vitepress-plugin-sparql": "^0.3.5"
   }
 }

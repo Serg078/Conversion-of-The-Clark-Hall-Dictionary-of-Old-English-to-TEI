@@ -19,7 +19,7 @@ export default defineConfig({
         items: [
           { text: 'Entry', link: '/search/' },
           { text: 'Grammar', link: '/search/morph.md' },
-          { text: 'Latin translation', link: '/search/latin.md' }
+          //{ text: 'Latin translation', link: '/search/latin.md' }
         ]
       }
     ],
