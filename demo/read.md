@@ -18,7 +18,7 @@ This page provides a readable version of the dictionary encoded as TEI
 
 	onMounted(() => {
 		console.log("mounted")
-		CETEIcean.getHTML5("clark_hall_tei_rdfa.xml", function(data) {
+		CETEIcean.getHTML5("https://raw.githubusercontent.com/Serg078/Conversion-of-The-Clark-Hall-Dictionary-of-Old-English-to-TEI/refs/heads/main/clark_hall_tei_rdfa.xml", function(data) {
 			console.log("starting to append")
 			document.getElementById("TEI").appendChild(data)
 			document.getElementById("loading").style.visibility = 'hidden'
