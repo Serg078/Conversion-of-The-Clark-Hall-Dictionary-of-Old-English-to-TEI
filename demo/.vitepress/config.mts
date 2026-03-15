@@ -5,6 +5,7 @@ import { SparqlPlugin } from 'vitepress-plugin-sparql'
 export default defineConfig({
   title: "Clark Hall Dictionary",
   description: "This is a web interface for the TEI+RDFa edition of the Clark Hall Old English Dictinary",
+  base: "/Conversion-of-The-Clark-Hall-Dictionary-of-Old-English-to-TEI/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
