@@ -7,7 +7,7 @@ This page provides a way to search within the RDFa annotations of the dictionary
 ```json params
 {
 	"endpoints": [
-		"https://clark-hall-tei-rdfa.netlify.app/clark_hall_tei_rdfa.xml",
+		"https://raw.githubusercontent.com/Serg078/Conversion-of-The-Clark-Hall-Dictionary-of-Old-English-to-TEI/refs/heads/main/clark_hall_tei_rdfa.xml",
 		"https://lexinfo.net/ontology/2.0/lexinfo.owl"
 	],
 	"parameters": [
